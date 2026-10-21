@@ -1,0 +1,1742 @@
+[001]
+body_part: head
+symptoms: deep cut on scalp, heavy bleeding, dizziness
+condition: Scalp laceration with heavy bleeding
+severity: URGENT
+immediate_action: Apply firm direct pressure with a clean cloth for at least 10 minutes without lifting to check. Keep the head higher than the heart if the person is awake. Seek medical care for stitches and to check for concussion.
+what_not_to_do: Do not remove an object stuck in the wound. Do not stop pressing to peek every few seconds. Do not ignore vomiting or confusion after the injury.
+keywords: head cut, scalp bleeding, head wound, bleeding won't stop, cut on head, bleeding scalp
+
+[002]
+body_part: head
+symptoms: throbbing pain on one side, nausea, light sensitivity, aura
+condition: Migraine headache
+severity: MODERATE
+immediate_action: Move to a dark, quiet room and rest. Take the person's usual prescribed migraine medicine early if available. Place a cool cloth on the forehead and encourage fluids.
+what_not_to_do: Do not give aspirin to a child or teenager. Do not let the person drive. Do not ignore a headache that is sudden and the worst of their life.
+keywords: migraine, throbbing headache, light hurts, nausea headache, one sided headache
+
+[003]
+body_part: head
+symptoms: sudden worst-ever headache, 'thunderclap', neck stiffness, vomiting
+condition: Subarachnoid hemorrhage (brain bleed)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person still and lying flat with the head slightly raised. Keep them calm and do not let them walk or strain.
+what_not_to_do: Do not give painkillers that mask symptoms. Do not let the person walk or climb stairs. Do not wait to see if it passes.
+keywords: worst headache ever, thunderclap headache, sudden severe headache, headache and stiff neck, vomiting with headache
+
+[004]
+body_part: head
+symptoms: headache, neck stiffness, fever, rash, dislike of bright light
+condition: Meningitis
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person quiet and comfortable in a darkened room. Note the time a rash or fever started.
+what_not_to_do: Do not wait for a rash to appear before getting help. Do not give aspirin to children. Do not leave the person alone.
+keywords: stiff neck fever, meningitis, headache and fever, rash with fever, light hurts eyes
+
+[005]
+body_part: head
+symptoms: confusion, unequal pupils, vomiting, drowsiness after a blow
+condition: Concussion / head injury
+severity: URGENT
+immediate_action: Keep the person resting and stay with them. Watch for worsening drowsiness, vomiting, or confusion. Seek medical care the same day.
+what_not_to_do: Do not let them go to sleep alone without observation. Do not give alcohol or sedatives. Do not let them return to sport today.
+keywords: hit head, concussion, confused after fall, drowsy after head injury, headache after knock
+
+[006]
+body_part: head
+symptoms: a dent in the skull, bruising behind the ears, clear fluid from nose
+condition: Skull fracture
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person still and do not move the neck. Cover any wound lightly with a clean dressing.
+what_not_to_do: Do not press hard on a dented skull. Do not plug the nose or ear if clear fluid leaks out. Do not move the head or neck.
+keywords: skull fracture, dent in head, clear fluid from nose, head trauma, bleeding from ear
+
+[007]
+body_part: head
+symptoms: severe headache, hot dry skin, no sweating, confusion
+condition: Heat stroke
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Move the person to shade and start cooling at once - remove excess clothing, wet the skin, and fan them.
+what_not_to_do: Do not give fluids to an unconscious person. Do not use ice-cold immersion on the elderly. Do not delay cooling to wait for help.
+keywords: heat stroke, hot dry skin, headache in heat, confused in heat, no sweating in heat
+
+[008]
+body_part: head
+symptoms: itching, red bumps, live lice, sores from scratching
+condition: Head lice
+severity: MODERATE
+immediate_action: Do treat with a lice shampoo or combing as directed. Wash bedding and hats in hot water. Comb out nits daily.
+what_not_to_do: Do not use insecticide or kerosene on the scalp. Do not share combs or hats. Do not treat infants without advice.
+keywords: head lice, itchy scalp, lice in hair, scalp itching, nits in hair
+
+[009]
+body_part: head
+symptoms: localised tender bald patch, itching, ring-shaped patch
+condition: Ringworm of the scalp
+severity: MODERATE
+immediate_action: Keep the area clean and dry and see a doctor for antifungal treatment. Wash the hands after touching the area.
+what_not_to_do: Do not share hats, combs, or pillows. Do not apply strong steroid creams. Do not scratch and spread it to others.
+keywords: ringworm scalp, bald patch, scaly scalp patch, itchy round patch, fungal scalp
+
+[010]
+body_part: eyes
+symptoms: chemical splash, burning, redness, tearing
+condition: Chemical eye injury
+severity: CRITICAL
+immediate_action: Call emergency services and irrigate the eye immediately with clean water or saline for at least 15-20 minutes, holding the lids open.
+what_not_to_do: Do not rub the eye. Do not try to neutralise the chemical. Do not stop rinsing to wait for help.
+keywords: chemical in eye, eye burning, bleach in eye, eye splash, chemical burn eye
+
+[011]
+body_part: eyes
+symptoms: sudden painless loss of vision in one eye, curtain over vision
+condition: Retinal artery occlusion / sudden vision loss
+severity: CRITICAL
+immediate_action: Call emergency services immediately - this is a stroke of the eye. Note the exact time vision was lost and keep the person calm.
+what_not_to_do: Do not rub the eye. Do not wait to see if vision returns. Do not give food or drink in case of stroke.
+keywords: sudden vision loss, lost sight in one eye, curtain over eye, can't see one eye, blurred one eye
+
+[012]
+body_part: eyes
+symptoms: flashes of light, floaters, shadow across vision
+condition: Retinal detachment
+severity: URGENT
+immediate_action: Do cover both eyes with a light pad and keep the head still. Go to an eye emergency department the same day.
+what_not_to_do: Do not rub or press the eye. Do not bend, lift, or shake the head. Do not delay - surgery is time-sensitive.
+keywords: flashes and floaters, shadow in vision, retinal detachment, curtain in eye, sudden floaters
+
+[013]
+body_part: eyes
+symptoms: severe eye pain, red eye, halos around lights, nausea, blurred vision
+condition: Acute angle-closure glaucoma
+severity: CRITICAL
+immediate_action: Call emergency services or go to an eye hospital now. Keep the person sitting upright and calm.
+what_not_to_do: Do not give over-the-counter eye drops. Do not cover the eye tightly. Do not wait for the pain to settle.
+keywords: severe eye pain, red eye, halos around lights, glaucoma attack, painful red eye
+
+[014]
+body_part: eyes
+symptoms: foreign body sensation, tearing, redness, unable to open the eye
+condition: Foreign object in eye
+severity: URGENT
+immediate_action: Do try blinking and flushing with clean water. If the object stays on the eye, cover both eyes loosely and get medical help.
+what_not_to_do: Do not rub the eye. Do not use tweezers or cotton buds on the eyeball. Do not try to remove an embedded object.
+keywords: something in my eye, foreign body eye, eye feels gritty, eye pain, can't open eye
+
+[015]
+body_part: eyes
+symptoms: swollen shut, bruising around the eye, double vision, blood in the white
+condition: Eye injury / blow to the eye
+severity: URGENT
+immediate_action: Apply a cold pack gently over the closed lid for 15 minutes. Get medical assessment, especially for double vision or blood in the eye.
+what_not_to_do: Do not press on the eyeball. Do not blow the nose hard. Do not use heat on a fresh injury.
+keywords: black eye, hit in eye, swollen eye, blood in eye, eye injury
+
+[016]
+body_part: eyes
+symptoms: red itchy watery eyes, discharge, gritty feeling
+condition: Conjunctivitis (pink eye)
+severity: MODERATE
+immediate_action: Keep the eyes clean with cooled boiled water and a fresh cotton pad per eye. Wash the hands often and use prescribed drops if given.
+what_not_to_do: Do not share towels or pillowcases. Do not wear contact lenses. Do not touch the eyes with dirty hands.
+keywords: pink eye, red watery eyes, itchy eyes, eye discharge, sticky eyes
+
+[017]
+body_part: eyes
+symptoms: sudden double vision, drooping eyelid, one eye turned out, headache
+condition: Stroke / nerve palsy with double vision
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Note when symptoms began and keep the person still with the head slightly raised.
+what_not_to_do: Do not give aspirin without medical advice. Do not let the person eat or drink. Do not wait for symptoms to pass.
+keywords: double vision, droopy eyelid, one eye turned, sudden blurry vision, vision changes
+
+[018]
+body_part: ears
+symptoms: blood or clear fluid from the ear after a blow
+condition: Ear bleeding / CSF leak after head injury
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Cover the ear lightly with a clean pad and keep the head still and level.
+what_not_to_do: Do not plug the ear canal. Do not put anything inside the ear. Do not move the head or neck.
+keywords: blood from ear, fluid from ear, ear bleeding after head injury, clear fluid ear, ear injury
+
+[019]
+body_part: ears
+symptoms: pain, discharge, hearing loss, fever, child pulling the ear
+condition: Ear infection (otitis media)
+severity: MODERATE
+immediate_action: Give pain relief such as paracetamol and keep the ear dry. See a doctor, especially for a child under 2 or if there is discharge.
+what_not_to_do: Do not put cotton buds or oil in the ear. Do not let water enter the ear. Do not give leftover antibiotics.
+keywords: earache, ear infection, child pulling ear, ear pain with fever, ear discharge
+
+[020]
+body_part: ears
+symptoms: intense pain, muffled hearing, ringing after loud noise or a slap
+condition: Ruptured eardrum
+severity: URGENT
+immediate_action: Keep the ear dry and do not block it. See a doctor promptly and take simple pain relief.
+what_not_to_do: Do not put anything into the ear canal. Do not get water in the ear. Do not fly or dive until checked.
+keywords: popped eardrum, ear pain after slap, muffled hearing, ringing in ear, ruptured ear
+
+[021]
+body_part: ears
+symptoms: sudden hearing loss in one ear, ringing, muffled feeling
+condition: Sudden sensorineural hearing loss
+severity: URGENT
+immediate_action: Do see a doctor urgently the same day - early treatment improves recovery. Note when the hearing was lost.
+what_not_to_do: Do not wait to see if hearing returns. Do not use ear drops without advice. Do not ignore one-sided hearing loss.
+keywords: sudden hearing loss, deaf in one ear, ringing and muffled ear, hearing gone, one ear deaf
+
+[022]
+body_part: ears
+symptoms: object or insect stuck in the ear, buzzing, pain
+condition: Foreign body in ear
+severity: URGENT
+immediate_action: Do float out a live insect with a little clean oil or water. Get medical help to remove solid objects safely.
+what_not_to_do: Do not poke with cotton buds, pins, or tweezers. Do not try to flush a seed or bean with water. Do not push the object deeper.
+keywords: insect in ear, object in ear, buzzing in ear, something stuck in ear, ear blocked
+
+[023]
+body_part: ears
+symptoms: ear pain when flying or diving, blocked ear, muffled hearing
+condition: Ear barotrauma (pressure injury)
+severity: MODERATE
+immediate_action: Do try swallowing, yawning, or gently blowing with the nose pinched. Rest the ear and see a doctor if pain or hearing loss persists.
+what_not_to_do: Do not fly or dive again until healed. Do not force pressure if it hurts. Do not put objects in the ear.
+keywords: blocked ear, ear pressure, ear pain flying, muffled ear after flight, ear won't pop
+
+[024]
+body_part: nose
+symptoms: blood from one nostril, bleeding after a blow
+condition: Nosebleed (epistaxis)
+severity: MODERATE
+immediate_action: Do sit up, lean forward, and pinch the soft part of the nose firmly for 10-15 minutes without letting go. Spit out blood, do not swallow it.
+what_not_to_do: Do not tilt the head back. Do not stuff the nose with tissue and leave it. Do not blow the nose after it stops.
+keywords: nosebleed, bleeding nose, nose won't stop bleeding, blood from nose, epistaxis
+
+[025]
+body_part: nose
+symptoms: nosebleed that will not stop after 20 minutes, heavy flow, dizziness
+condition: Severe nosebleed
+severity: URGENT
+immediate_action: Keep pinching continuously and go to an emergency department. Keep the person sitting upright and calm.
+what_not_to_do: Do not tilt the head back. Do not swallow blood - spit it out. Do not stop pinching to check too soon.
+keywords: severe nosebleed, heavy nose bleed, nose bleeding for an hour, nosebleed won't stop, lots of blood from nose
+
+[026]
+body_part: nose
+symptoms: deformed nose, swelling, bruising, pain after a hit
+condition: Broken nose (nasal fracture)
+severity: URGENT
+immediate_action: Apply a cold pack for 15 minutes and keep the head raised. Get medical assessment, especially if breathing through the nose is blocked or the nose is crooked.
+what_not_to_do: Do not try to straighten the nose yourself. Do not blow the nose for 2 weeks. Do not press hard on the swelling.
+keywords: broken nose, crooked nose, nose injury, swollen nose, nosebleed after hit
+
+[027]
+body_part: nose
+symptoms: clear watery fluid running from the nose after a head injury
+condition: CSF leak (cerebrospinal fluid rhinorrhoea)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the head slightly raised and let the fluid drain freely onto a clean pad.
+what_not_to_do: Do not plug or block the nose. Do not blow the nose. Do not lean the head back.
+keywords: clear fluid from nose, watery nose after head injury, runny nose after fall, csf leak, fluid dripping nose
+
+[028]
+body_part: nose
+symptoms: object stuck in the nose, foul smell, one-sided discharge
+condition: Foreign body in nose
+severity: URGENT
+immediate_action: Keep the person breathing through the mouth and get medical help for removal. Keep calm and do not panic.
+what_not_to_do: Do not push the object further in. Do not use cotton buds or tweezers blindly. Do not try to sniff it out.
+keywords: object in nose, something stuck in nose, smelly nose discharge, nose blockage child, foreign body nose
+
+[029]
+body_part: nose
+symptoms: blocked nose, facial pressure, thick green discharge, loss of smell
+condition: Sinusitis
+severity: MODERATE
+immediate_action: Do use steam inhalation, drink fluids, and try a salt-water nasal rinse. See a doctor if symptoms last over 10 days or there is fever.
+what_not_to_do: Do not use decongestant sprays for more than 3 days. Do not share nasal rinses. Do not ignore severe facial swelling.
+keywords: sinus pain, blocked nose, facial pressure, sinusitis, face pain with cold
+
+[030]
+body_part: mouth/throat
+symptoms: unable to breathe, clutching the throat, silent cough
+condition: Choking / airway obstruction
+severity: CRITICAL
+immediate_action: Do encourage forceful coughing. If the person cannot breathe, give 5 back blows between the shoulder blades, then 5 abdominal thrusts, and repeat. Call emergency services.
+what_not_to_do: Do not put your fingers blindly into the mouth. Do not give abdominal thrusts to a pregnant woman or an infant - use chest thrusts. Do not give water.
+keywords: choking, can't breathe, something stuck in throat, block airway, blue lips choking
+
+[031]
+body_part: mouth/throat
+symptoms: severe sore throat, drooling, muffled voice, sitting forward to breathe
+condition: Epiglottitis
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person sitting upright and calm - do not lie them down. Do not examine the throat.
+what_not_to_do: Do not lie the person flat. Do not try to look in the throat with a spoon. Do not give food or drink.
+keywords: severe sore throat, drooling, can't swallow saliva, muffled voice, throat closing
+
+[032]
+body_part: mouth/throat
+symptoms: swollen lips, tongue or throat, hives, difficulty breathing
+condition: Anaphylaxis with throat swelling
+severity: CRITICAL
+immediate_action: Do use an adrenaline autoinjector into the outer thigh at once if available, then call emergency services. Lay the person flat with legs raised if breathing allows.
+what_not_to_do: Do not let the person stand or walk. Do not rely on antihistamines alone. Do not give anything by mouth if breathing is difficult.
+keywords: throat swelling, swollen tongue, allergic reaction, can't breathe hives, anaphylaxis
+
+[033]
+body_part: mouth/throat
+symptoms: severe tooth pain, swollen cheek, fever, bad taste
+condition: Dental abscess
+severity: URGENT
+immediate_action: Do rinse with warm salt water, take pain relief, and see a dentist urgently. Go to hospital if the eye, neck, or floor of the mouth is swelling.
+what_not_to_do: Do not put aspirin directly on the gum. Do not apply heat to the swelling. Do not delay if the face is swelling.
+keywords: tooth abscess, swollen jaw, severe toothache, infected tooth, face swelling tooth
+
+[034]
+body_part: mouth/throat
+symptoms: tooth knocked out, bleeding socket, broken tooth
+condition: Knocked-out tooth (dental avulsion)
+severity: URGENT
+immediate_action: Do hold the tooth by the crown, rinse gently in milk or saline, and reinsert into the socket if possible. Bite on a cloth and go to a dentist within 30-60 minutes.
+what_not_to_do: Do not touch or scrub the root. Do not let the tooth dry out. Do not store the tooth in plain water.
+keywords: knocked out tooth, tooth fell out, broken tooth, dental emergency, tooth knocked out
+
+[035]
+body_part: mouth/throat
+symptoms: cut lip or tongue, bleeding, pain
+condition: Lip or tongue laceration
+severity: URGENT
+immediate_action: Apply firm pressure with a clean cloth and keep the head raised. Get stitches if the cut is deep, wide, or will not stop bleeding.
+what_not_to_do: Do not poke the wound with fingers. Do not use dirty cloths. Do not ignore a cut that goes through the lip.
+keywords: cut lip, cut tongue, bleeding mouth, lip injury, mouth bleeding
+
+[036]
+body_part: mouth/throat
+symptoms: steady bleeding from a tooth socket after extraction
+condition: Bleeding after tooth extraction
+severity: MODERATE
+immediate_action: Do bite firmly on a gauze pad for 20-30 minutes and avoid rinsing, spitting, or hot drinks for 24 hours.
+what_not_to_do: Do not rinse or spit for 24 hours. Do not smoke or drink through a straw. Do not poke the socket with the tongue or fingers.
+keywords: bleeding after tooth pulled, tooth socket bleeding, extraction bleeding, blood after tooth removal, mouth bleed
+
+[037]
+body_part: mouth/throat
+symptoms: inability to close the mouth, jaw stuck open, pain
+condition: Dislocated jaw
+severity: URGENT
+immediate_action: Keep the mouth supported and go to an emergency department for relocation. Do not try to force the jaw closed.
+what_not_to_do: Do not try to force the jaw shut. Do not eat solid food. Do not place objects between the teeth.
+keywords: dislocated jaw, jaw stuck open, can't close mouth, jaw dislocation, jaw pain open
+
+[038]
+body_part: mouth/throat
+symptoms: painful mouth ulcer, white sore, hurts to eat
+condition: Mouth ulcer (aphthous)
+severity: MODERATE
+immediate_action: Do rinse with warm salt water and use a soothing gel if available. See a doctor if ulcers last over 2 weeks or keep returning.
+what_not_to_do: Do not pick or burn the ulcer. Do not share cups or cutlery. Do not put strong irritants like salt directly on the sore.
+keywords: mouth ulcer, canker sore, painful mouth sore, can't eat sore mouth, sore in mouth
+
+[039]
+body_part: mouth/throat
+symptoms: persistent hoarse voice, difficulty swallowing, neck lump
+condition: Persistent hoarseness / possible throat cancer
+severity: URGENT
+immediate_action: Do see a doctor within days for assessment. Avoid smoking and keep the throat moist.
+what_not_to_do: Do not ignore hoarseness lasting more than 3 weeks. Do not force the voice. Do not delay assessment.
+keywords: hoarse voice, trouble swallowing, lump in throat, voice change, hoarseness weeks
+
+[040]
+body_part: neck
+symptoms: stiff neck, fever, headache, dislike of light
+condition: Meningitis (neck stiffness)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person calm in a quiet darkened room and note the time symptoms started.
+what_not_to_do: Do not wait for a rash before getting help. Do not give aspirin to children. Do not leave the person alone.
+keywords: stiff neck, neck stiffness with fever, meningitis symptoms, neck pain fever, can't bend neck
+
+[041]
+body_part: neck
+symptoms: severe neck pain after injury, numbness, unable to move the limbs
+condition: Neck injury / spinal cord injury
+severity: CRITICAL
+immediate_action: Call emergency services and keep the head and neck perfectly still, holding them in line with the body. Do not remove a helmet.
+what_not_to_do: Do not move the person unless they are in immediate danger. Do not twist or bend the neck. Do not let them sit up.
+keywords: neck injury, can't move arms, neck pain after fall, spinal injury, numb after neck injury
+
+[042]
+body_part: neck
+symptoms: heavy bleeding from a neck wound, spurting blood
+condition: Neck laceration / bleeding
+severity: CRITICAL
+immediate_action: Call emergency services. Press firmly on the wound with a clean cloth but do not press on both sides of the neck at once.
+what_not_to_do: Do not press on both sides of the neck together. Do not remove an embedded object. Do not let the person walk.
+keywords: neck bleeding, cut neck, spurting blood from neck, neck wound, heavy bleeding neck
+
+[043]
+body_part: neck
+symptoms: one-sided neck pain and stiffness, headache, limited movement
+condition: Torticollis (wry neck)
+severity: MODERATE
+immediate_action: Apply a warm compress and rest the neck. Take simple pain relief and gently stretch when comfortable.
+what_not_to_do: Do not force the neck to move. Do not use sudden forceful stretching. Do not ignore pain after an injury.
+keywords: stiff neck, wry neck, can't turn head, neck muscle spasm, neck locked
+
+[044]
+body_part: neck
+symptoms: tender swollen lumps in the neck, sore throat
+condition: Swollen neck glands (lymphadenitis)
+severity: MODERATE
+immediate_action: Do rest, drink fluids, and see a doctor if the lumps are painful, growing, or last over 2 weeks.
+what_not_to_do: Do not squeeze or massage the lumps. Do not apply heat if the area is very red. Do not ignore lumps with fever.
+keywords: swollen neck glands, lumps in neck, lymph nodes neck, neck lumps, sore throat lumps
+
+[045]
+body_part: neck
+symptoms: enlarging lump at the base of the neck, difficulty swallowing or breathing
+condition: Goitre / thyroid swelling
+severity: URGENT
+immediate_action: Do see a doctor promptly. Go to hospital immediately if there is difficulty breathing or swallowing.
+what_not_to_do: Do not use iodine or seaweed supplements without advice. Do not ignore rapid growth. Do not press on the swelling.
+keywords: thyroid swelling, goitre, lump in front of neck, neck swelling, hard to swallow lump
+
+[046]
+body_part: chest
+symptoms: crushing pain, left arm pain, jaw pain, sweating, shortness of breath
+condition: Heart attack (Myocardial Infarction)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Have the person sit or lie down and loosen tight clothing. If available and not allergic, give one adult aspirin (325mg) to chew slowly. Stay with them until help arrives.
+what_not_to_do: Do not let the person walk or climb stairs. Do not give food or water except the aspirin if available. Do not leave them alone.
+keywords: chest pain, heart attack, left arm pain, jaw pain, crushing chest, sweating chest pain
+
+[047]
+body_part: chest
+symptoms: sudden racing heart, trembling, fear of dying, tingling hands
+condition: Panic attack
+severity: URGENT
+immediate_action: Do calm the person, encourage slow steady breathing, and move them to a quiet place. Seek medical help if it is a first attack or if heart disease is possible.
+what_not_to_do: Do not tell them to breathe into a paper bag if unsure of the cause. Do not leave them alone. Do not assume panic until a heart cause is ruled out.
+keywords: panic attack, racing heart, can't breathe anxiety, tingling hands, panic symptoms
+
+[048]
+body_part: chest
+symptoms: sharp pain worse on deep breath, tenderness over one rib after a fall
+condition: Broken rib
+severity: URGENT
+immediate_action: Do support the arm on the injured side with a sling and give pain relief. See a doctor, and go to hospital if breathing becomes difficult.
+what_not_to_do: Do not strap the chest tightly with tape. Do not press on the rib to test it. Do not ignore increasing breathlessness.
+keywords: broken rib, rib pain, pain on breathing, chest wall injury, hurt rib after fall
+
+[049]
+body_part: chest
+symptoms: sudden sharp chest pain, shortness of breath, one-sided breath sounds
+condition: Pneumothorax (collapsed lung)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Have the person sit upright and stay calm. If there is an open chest wound, cover it with a dressing taped on three sides.
+what_not_to_do: Do not let the person exert themselves. Do not remove a sealing dressing once applied. Do not delay calling for help.
+keywords: collapsed lung, sudden chest pain, can't breathe, air in chest, sharp chest pain breathing
+
+[050]
+body_part: chest
+symptoms: chest tightness on effort, pain radiating to the arm, relieved by rest
+condition: Angina
+severity: CRITICAL
+immediate_action: Do stop all activity and sit down. Use the person's prescribed nitrate spray or tablet if they have it. Call emergency services if pain lasts over 15 minutes or is new.
+what_not_to_do: Do not let the person continue activity. Do not ignore pain that occurs at rest. Do not give nitrates if they have taken erectile-dysfunction drugs.
+keywords: chest tightness, angina, chest pain on walking, pressure in chest, chest pain effort
+
+[051]
+body_part: chest
+symptoms: sharp pain, worse when lying down or pressing the breastbone
+condition: Costochondritis
+severity: MODERATE
+immediate_action: Do rest, take anti-inflammatory pain relief if safe, and apply a warm pack. See a doctor if the pain is severe or there are heart risk factors.
+what_not_to_do: Do not assume all chest pain is harmless. Do not overuse anti-inflammatory drugs. Do not exercise through the pain.
+keywords: chest wall pain, rib cartilage pain, sharp chest pain when pressed, chest sore to touch, costochondritis
+
+[052]
+body_part: chest
+symptoms: sudden tearing pain between the shoulder blades, pale, sweaty
+condition: Aortic dissection
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person still and lying flat. Do not give aspirin unless told to by a dispatcher.
+what_not_to_do: Do not let the person walk or strain. Do not give blood-thinning medicine. Do not delay for any reason.
+keywords: tearing chest pain, pain between shoulder blades, sudden severe chest pain, aortic pain, ripping chest pain
+
+[053]
+body_part: chest
+symptoms: stab or gunshot wound to the chest, bubbling wound, breathlessness
+condition: Penetrating chest wound
+severity: CRITICAL
+immediate_action: Call emergency services. Cover the wound with a dressing taped on three sides to let air escape, and keep the person sitting up if conscious.
+what_not_to_do: Do not remove an object stuck in the chest. Do not press the wound completely airtight. Do not give food or drink.
+keywords: chest wound, stabbing chest, gunshot chest, bubbling chest wound, punctured chest
+
+[054]
+body_part: chest
+symptoms: sharp pain on one side, worse with breathing, fever, cough
+condition: Pleurisy
+severity: URGENT
+immediate_action: Do see a doctor the same day. Rest, take pain relief, and sit upright to ease breathing.
+what_not_to_do: Do not ignore breathlessness or fever. Do not suppress a productive cough completely. Do not delay assessment.
+keywords: pleurisy, chest pain on breathing, sharp side pain, painful breathing, chest pain cough
+
+[055]
+body_part: chest
+symptoms: paradoxical chest movement, several ribs broken, severe breathlessness
+condition: Flail chest
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Support the injured area gently with a hand or pad and keep the person still and semi-upright.
+what_not_to_do: Do not strap or bind the chest. Do not press hard on the flail segment. Do not delay calling for help.
+keywords: flail chest, multiple broken ribs, chest not moving evenly, ribcage injury, chest wall flail
+
+[056]
+body_part: chest
+symptoms: sudden breathlessness, sharp chest pain, coughing blood, calf swelling
+condition: Pulmonary embolism
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person still and sitting up; do not let them walk. Give oxygen if available.
+what_not_to_do: Do not massage the legs. Do not let the person exert themselves. Do not delay - this is life-threatening.
+keywords: blood clot in lung, sudden breathlessness, coughing blood, pe, clot in lung
+
+[057]
+body_part: chest
+symptoms: burning behind the breastbone after eating, sour taste, worse lying down
+condition: Acid reflux / heartburn
+severity: MODERATE
+immediate_action: Do sit upright, avoid lying down for 3 hours after eating, and use an antacid if appropriate.
+what_not_to_do: Do not ignore chest pain that feels like pressure or spreads to the arm. Do not eat large late meals. Do not lie flat after eating.
+keywords: heartburn, acid reflux, indigestion, burning chest after eating, sour taste
+
+[058]
+body_part: heart
+symptoms: no pulse, not breathing, unresponsive
+condition: Cardiac arrest
+severity: CRITICAL
+immediate_action: Call emergency services and start CPR immediately - push hard and fast in the centre of the chest at 100-120 per minute. Use an AED as soon as it is available.
+what_not_to_do: Do not stop CPR to check for a pulse repeatedly. Do not give mouth-to-mouth if untrained - use compression-only CPR. Do not delay compressions.
+keywords: cardiac arrest, no pulse, not breathing, cpr needed, collapsed and unresponsive
+
+[059]
+body_part: heart
+symptoms: extreme breathlessness lying flat, swollen ankles, frothy cough
+condition: Heart failure exacerbation
+severity: CRITICAL
+immediate_action: Call emergency services. Sit the person upright, keep the legs down, and give oxygen if available. Give prescribed medicines if directed.
+what_not_to_do: Do not lay the person flat. Do not give large amounts of fluid. Do not let them walk.
+keywords: heart failure, can't breathe lying down, swollen legs, frothy cough, breathless at night
+
+[060]
+body_part: heart
+symptoms: racing irregular heartbeat, palpitations, dizziness
+condition: Arrhythmia / palpitations
+severity: URGENT
+immediate_action: Do sit the person down and keep them calm. Call emergency services if there is fainting, chest pain, or breathlessness.
+what_not_to_do: Do not have them exercise to test the heart. Do not give stimulants like coffee or energy drinks. Do not ignore fainting.
+keywords: palpitations, irregular heartbeat, racing heart, heart fluttering, skipped beats
+
+[061]
+body_part: heart
+symptoms: very slow pulse, dizziness, fainting, fatigue
+condition: Bradycardia (slow heart rate)
+severity: URGENT
+immediate_action: Do lay the person down with the legs raised and call emergency services if they faint or feel very unwell.
+what_not_to_do: Do not give stimulants to speed the heart. Do not let them stand up quickly. Do not delay if they faint.
+keywords: slow heart rate, low pulse, dizzy and faint, bradycardia, slow pulse
+
+[062]
+body_part: heart
+symptoms: very fast pulse at rest, chest discomfort, light-headedness
+condition: Tachycardia (fast heart rate)
+severity: URGENT
+immediate_action: Do sit the person down and have them breathe slowly. Call emergency services if there is chest pain, fainting, or breathlessness.
+what_not_to_do: Do not let them continue exercising. Do not give caffeine. Do not ignore chest pain.
+keywords: fast heartbeat, heart racing at rest, tachycardia, racing pulse, heart pounding
+
+[063]
+body_part: heart
+symptoms: very high blood pressure with severe headache, blurred vision, chest pain
+condition: Hypertensive crisis
+severity: CRITICAL
+immediate_action: Call emergency services. Keep the person calm and sitting quietly. Give prescribed blood-pressure medicine only if directed by a doctor.
+what_not_to_do: Do not lower the blood pressure too fast with extra doses. Do not let them exert themselves. Do not give stimulants.
+keywords: high blood pressure, hypertensive crisis, very high bp, headache high bp, bp emergency
+
+[064]
+body_part: heart
+symptoms: chest pressure with fainting and a rapid weak pulse
+condition: Cardiogenic shock
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Lay the person flat with the legs raised unless they are breathless, and keep them warm.
+what_not_to_do: Do not sit them up if they are pale and faint. Do not give food or drink. Do not delay transport.
+keywords: shock, fainting with chest pain, weak pulse, pale and clammy, cardiogenic shock
+
+[065]
+body_part: lungs
+symptoms: wheezing, unable to speak in full sentences, tight chest
+condition: Asthma attack
+severity: CRITICAL
+immediate_action: Do help the person sit upright and use their blue reliever inhaler - 1 puff every 30-60 seconds up to 10 puffs, using a spacer if available. Call emergency services if there is no improvement.
+what_not_to_do: Do not lay the person flat. Do not leave them alone. Do not give sedatives.
+keywords: asthma attack, wheezing, can't breathe out, tight chest inhaler, wheeze and cough
+
+[066]
+body_part: lungs
+symptoms: long-standing smoker, worsening breathlessness, cough with phlegm
+condition: COPD exacerbation
+severity: URGENT
+immediate_action: Do sit the person upright, use their prescribed inhalers and oxygen if directed, and seek medical help the same day.
+what_not_to_do: Do not give high-flow oxygen without advice in COPD. Do not give sedatives. Do not let them smoke.
+keywords: copd flare, breathless smoker, chronic bronchitis, can't breathe, smoker breathless
+
+[067]
+body_part: lungs
+symptoms: fever, productive cough, chest pain, breathlessness
+condition: Pneumonia
+severity: URGENT
+immediate_action: Do see a doctor promptly. Rest, drink fluids, and take paracetamol for fever. Go to hospital if breathing is fast or the lips look blue.
+what_not_to_do: Do not suppress the cough with strong medicines. Do not ignore rapid breathing. Do not delay antibiotics.
+keywords: pneumonia, chest infection, fever and cough, coughing green phlegm, breathless with fever
+
+[068]
+body_part: lungs
+symptoms: coughing up blood, breathlessness, chest pain
+condition: Haemoptysis (coughing blood)
+severity: URGENT
+immediate_action: Do sit the person upright and calm, and get medical help urgently. Note how much blood was coughed up.
+what_not_to_do: Do not lie the person flat if they are coughing blood. Do not give aspirin. Do not ignore even small amounts of blood.
+keywords: coughing blood, blood in phlegm, coughing up blood, hemoptysis, blood with cough
+
+[069]
+body_part: lungs
+symptoms: soot around the nose, hoarse voice, cough, confusion after a fire
+condition: Smoke inhalation
+severity: CRITICAL
+immediate_action: Call emergency services and move the person to fresh air. Give oxygen if available and keep them sitting up.
+what_not_to_do: Do not let them return into the smoke. Do not ignore a hoarse voice or soot in the nose. Do not delay - airway swelling can worsen fast.
+keywords: smoke inhalation, fire smoke, soot in nose, trouble breathing after fire, smoke in lungs
+
+[070]
+body_part: lungs
+symptoms: pulled from water, not breathing, blue lips
+condition: Near-drowning
+severity: CRITICAL
+immediate_action: Call emergency services and start CPR with rescue breaths if trained. If breathing, place in the recovery position and keep them warm.
+what_not_to_do: Do not attempt a drain manoeuvre to force water out. Do not stop CPR when the person vomits - clear the mouth and continue. Do not assume they are fine if they recover.
+keywords: drowning, near drowning, not breathing after water, pulled from water, water in lungs
+
+[071]
+body_part: lungs
+symptoms: rapid deep breathing, dizziness, tingling around mouth and hands
+condition: Hyperventilation
+severity: URGENT
+immediate_action: Do calm the person and coach slow, gentle breathing through the nose. Seek help if it does not settle or another cause is possible.
+what_not_to_do: Do not use a paper bag if unsure of the cause. Do not let them keep over-breathing. Do not ignore chest pain.
+keywords: hyperventilating, breathing too fast, tingling hands, dizzy breathing, can't catch breath
+
+[072]
+body_part: lungs
+symptoms: severe breathlessness, pink frothy sputum, unable to lie flat
+condition: Pulmonary oedema
+severity: CRITICAL
+immediate_action: Call emergency services. Sit the person upright with the legs dependent and give oxygen if available.
+what_not_to_do: Do not lay the person flat. Do not give large amounts of fluid. Do not delay calling for help.
+keywords: fluid in lungs, frothy sputum, can't breathe lying flat, pulmonary edema, pink frothy cough
+
+[073]
+body_part: lungs
+symptoms: long-standing cough, night sweats, weight loss, coughing blood
+condition: Tuberculosis
+severity: URGENT
+immediate_action: Do see a doctor for testing. Cover the mouth when coughing and keep the room ventilated.
+what_not_to_do: Do not share cups, cutlery, or bedding without washing. Do not stop treatment early if started. Do not ignore coughing blood.
+keywords: tb, night sweats, cough for weeks, weight loss cough, coughing blood weeks
+
+[074]
+body_part: abdomen
+symptoms: pain starting around the navel moving to the lower right, worse on movement
+condition: Appendicitis
+severity: CRITICAL
+immediate_action: Call emergency services or go to hospital now. Keep the person still and do not let them eat or drink.
+what_not_to_do: Do not give food or drink. Do not give laxatives or painkillers that mask the pain. Do not apply heat to the belly.
+keywords: appendicitis, right lower belly pain, belly pain moving down, tummy pain right side, appendix
+
+[075]
+body_part: abdomen
+symptoms: rigid board-like belly, severe pain, fever, shock
+condition: Peritonitis
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person lying still with the knees slightly bent and give nothing by mouth.
+what_not_to_do: Do not give food or drink. Do not give painkillers by mouth. Do not press repeatedly on the abdomen.
+keywords: rigid belly, board-like abdomen, severe belly pain, peritonitis, hard stomach
+
+[076]
+body_part: abdomen
+symptoms: sudden severe back and flank pain with a pulsating abdominal mass, pale
+condition: Abdominal aortic aneurysm rupture
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person lying still and flat, and keep them warm.
+what_not_to_do: Do not press on the abdomen. Do not let them walk. Do not give food or drink.
+keywords: tearing abdominal pain, pulsating belly mass, sudden back pain collapse, aaa, belly pain collapse
+
+[077]
+body_part: abdomen
+symptoms: colicky pain, vomiting, bloated belly, no gas or stool
+condition: Bowel obstruction
+severity: CRITICAL
+immediate_action: Call emergency services or go to hospital. Give nothing by mouth and keep the person comfortable.
+what_not_to_do: Do not give food, drink, or laxatives. Do not give enemas. Do not ignore vomiting and a swollen belly.
+keywords: bowel obstruction, bloated belly, vomiting no bowel movement, can't pass gas, blocked bowel
+
+[078]
+body_part: abdomen
+symptoms: abdominal wound with protruding bowel, severe pain
+condition: Abdominal evisceration
+severity: CRITICAL
+immediate_action: Call emergency services. Do not push the bowel back in - cover it with a clean moist dressing and keep the person warm and still.
+what_not_to_do: Do not push organs back inside. Do not give food or drink. Do not remove an embedded object.
+keywords: bowel out of wound, abdominal wound, guts exposed, evisceration, belly wound
+
+[079]
+body_part: abdomen
+symptoms: bruising across the belly after a blow, pain, dizziness
+condition: Blunt abdominal trauma / internal bleeding
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person lying flat and still, and give nothing by mouth.
+what_not_to_do: Do not give food or drink. Do not let them walk. Do not press hard on the bruised area.
+keywords: belly injury, internal bleeding, bruised abdomen after fall, stomach injury, belly trauma
+
+[080]
+body_part: abdomen
+symptoms: bulge in the groin or navel, pain, cannot push it back
+condition: Strangulated hernia
+severity: CRITICAL
+immediate_action: Call emergency services if the bulge is painful, hard, and cannot be pushed back, or if there is vomiting.
+what_not_to_do: Do not forcefully push the hernia back. Do not lift heavy objects. Do not ignore severe pain with vomiting.
+keywords: hernia, groin lump, bulge in groin, strangulated hernia, painful groin lump
+
+[081]
+body_part: abdomen
+symptoms: watery diarrhoea, vomiting, cramping, no blood
+condition: Gastroenteritis
+severity: MODERATE
+immediate_action: Give small frequent sips of oral rehydration solution. Rest and monitor urine output. Seek help if there is blood, high fever, or signs of dehydration.
+what_not_to_do: Do not give anti-diarrhoeal medicine if there is blood or high fever. Do not give plain sugary drinks alone. Do not stop fluids.
+keywords: stomach flu, diarrhoea and vomiting, dehydration, food poisoning, watery diarrhoea
+
+[082]
+body_part: abdomen
+symptoms: left lower belly pain, fever, change in bowel habit
+condition: Diverticulitis
+severity: URGENT
+immediate_action: Do see a doctor. Rest, take fluids, and use simple pain relief. Go to hospital if the pain is severe or there is fever.
+what_not_to_do: Do not take anti-diarrhoeal medicine. Do not eat a high-fibre diet during the flare. Do not ignore fever or worsening pain.
+keywords: diverticulitis, left side belly pain, fever with belly pain, painful left belly, bowel pain
+
+[083]
+body_part: abdomen
+symptoms: pain under the left ribs after a blow, pale, dizzy, rapid pulse
+condition: Ruptured spleen
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Lay the person flat with the legs raised and keep them warm and still.
+what_not_to_do: Do not give food or drink. Do not let them walk. Do not press on the left upper abdomen.
+keywords: ruptured spleen, left upper belly pain after injury, internal bleeding, spleen injury, belly pain after blow
+
+[084]
+body_part: abdomen
+symptoms: severe upper belly pain spreading to the back after alcohol or a heavy meal
+condition: Acute pancreatitis
+severity: CRITICAL
+immediate_action: Call emergency services. Give nothing by mouth and keep the person still, often more comfortable sitting and leaning forward.
+what_not_to_do: Do not give food or alcohol. Do not give painkillers that must be swallowed. Do not delay assessment.
+keywords: pancreatitis, upper belly pain to back, severe stomach pain, belly pain alcohol, pain to back
+
+[085]
+body_part: stomach
+symptoms: vomiting blood or coffee-ground material, black stools, weakness
+condition: Bleeding peptic ulcer
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Lay the person flat with the legs raised and give nothing by mouth.
+what_not_to_do: Do not give food, drink, or aspirin. Do not give anti-inflammatory painkillers. Do not let them walk.
+keywords: vomiting blood, black stools, bleeding ulcer, coffee ground vomit, blood in vomit
+
+[086]
+body_part: stomach
+symptoms: severe burning upper belly pain, worse on an empty stomach, relieved by food
+condition: Peptic ulcer
+severity: URGENT
+immediate_action: Do see a doctor. Avoid alcohol, smoking, and anti-inflammatory painkillers, and take prescribed acid-suppressing medicine.
+what_not_to_do: Do not take aspirin or ibuprofen. Do not drink alcohol. Do not ignore black stools or vomiting blood.
+keywords: ulcer pain, burning stomach, upper belly pain, gastritis, indigestion pain
+
+[087]
+body_part: stomach
+symptoms: vomiting and diarrhoea within hours of eating, cramping
+condition: Food poisoning
+severity: MODERATE
+immediate_action: Do encourage small frequent sips of oral rehydration solution and rest. Seek help if there is blood, high fever, or severe dehydration.
+what_not_to_do: Do not give anti-diarrhoeal medicine with bloody diarrhoea or high fever. Do not give solid food if vomiting repeatedly. Do not stop fluids.
+keywords: food poisoning, vomiting after eating, diarrhoea, stomach cramps, sick after meal
+
+[088]
+body_part: stomach
+symptoms: heartburn, sour taste, burning behind the breastbone after meals
+condition: Indigestion / heartburn
+severity: MODERATE
+immediate_action: Do sit upright, avoid lying down for 3 hours after eating, and use an antacid if appropriate.
+what_not_to_do: Do not ignore chest pain that feels like pressure or spreads to the arm. Do not eat large late meals. Do not lie flat after eating.
+keywords: heartburn, acid reflux, indigestion, burning chest after eating, acid taste
+
+[089]
+body_part: stomach
+symptoms: nausea, upper belly discomfort, feeling of fullness
+condition: Gastritis
+severity: MODERATE
+immediate_action: Do eat small bland meals, avoid alcohol and anti-inflammatory painkillers, and see a doctor if it persists.
+what_not_to_do: Do not take aspirin or ibuprofen. Do not drink alcohol or coffee. Do not ignore vomiting blood.
+keywords: gastritis, stomach lining pain, nausea after eating, upset stomach, stomach burning
+
+[090]
+body_part: stomach
+symptoms: vomiting blood with dizziness, fast pulse, sweating
+condition: Haematemesis (vomiting blood)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person lying on their side if vomiting and give nothing by mouth.
+what_not_to_do: Do not give food, drink, or aspirin. Do not let them swallow the blood if possible. Do not delay.
+keywords: vomiting blood, blood in vomit, throwing up blood, hematemesis, coffee ground vomit
+
+[091]
+body_part: stomach
+symptoms: bloating, wind, mild cramping after a large meal
+condition: Bloating / gas
+severity: MODERATE
+immediate_action: Do walk gently, avoid fizzy drinks and gas-producing foods, and use a simple antacid if needed.
+what_not_to_do: Do not ignore severe pain or a rigid abdomen. Do not lie flat if it worsens. Do not use laxatives unnecessarily.
+keywords: bloated stomach, gas pain, belly bloating, trapped wind, stomach fullness
+
+[092]
+body_part: liver
+symptoms: yellow skin and eyes, dark urine, pale stools, tiredness
+condition: Jaundice
+severity: URGENT
+immediate_action: Do see a doctor promptly for blood tests. Rest, avoid alcohol, and drink fluids.
+what_not_to_do: Do not drink alcohol. Do not take paracetamol beyond the label dose. Do not ignore confusion or bleeding.
+keywords: yellow eyes, jaundice, yellow skin, dark urine, liver problem
+
+[093]
+body_part: liver
+symptoms: right upper belly pain, fever, nausea, yellow skin
+condition: Hepatitis
+severity: URGENT
+immediate_action: Do see a doctor for testing. Rest, drink fluids, avoid alcohol, and follow safe food and hygiene practices.
+what_not_to_do: Do not drink alcohol. Do not share needles or personal items. Do not take liver-damaging medicines.
+keywords: hepatitis, liver infection, yellow skin with fever, liver pain, liver disease
+
+[094]
+body_part: liver
+symptoms: right upper belly pain after a blow, pale, rapid pulse
+condition: Liver injury (blunt trauma)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Lay the person flat and still, keep them warm, and give nothing by mouth.
+what_not_to_do: Do not give food or drink. Do not let them walk. Do not press hard on the right upper abdomen.
+keywords: liver injury, right upper belly trauma, belly injury after crash, liver bleed, stomach injury crash
+
+[095]
+body_part: liver
+symptoms: swollen belly, confusion, bleeding gums in a person with liver disease
+condition: Cirrhosis complications
+severity: CRITICAL
+immediate_action: Call emergency services. Keep the person safe, lying on their side if drowsy, and give nothing by mouth if confused.
+what_not_to_do: Do not give alcohol or paracetamol. Do not give sedatives. Do not delay if they are confused.
+keywords: cirrhosis, swollen belly, confusion liver disease, liver failure, liver disease confusion
+
+[096]
+body_part: liver
+symptoms: overdose of paracetamol, nausea, vomiting 24 hours later
+condition: Paracetamol overdose (liver failure risk)
+severity: CRITICAL
+immediate_action: Call emergency services or poison control IMMEDIATELY even if the person feels well - the antidote works best within 8 hours. Note the amount and the time taken.
+what_not_to_do: Do not wait for symptoms to appear. Do not induce vomiting. Do not assume a few extra tablets are safe.
+keywords: paracetamol overdose, took too many tablets, paracetamol poisoning, overdose tablets, too much paracetamol
+
+[097]
+body_part: kidneys
+symptoms: severe waves of flank pain to the groin, blood in urine, restlessness
+condition: Kidney stones (renal colic)
+severity: URGENT
+immediate_action: Give pain relief and encourage fluids. Go to hospital if the pain is unbearable, there is fever, or urine stops.
+what_not_to_do: Do not withhold fluids. Do not ignore fever with flank pain. Do not take large doses of anti-inflammatory drugs.
+keywords: kidney stone, flank pain to groin, blood in urine, renal colic, severe side pain
+
+[098]
+body_part: kidneys
+symptoms: fever, flank pain, burning urine, nausea
+condition: Kidney infection (pyelonephritis)
+severity: URGENT
+immediate_action: Do see a doctor urgently for antibiotics. Rest, drink fluids, and take paracetamol for fever.
+what_not_to_do: Do not delay treatment. Do not ignore fever and back pain. Do not rely on home remedies alone.
+keywords: kidney infection, flank pain with fever, burning urine fever, kidney pain fever, urine infection fever
+
+[099]
+body_part: kidneys
+symptoms: passing very little urine, swelling, confusion, drowsiness
+condition: Acute kidney injury
+severity: CRITICAL
+immediate_action: Call emergency services. Keep the person calm and note how much urine has been passed.
+what_not_to_do: Do not give potassium-rich foods or salt substitutes. Do not give large amounts of fluid if urine is not passing. Do not delay.
+keywords: no urine, kidney failure, swelling and confusion, aki, not passing urine
+
+[100]
+body_part: kidneys
+symptoms: pain in the side and back just below the ribs, fever, painful urination
+condition: Flank pain / upper urinary infection
+severity: URGENT
+immediate_action: Do see a doctor the same day. Rest, drink fluids, and use simple pain relief.
+what_not_to_do: Do not ignore fever or vomiting. Do not take anti-inflammatory painkillers in kidney disease. Do not delay assessment.
+keywords: flank pain, side pain, kidney pain, back and side pain, pain below ribs
+
+[101]
+body_part: kidneys
+symptoms: visible blood in urine, no pain, tiredness
+condition: Haematuria (blood in urine)
+severity: URGENT
+immediate_action: Do see a doctor promptly for testing. Drink fluids and note any clots or pain.
+what_not_to_do: Do not ignore blood in urine. Do not take blood thinners without advice. Do not delay assessment.
+keywords: blood in urine, reddish urine, hematuria, peeing blood, red pee
+
+[102]
+body_part: kidneys
+symptoms: bruising over the flank after a blow, blood in urine, pain
+condition: Kidney trauma
+severity: CRITICAL
+immediate_action: Call emergency services. Keep the person still and lying flat, and give nothing by mouth.
+what_not_to_do: Do not give food or drink. Do not let them walk. Do not press hard on the flank.
+keywords: kidney injury, flank bruising, blood in urine after injury, kidney trauma, side injury
+
+[103]
+body_part: back
+symptoms: severe back pain after a fall, numb legs, loss of bladder control
+condition: Cauda equina syndrome / spinal emergency
+severity: CRITICAL
+immediate_action: Do go to an emergency department IMMEDIATELY. Keep the person still and note when bladder or bowel control was lost.
+what_not_to_do: Do not wait for the pain to settle. Do not let them bend or lift. Do not treat it as ordinary back pain.
+keywords: back pain numb legs, can't control bladder, saddle numbness, cauda equina, back pain incontinence
+
+[104]
+body_part: back
+symptoms: muscle ache after lifting, stiffness, no leg weakness
+condition: Lower back strain
+severity: MODERATE
+immediate_action: Do rest briefly, apply a warm pack, and take simple pain relief. Return to gentle activity as soon as possible.
+what_not_to_do: Do not stay in bed for days. Do not lift heavy objects. Do not ignore numbness or leg weakness.
+keywords: lower back pain, back strain, pulled back muscle, back ache, sore back
+
+[105]
+body_part: back
+symptoms: shooting leg pain, numbness down one leg, worse on coughing
+condition: Slipped disc (sciatica)
+severity: URGENT
+immediate_action: Do rest in a comfortable position, use pain relief, and see a doctor if the pain is severe or there is leg weakness.
+what_not_to_do: Do not lift or twist. Do not sit for long periods. Do not ignore worsening weakness or numbness.
+keywords: slipped disc, sciatica, shooting leg pain, back pain down leg, disc pain
+
+[106]
+body_part: back
+symptoms: sudden severe mid-back pain, tenderness over the spine
+condition: Vertebral compression fracture
+severity: URGENT
+immediate_action: Keep the back straight, rest, and see a doctor for assessment and pain control.
+what_not_to_do: Do not bend or lift. Do not have the back manipulated. Do not ignore new weakness.
+keywords: back fracture, spine pain, sudden back pain in elderly, broken back, spine injury
+
+[107]
+body_part: back
+symptoms: back pain with fever, chills, and tenderness over one vertebra
+condition: Spinal infection (discitis/osteomyelitis)
+severity: CRITICAL
+immediate_action: Call emergency services or go to hospital urgently. Keep the person still and give nothing by mouth until assessed.
+what_not_to_do: Do not delay with fever and back pain. Do not have the back manipulated. Do not ignore new weakness.
+keywords: back pain with fever, spinal infection, back pain and chills, serious back pain, infected spine
+
+[108]
+body_part: back
+symptoms: muscle spasm, sudden sharp back pain, unable to straighten up
+condition: Acute back muscle spasm
+severity: MODERATE
+immediate_action: Apply a warm pack, take simple pain relief, and rest in a comfortable position. Gradually return to activity.
+what_not_to_do: Do not force movement. Do not have the back manipulated aggressively. Do not ignore numbness or bladder changes.
+keywords: back spasm, back locked, sudden back pain, back won't straighten, muscle spasm back
+
+[109]
+body_part: spine
+symptoms: numb limbs, no movement below a level, incontinence after injury
+condition: Spinal cord injury
+severity: CRITICAL
+immediate_action: Call emergency services and keep the head, neck, and spine in line with the body - do not move them unless in danger.
+what_not_to_do: Do not twist, bend, or sit the person up. Do not remove a helmet. Do not test for feeling by pinching.
+keywords: spinal cord injury, can't move legs, numb from waist, paralysis, no feeling below waist
+
+[110]
+body_part: spine
+symptoms: severe midline spine pain after a fall, a step in the back
+condition: Spinal fracture
+severity: CRITICAL
+immediate_action: Call emergency services and immobilise the spine, keeping the person flat and still until help arrives.
+what_not_to_do: Do not move the person. Do not let them sit or walk. Do not remove a helmet.
+keywords: broken back, spine fracture, broken spine after fall, back injury, spine broken
+
+[111]
+body_part: spine
+symptoms: neck pain and stiffness after a car crash, headache, dizziness
+condition: Whiplash
+severity: URGENT
+immediate_action: Do support the neck with a soft collar, rest, and use cold then gentle warmth and pain relief. See a doctor if severe or with numbness.
+what_not_to_do: Do not force neck movements. Do not ignore numbness or weakness. Do not return to sport until cleared.
+keywords: whiplash, neck pain after crash, stiff neck after accident, car crash neck pain, neck injury crash
+
+[112]
+body_part: spine
+symptoms: long-standing curved spine, back pain, uneven shoulders
+condition: Scoliosis-related pain
+severity: MODERATE
+immediate_action: Do strengthen the back with guided exercises, use pain relief, and see a doctor if the curve is worsening.
+what_not_to_do: Do not ignore rapidly worsening curves. Do not self-manipulate the spine. Do not let a child carry heavy bags on one shoulder.
+keywords: scoliosis, curved spine, uneven shoulders, back curve, curved back
+
+[113]
+body_part: spine
+symptoms: back pain worse at night, unexplained weight loss, fever
+condition: Metastatic spinal disease / serious spine pathology
+severity: URGENT
+immediate_action: Do see a doctor urgently for assessment. Note any new weakness or numbness.
+what_not_to_do: Do not assume it is a strain. Do not delay with night pain and weight loss. Do not ignore leg weakness or bladder changes.
+keywords: back pain at night, weight loss back pain, serious back pain, night pain spine, back pain cancer
+
+[114]
+body_part: arms
+symptoms: deformity, severe pain, unable to move the arm after a fall
+condition: Arm fracture
+severity: URGENT
+immediate_action: Do support the arm in a sling or splint in the position found, apply a cold pack, and take the person to hospital.
+what_not_to_do: Do not try to straighten the arm. Do not move the joint. Do not give food or drink if surgery may be needed.
+keywords: broken arm, arm fracture, arm bent after fall, arm injury, swollen arm injury
+
+[115]
+body_part: arms
+symptoms: deep cut, heavy bleeding from the arm
+condition: Arm laceration / bleeding
+severity: URGENT
+immediate_action: Apply firm pressure on the wound with a clean cloth and raise the arm above the heart. Add more cloth if it soaks through and get help if bleeding is severe.
+what_not_to_do: Do not remove an object stuck in the wound. Do not use a tourniquet unless bleeding is uncontrollable and life-threatening. Do not peek under the dressing.
+keywords: arm bleeding, deep cut arm, arm cut won't stop, bleeding arm wound, gash on arm
+
+[116]
+body_part: arms
+symptoms: shoulder out of place, severe pain, squared-off shoulder
+condition: Dislocated shoulder
+severity: URGENT
+immediate_action: Do support the arm in the position found with a sling and get medical help for relocation. Apply a cold pack.
+what_not_to_do: Do not try to force the shoulder back in. Do not move the joint. Do not give food or drink if sedation is likely.
+keywords: dislocated shoulder, shoulder out of joint, can't move shoulder, shoulder pain, popped shoulder
+
+[117]
+body_part: arms
+symptoms: sudden weakness or numbness of one arm, facial droop, slurred speech
+condition: Stroke (arm weakness)
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY and note the time symptoms began. Keep the person still and give nothing by mouth. Use the FAST test: Face, Arms, Speech, Time.
+what_not_to_do: Do not give aspirin without medical instruction. Do not let them eat or drink. Do not wait to see if it passes.
+keywords: arm weakness, stroke, numb arm, face droop slurred speech, one side weak
+
+[118]
+body_part: arms
+symptoms: severe pain, tight swollen forearm after injury, pain on stretching the fingers
+condition: Compartment syndrome
+severity: CRITICAL
+immediate_action: Call emergency services or go to hospital IMMEDIATELY - this needs urgent surgery. Remove rings and tight bandages.
+what_not_to_do: Do not elevate the limb above the heart. Do not apply ice or a tight bandage. Do not wait for the pain to settle.
+keywords: tight swollen arm, compartment syndrome, severe arm pain after cast, arm pain swelling, painful swollen forearm
+
+[119]
+body_part: arms
+symptoms: swollen painful joint after a sprain, bruising, limited movement
+condition: Arm sprain / strain
+severity: MODERATE
+immediate_action: Do rest, ice for 20 minutes every 2 hours, compress with a bandage, and elevate the arm.
+what_not_to_do: Do not apply ice directly to the skin. Do not massage a fresh injury. Do not return to full activity too soon.
+keywords: sprained arm, twisted arm, arm strain, swollen arm, wrist sprain
+
+[120]
+body_part: hands
+symptoms: finger cut off, heavy bleeding, severe pain
+condition: Finger amputation
+severity: CRITICAL
+immediate_action: Call emergency services. Control bleeding with firm pressure, wrap the amputated part in clean gauze, seal it in a plastic bag, and place the bag on ice.
+what_not_to_do: Do not put the amputated part directly on ice. Do not use a tourniquet unless bleeding is uncontrollable. Do not discard the amputated part.
+keywords: finger cut off, amputated finger, severed finger, hand injury, finger amputation
+
+[121]
+body_part: hands
+symptoms: deformity, swelling, severe pain, unable to move the fingers
+condition: Hand fracture
+severity: URGENT
+immediate_action: Do support the hand in the position found, apply a cold pack, and go to hospital for an X-ray.
+what_not_to_do: Do not try to straighten the hand. Do not move the fingers forcefully. Do not delay if the hand is deformed.
+keywords: broken hand, hand fracture, swollen hand after fall, hand injury, painful hand
+
+[122]
+body_part: hands
+symptoms: burns on the hand, blisters, red or white skin
+condition: Hand burns
+severity: URGENT
+immediate_action: Do cool the burn under cool running water for at least 20 minutes, remove rings, and cover loosely with a clean non-stick dressing.
+what_not_to_do: Do not apply ice, butter, or toothpaste. Do not burst blisters. Do not wrap tightly.
+keywords: burnt hand, hand burn, blistered hand, scald on hand, hand scald
+
+[123]
+body_part: hands
+symptoms: finger bent out of place, severe pain
+condition: Finger dislocation
+severity: URGENT
+immediate_action: Do support the finger in the position found and get medical help for relocation. Apply a cold pack.
+what_not_to_do: Do not try to force the finger straight. Do not pull on the finger. Do not ignore numbness.
+keywords: dislocated finger, finger out of joint, bent finger injury, finger pain, crooked finger
+
+[124]
+body_part: hands
+symptoms: blood under the nail, severe throbbing pain after a crush
+condition: Subungual haematoma (nail injury)
+severity: MODERATE
+immediate_action: Do elevate the hand, apply a cold pack, and see a doctor who may drain the blood to relieve pain.
+what_not_to_do: Do not try to drill or prick the nail at home. Do not ignore severe pain. Do not pull off the nail.
+keywords: smashed finger, blood under nail, nail injury, throbbing finger, crushed finger
+
+[125]
+body_part: hands
+symptoms: red, hot, swollen, painful hand or finger with fever
+condition: Hand infection (cellulitis/tenosynovitis)
+severity: URGENT
+immediate_action: Keep the hand raised and see a doctor urgently - hand infections can spread quickly. Take prescribed antibiotics.
+what_not_to_do: Do not squeeze or cut the swelling. Do not delay antibiotics. Do not ignore red streaks spreading up the arm.
+keywords: infected hand, red swollen hand, hand infection fever, red streak arm, swollen finger infection
+
+[126]
+body_part: legs
+symptoms: deformity, severe pain, unable to bear weight after a fall
+condition: Leg fracture
+severity: URGENT
+immediate_action: Do immobilise the leg in the position found, apply a cold pack, and keep the person still until help arrives.
+what_not_to_do: Do not try to straighten the leg. Do not let them walk on it. Do not remove a shoe if the ankle is badly deformed.
+keywords: broken leg, leg fracture, can't stand after fall, leg deformity, leg injury
+
+[127]
+body_part: legs
+symptoms: swollen painful calf, warm skin, pain on walking
+condition: Deep vein thrombosis (DVT)
+severity: URGENT
+immediate_action: Do see a doctor urgently for assessment. Keep the leg resting and raised, and do not massage it.
+what_not_to_do: Do not massage the calf. Do not apply heat. Do not ignore sudden breathlessness or chest pain.
+keywords: swollen calf, dvt, painful calf, leg clot, calf pain swelling
+
+[128]
+body_part: legs
+symptoms: spurting blood from a leg wound, heavy bleeding, pale
+condition: Arterial leg bleeding
+severity: CRITICAL
+immediate_action: Call emergency services. Press hard on the wound and, if bleeding is uncontrollable from a limb, apply a tourniquet above the wound and note the time.
+what_not_to_do: Do not loosen a tourniquet once applied. Do not remove an embedded object. Do not delay calling for help.
+keywords: leg bleeding heavily, spurting blood leg, tourniquet, leg wound, heavy bleeding leg
+
+[129]
+body_part: legs
+symptoms: sudden severe leg cramp, tight knot in the calf
+condition: Muscle cramp
+severity: MODERATE
+immediate_action: Do stretch the muscle gently, massage it, and drink fluids with electrolytes. Apply warmth.
+what_not_to_do: Do not stretch forcefully. Do not ignore persistent cramps with swelling. Do not ignore leg swelling or redness.
+keywords: leg cramp, calf cramp, charley horse, muscle spasm leg, tight calf
+
+[130]
+body_part: legs
+symptoms: sudden weakness or numbness of one leg, facial droop, slurred speech
+condition: Stroke (leg weakness)
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY and note the time symptoms began. Keep the person still and give nothing by mouth.
+what_not_to_do: Do not give aspirin without medical instruction. Do not let them walk or eat. Do not wait for it to pass.
+keywords: leg weakness, stroke, numb leg, droopy face, one side weak leg
+
+[131]
+body_part: legs
+symptoms: severe pain, tight swollen leg after injury, pain on stretching the foot
+condition: Compartment syndrome (leg)
+severity: CRITICAL
+immediate_action: Call emergency services or go to hospital IMMEDIATELY. Remove any tight bandage or cast if possible.
+what_not_to_do: Do not elevate the leg above the heart. Do not apply ice. Do not wait - this needs emergency surgery.
+keywords: tight swollen leg, compartment syndrome leg, severe leg pain, leg pain swelling, painful swollen leg
+
+[132]
+body_part: feet
+symptoms: swollen painful ankle after a twist, bruising
+condition: Ankle sprain
+severity: MODERATE
+immediate_action: Do rest, ice for 20 minutes every 2 hours, compress with a bandage, and elevate the ankle. See a doctor if unable to bear weight.
+what_not_to_do: Do not apply ice directly to skin. Do not walk on it if very painful. Do not massage the swollen ankle.
+keywords: sprained ankle, twisted ankle, swollen ankle, ankle injury, ankle pain
+
+[133]
+body_part: feet
+symptoms: severe pain, deformity, unable to walk after a fall
+condition: Foot fracture
+severity: URGENT
+immediate_action: Do immobilise the foot in the position found, apply a cold pack, and go to hospital for an X-ray.
+what_not_to_do: Do not try to straighten the foot. Do not walk on it. Do not delay if the foot is deformed.
+keywords: broken foot, foot fracture, can't walk on foot, foot injury, swollen foot
+
+[134]
+body_part: feet
+symptoms: non-healing sore on the foot in a person with diabetes
+condition: Diabetic foot ulcer
+severity: URGENT
+immediate_action: Keep the wound clean and dry, offload pressure, and see a doctor promptly. Check the foot daily.
+what_not_to_do: Do not walk barefoot. Do not cut corns or calluses yourself. Do not ignore redness, swelling, or black tissue.
+keywords: diabetic foot, foot ulcer, sore on foot, foot wound not healing, foot sore diabetic
+
+[135]
+body_part: feet
+symptoms: white, waxy, numb, hard skin after cold exposure
+condition: Frostbite
+severity: CRITICAL
+immediate_action: Move the person to warmth and rewarm the foot in water at 37-39C for 20-30 minutes. Do not rub. Get medical help.
+what_not_to_do: Do not rub or massage the frozen part. Do not use direct heat or a fire. Do not walk on frozen feet if avoidable.
+keywords: frostbite, frozen feet, white numb toes, cold injury foot, frozen toes
+
+[136]
+body_part: feet
+symptoms: painful swollen toe edge, redness, pus
+condition: Ingrown toenail infection
+severity: MODERATE
+immediate_action: Do soak the foot in warm salt water, keep it clean, and see a doctor if there is spreading redness or pus.
+what_not_to_do: Do not cut down the side of the nail yourself. Do not wear tight shoes. Do not ignore spreading redness.
+keywords: ingrown toenail, swollen toe, infected toenail, painful toe, toenail infection
+
+[137]
+body_part: feet
+symptoms: deep puncture wound, small hole that may contain an object
+condition: Puncture wound (foot)
+severity: URGENT
+immediate_action: Do clean the wound, do not remove a deeply embedded object, cover it, and get medical help and a tetanus check.
+what_not_to_do: Do not probe or squeeze the wound. Do not remove a deeply embedded object. Do not ignore a wound from a rusty object.
+keywords: stepped on nail, puncture wound foot, deep foot wound, foot injury, hole in foot
+
+[138]
+body_part: skin
+symptoms: large burn, charred or white skin, pain
+condition: Severe burns (large area)
+severity: CRITICAL
+immediate_action: Call emergency services. Cool the burn with cool running water for 20 minutes, remove jewellery and clothing that is not stuck, and cover with a clean sheet.
+what_not_to_do: Do not apply ice, butter, or ointments. Do not peel off stuck clothing. Do not break blisters.
+keywords: severe burn, large burn, burn injury, burnt skin, big burn
+
+[139]
+body_part: skin
+symptoms: chemical burn, burning skin, contaminated clothing
+condition: Chemical burn
+severity: CRITICAL
+immediate_action: Call emergency services. Brush off dry chemical, then flush the skin with large amounts of clean water for at least 20 minutes. Remove contaminated clothing.
+what_not_to_do: Do not use a neutralising agent. Do not apply ointments. Do not delay flushing.
+keywords: chemical burn, acid on skin, chemical splash skin, burnt by chemical, skin chemical injury
+
+[140]
+body_part: skin
+symptoms: hives spreading, swollen lips or tongue, difficulty breathing
+condition: Anaphylaxis (skin signs)
+severity: CRITICAL
+immediate_action: Do use an adrenaline autoinjector into the outer thigh at once if available, then call emergency services. Lay the person flat with the legs raised.
+what_not_to_do: Do not let the person stand or walk. Do not rely on antihistamines alone. Do not give anything by mouth if breathing is difficult.
+keywords: hives and swelling, allergic reaction, swollen face, anaphylaxis, rash with swelling
+
+[141]
+body_part: skin
+symptoms: deep cut, gaping wound, bleeding
+condition: Deep skin laceration
+severity: URGENT
+immediate_action: Apply firm direct pressure, raise the area if possible, and seek medical help for stitches if the wound is deep or gaping.
+what_not_to_do: Do not use a tourniquet unless bleeding is uncontrollable. Do not remove an embedded object. Do not use dirty dressings.
+keywords: deep cut, gaping wound, cut needs stitches, bleeding cut, large cut
+
+[142]
+body_part: skin
+symptoms: itchy raised rash, redness, no breathing problems
+condition: Allergic contact rash / urticaria
+severity: MODERATE
+immediate_action: Do wash off any trigger, apply a cool compress, and use an antihistamine if appropriate. Seek help if there is swelling of the face or throat.
+what_not_to_do: Do not scratch the rash. Do not apply strong steroid creams without advice. Do not ignore breathing problems.
+keywords: skin rash, itchy rash, hives, allergic rash, red itchy skin
+
+[143]
+body_part: skin
+symptoms: spreading red, hot, painful area with fever
+condition: Cellulitis
+severity: URGENT
+immediate_action: Keep the area raised and see a doctor promptly for antibiotics. Mark the edge of the redness to track the spread.
+what_not_to_do: Do not squeeze or cut the area. Do not delay antibiotics. Do not ignore fever or a fast-spreading red area.
+keywords: cellulitis, red hot skin, spreading redness, skin infection, red swollen skin
+
+[144]
+body_part: skin
+symptoms: rapidly spreading severe pain, blistering, black tissue, fever
+condition: Necrotising fasciitis
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY - this is a surgical emergency. Keep the person still and give nothing by mouth.
+what_not_to_do: Do not wait for antibiotics to work. Do not delay surgery. Do not assume it is a minor wound.
+keywords: flesh-eating infection, black skin wound, severe pain spreading, necrotising fasciitis, wound turning black
+
+[145]
+body_part: skin
+symptoms: small deep puncture, possible rusty object, tetanus risk
+condition: Puncture wound / tetanus risk
+severity: URGENT
+immediate_action: Do clean the wound, cover it, and get medical help for a tetanus booster if the wound is dirty or the person is not up to date.
+what_not_to_do: Do not probe the wound. Do not ignore a dirty or deep puncture. Do not delay a tetanus check.
+keywords: puncture wound, stepped on nail, tetanus, dirty wound, deep puncture
+
+[146]
+body_part: skin
+symptoms: itchy red bumps in skin folds after heat and sweating
+condition: Heat rash (prickly heat)
+severity: MODERATE
+immediate_action: Do cool the skin, wear loose cotton clothing, and keep the area dry. Use calamine lotion if soothing.
+what_not_to_do: Do not use heavy creams that block the pores. Do not scratch. Do not overheat the person.
+keywords: heat rash, prickly heat, itchy rash in heat, sweat rash, rash in hot weather
+
+[147]
+body_part: skin
+symptoms: pale numb white fingers after cold, hard skin
+condition: Superficial frostbite (skin)
+severity: URGENT
+immediate_action: Do rewarm gently in warm water at 37-39C and cover with a clean dressing. Do not rub.
+what_not_to_do: Do not rub or massage the area. Do not use direct heat. Do not rewarm if there is a risk of refreezing.
+keywords: frostnip, white fingers, cold numb skin, frostbite skin, numb white fingers
+
+[148]
+body_part: blood
+symptoms: heavy bleeding that will not stop, large blood loss, pale
+condition: Severe haemorrhage
+severity: CRITICAL
+immediate_action: Call emergency services. Press firmly on the wound, add more dressings if they soak through, and lay the person flat with the legs raised.
+what_not_to_do: Do not remove soaked dressings - add more on top. Do not give food or drink. Do not delay.
+keywords: severe bleeding, won't stop bleeding, blood loss, hemorrhage, heavy bleeding
+
+[149]
+body_part: blood
+symptoms: fever, fast heart rate, low blood pressure, mottled skin
+condition: Sepsis / septicaemia
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY. Keep the person warm, lying down, and note when the fever or confusion began.
+what_not_to_do: Do not wait for a high fever - sepsis can occur with a low temperature. Do not give food or drink. Do not delay.
+keywords: sepsis, blood infection, fever and confusion, very unwell, fever fast pulse
+
+[150]
+body_part: blood
+symptoms: extreme tiredness, pallor, breathlessness on effort
+condition: Severe anaemia
+severity: URGENT
+immediate_action: Do see a doctor promptly for blood tests. Rest and avoid strenuous activity.
+what_not_to_do: Do not ignore breathlessness and pallor. Do not take iron without advice. Do not delay if there is chest pain.
+keywords: anaemia, pale and tired, low blood, breathless tired, pale skin tired
+
+[151]
+body_part: blood
+symptoms: sudden breathlessness and chest pain after immobility
+condition: Blood clot (thrombosis/embolism)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person still and sitting up, and do not let them walk.
+what_not_to_do: Do not massage the leg. Do not let them move around. Do not delay - this can be fatal.
+keywords: blood clot, clot in lung, sudden breathless, clot risk, chest pain clot
+
+[152]
+body_part: blood
+symptoms: fever, chills, back pain, red urine during a transfusion
+condition: Transfusion reaction
+severity: CRITICAL
+immediate_action: Do stop the transfusion immediately and call emergency services. Keep the line open with saline if trained and note the time.
+what_not_to_do: Do not restart the transfusion. Do not remove the IV line yourself unless told. Do not delay calling for help.
+keywords: transfusion reaction, fever during transfusion, red urine transfusion, reaction to blood, chills transfusion
+
+[153]
+body_part: blood
+symptoms: bleeding from many sites in a person with haemophilia, swollen joint
+condition: Haemophilia bleeding
+severity: CRITICAL
+immediate_action: Call emergency services or the haemophilia centre. Apply pressure to bleeds, rest and elevate the joint, and give factor replacement if prescribed.
+what_not_to_do: Do not give aspirin or anti-inflammatory drugs. Do not delay factor replacement. Do not exercise the bleeding joint.
+keywords: haemophilia, bleeding disorder, bleeding a lot, swollen joint bleed, easy bleeding
+
+[154]
+body_part: brain
+symptoms: facial droop, arm weakness, slurred speech, sudden onset
+condition: Stroke
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY and note the time symptoms began. Keep the person still and give nothing by mouth. Remember FAST: Face, Arms, Speech, Time.
+what_not_to_do: Do not give aspirin without medical instruction. Do not let them eat or drink. Do not wait to see if it passes.
+keywords: stroke, face droop, slurred speech, weakness one side, fast stroke
+
+[155]
+body_part: brain
+symptoms: sudden collapse, shaking, loss of consciousness, confusion after
+condition: Seizure
+severity: CRITICAL
+immediate_action: Call emergency services. Protect the head, clear the area, and place the person on their side once the shaking stops. Time the seizure.
+what_not_to_do: Do not put anything in the mouth. Do not restrain the limbs. Do not give food or drink until fully alert.
+keywords: seizure, fit, convulsions, shaking on the floor, epileptic fit
+
+[156]
+body_part: brain
+symptoms: worst-ever sudden headache, vomiting, neck stiffness
+condition: Brain haemorrhage
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person still and lying flat with the head slightly raised. Keep them calm.
+what_not_to_do: Do not give painkillers that mask symptoms. Do not let them walk or strain. Do not delay.
+keywords: brain bleed, worst headache, sudden severe headache vomiting, brain hemorrhage, hemorrhage headache
+
+[157]
+body_part: brain
+symptoms: brief weakness or slurred speech that fully recovers
+condition: Transient ischaemic attack (mini-stroke)
+severity: CRITICAL
+immediate_action: Call emergency services even if symptoms have gone - the risk of a major stroke is highest in the next 48 hours. Note the time.
+what_not_to_do: Do not ignore symptoms because they resolved. Do not drive yourself. Do not wait for a routine appointment.
+keywords: mini stroke, tia, weakness that went away, symptoms came and went, temporary stroke
+
+[158]
+body_part: brain
+symptoms: fever, headache, confusion, seizures, neck stiffness
+condition: Encephalitis / brain infection
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the person calm with the head slightly raised and monitor breathing.
+what_not_to_do: Do not give aspirin to children. Do not leave the person alone. Do not delay assessment.
+keywords: brain infection, fever and confusion, encephalitis, confused and fever, fever with seizures
+
+[159]
+body_part: brain
+symptoms: unresponsive, not waking, breathing present
+condition: Coma / reduced consciousness
+severity: CRITICAL
+immediate_action: Call emergency services. Place the person on their side in the recovery position, keep the airway open, and check breathing.
+what_not_to_do: Do not give food or drink. Do not shake them awake. Do not leave them on their back if vomiting.
+keywords: unconscious, unresponsive, won't wake up, coma, not waking up
+
+[160]
+body_part: brain
+symptoms: confusion, drowsiness, slow pulse, headache after a head injury
+condition: Raised pressure inside the skull
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep the head raised slightly and keep the person still and calm.
+what_not_to_do: Do not give painkillers or sedatives. Do not let them lie flat if it worsens the headache. Do not delay.
+keywords: head injury getting worse, drowsy after head injury, raised pressure, worsening headache, confused after head injury
+
+[161]
+body_part: nervous system
+symptoms: sudden severe weakness, numbness below a level, after injury
+condition: Acute nerve injury
+severity: CRITICAL
+immediate_action: Call emergency services and keep the person still. Do not move the spine and note any loss of movement or feeling.
+what_not_to_do: Do not test by pinching. Do not move the neck or back. Do not delay assessment.
+keywords: nerve injury, numb and weak, lost feeling, can't feel limb, numbness after injury
+
+[162]
+body_part: nervous system
+symptoms: tingling and numbness in hands and feet, weakness
+condition: Peripheral neuropathy
+severity: URGENT
+immediate_action: Do see a doctor for assessment. Manage the underlying cause and take care of the feet, checking daily for injury.
+what_not_to_do: Do not walk barefoot with numb feet. Do not use heat pads on numb skin. Do not ignore rapid worsening.
+keywords: tingling hands, numbness, pins and needles, neuropathy, numb feet
+
+[163]
+body_part: nervous system
+symptoms: sudden one-sided facial weakness, cannot close one eye
+condition: Bell's palsy
+severity: URGENT
+immediate_action: Do see a doctor the same day - early steroid treatment helps. Protect the eye with drops and tape it shut at night.
+what_not_to_do: Do not assume all facial weakness is Bell's palsy - a stroke must be excluded. Do not delay. Do not let the eye dry out.
+keywords: droopy face, bell's palsy, can't close eye, facial weakness, one side face droop
+
+[164]
+body_part: nervous system
+symptoms: exposure to nerve agent or pesticide, drooling, pinpoint pupils, muscle twitching
+condition: Nerve agent / organophosphate poisoning
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Move the person to fresh air, remove contaminated clothing, and wash the skin with soap and water.
+what_not_to_do: Do not touch contaminated clothing with bare hands. Do not make the rescuer a casualty. Do not give anything by mouth.
+keywords: pesticide poisoning, nerve agent, drooling twitching, organophosphate, poisoned by spray
+
+[165]
+body_part: nervous system
+symptoms: shooting pain down the back of the leg, tingling, worse on sitting
+condition: Sciatica / nerve compression
+severity: MODERATE
+immediate_action: Do rest briefly, use pain relief, and keep moving gently. See a doctor if there is leg weakness or numbness.
+what_not_to_do: Do not stay in bed for days. Do not lift or twist. Do not ignore bladder or bowel changes.
+keywords: sciatica, nerve pain leg, shooting pain down leg, tingling leg, leg nerve pain
+
+[166]
+body_part: nervous system
+symptoms: confusion, memory loss, unsteady walking in a person who drinks heavily
+condition: Wernicke's encephalopathy (thiamine deficiency)
+severity: CRITICAL
+immediate_action: Call emergency services. Give thiamine (vitamin B1) BEFORE any glucose if trained and available, and keep the person safe.
+what_not_to_do: Do not give glucose before thiamine in a malnourished drinker. Do not leave the person alone. Do not delay treatment.
+keywords: confusion in drinker, unsteady walk, memory loss alcohol, wernicke, drunk and confused
+
+[167]
+body_part: reproductive system
+symptoms: severe one-sided lower belly pain, missed period, fainting, shoulder tip pain
+condition: Ectopic pregnancy
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY. Keep the woman lying flat and still, and give nothing by mouth.
+what_not_to_do: Do not give painkillers that mask the pain. Do not give food or drink. Do not delay - this can bleed fatally.
+keywords: ectopic pregnancy, severe belly pain missed period, shoulder tip pain, pregnancy belly pain, early pregnancy pain
+
+[168]
+body_part: reproductive system
+symptoms: heavy vaginal bleeding in pregnancy, cramping, passing tissue
+condition: Miscarriage with heavy bleeding
+severity: CRITICAL
+immediate_action: Call emergency services if bleeding is heavy or there is faintness. Lie flat with the legs raised and keep any passed tissue for the doctor.
+what_not_to_do: Do not use tampons. Do not have intercourse. Do not delay if bleeding is heavy or you feel faint.
+keywords: miscarriage, heavy bleeding pregnancy, cramping pregnancy, bleeding in pregnancy, pregnancy bleeding
+
+[169]
+body_part: reproductive system
+symptoms: sudden severe testicular pain, swelling, nausea
+condition: Testicular torsion
+severity: CRITICAL
+immediate_action: Do go to an emergency department IMMEDIATELY - surgery within 6 hours can save the testicle. Support the testicle and give nothing by mouth.
+what_not_to_do: Do not wait for the pain to settle. Do not take painkillers that hide the pain. Do not delay seeking surgery.
+keywords: testicle pain, twisted testicle, sudden ball pain, swollen testicle, testicular torsion
+
+[170]
+body_part: reproductive system
+symptoms: labour starting, contractions, waters breaking, bleeding
+condition: Labour and delivery emergency
+severity: CRITICAL
+immediate_action: Call emergency services or a midwife. Keep the woman calm and comfortable, and prepare for delivery if it is imminent - do not try to stop it.
+what_not_to_do: Do not pull on the cord. Do not give food or drink if surgery may be needed. Do not delay if there is heavy bleeding.
+keywords: in labour, contractions, water broke, baby coming, giving birth
+
+[171]
+body_part: reproductive system
+symptoms: painless heavy vaginal bleeding after delivery, dizziness
+condition: Postpartum haemorrhage
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY. Lie flat, and massage the top of the womb firmly if trained while waiting for help.
+what_not_to_do: Do not put anything into the vagina. Do not delay - bleeding can be very fast. Do not leave the mother alone.
+keywords: bleeding after birth, postpartum bleeding, heavy bleeding after delivery, bleeding after labour, blood loss birth
+
+[172]
+body_part: reproductive system
+symptoms: painful erection lasting over 4 hours
+condition: Priapism
+severity: CRITICAL
+immediate_action: Do go to an emergency department IMMEDIATELY - this is a urological emergency. Do not wait for it to settle.
+what_not_to_do: Do not apply ice or try to force it down. Do not take more erectile-dysfunction medicine. Do not delay.
+keywords: priapism, erection won't go away, painful erection 4 hours, long erection, erection lasting hours
+
+[173]
+body_part: reproductive system
+symptoms: fever, lower belly pain, abnormal discharge, pain during sex
+condition: Pelvic inflammatory disease
+severity: URGENT
+immediate_action: Do see a doctor promptly for antibiotics. Rest, drink fluids, and avoid intercourse until treated.
+what_not_to_do: Do not delay treatment - it can cause infertility. Do not self-treat with leftover antibiotics. Do not ignore fever.
+keywords: pid, pelvic pain, discharge and fever, lower belly pain, pelvic infection
+
+[174]
+body_part: reproductive system
+symptoms: cord visible at the vagina before the baby is born
+condition: Prolapsed umbilical cord
+severity: CRITICAL
+immediate_action: Call emergency services IMMEDIATELY. Have the woman kneel or lie with the hips raised (knee-chest or head-down), and do NOT push the cord back.
+what_not_to_do: Do not try to push the cord back in. Do not let the woman sit or walk. Do not delay - the baby needs urgent delivery.
+keywords: cord prolapse, cord coming out, baby emergency birth, cord first, emergency birth
+
+[175]
+body_part: urinary system
+symptoms: unable to pass urine, painful full bladder, lower belly swelling
+condition: Acute urinary retention
+severity: URGENT
+immediate_action: Do go to hospital - a catheter is needed. Do not drink large amounts of fluid and sit in a warm bath if it helps.
+what_not_to_do: Do not press hard on the full bladder. Do not drink large volumes. Do not delay if there is severe pain.
+keywords: can't pee, urinary retention, full bladder pain, can't pass urine, bladder won't empty
+
+[176]
+body_part: urinary system
+symptoms: burning urine, frequent urination, lower belly discomfort
+condition: Urinary tract infection
+severity: MODERATE
+immediate_action: Do drink plenty of water and see a doctor for antibiotics. Use simple pain relief if needed.
+what_not_to_do: Do not delay if there is fever or back pain. Do not self-treat with leftover antibiotics. Do not hold urine for long periods.
+keywords: uti, burning pee, urinary infection, frequent urination, burning when peeing
+
+[177]
+body_part: urinary system
+symptoms: severe cramping flank pain, blood in urine, nausea
+condition: Renal colic
+severity: URGENT
+immediate_action: Give pain relief and encourage fluids. Go to hospital if the pain is unbearable, there is fever, or no urine is passed.
+what_not_to_do: Do not restrict fluids. Do not ignore fever with the pain. Do not take large doses of anti-inflammatory drugs.
+keywords: kidney stone pain, renal colic, flank pain blood urine, cramping side pain, stone pain
+
+[178]
+body_part: urinary system
+symptoms: blood in the urine with pain or clots
+condition: Blood in urine (urinary bleeding)
+severity: URGENT
+immediate_action: Do see a doctor promptly for testing. Drink fluids and note any clots or pain.
+what_not_to_do: Do not ignore blood in urine. Do not take blood thinners without advice. Do not delay assessment.
+keywords: blood in urine, peeing blood, hematuria, red urine, blood when peeing
+
+[179]
+body_part: urinary system
+symptoms: bruising over the lower belly after a blow, unable to urinate, blood in urine
+condition: Bladder injury
+severity: CRITICAL
+immediate_action: Call emergency services. Keep the person still and lying flat, and give nothing by mouth.
+what_not_to_do: Do not give food or drink. Do not press hard on the lower belly. Do not let them walk.
+keywords: bladder injury, lower belly injury, can't pee after injury, bladder trauma, belly injury can't pee
+
+[180]
+body_part: urinary system
+symptoms: blood at the penis opening, difficulty urinating after injury
+condition: Urethral injury
+severity: CRITICAL
+immediate_action: Call emergency services. Do not try to pass a catheter - keep the person still and give nothing by mouth.
+what_not_to_do: Do not try to pass a catheter or tube. Do not press on the injury. Do not give food or drink.
+keywords: urethral injury, blood from penis, can't pee after fall straddle, urethral bleed, straddle injury
+
+[181]
+body_part: chest
+symptoms: baby not breathing, infant unconscious, newborn not moving, infant unresponsive, baby limp
+condition: Infant Cardiac Arrest / Respiratory Arrest
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Place baby on firm flat surface. Tilt head back very slightly (less than adult). Give 2 small gentle puffs covering mouth AND nose. Start chest compressions with 2 fingers on center of chest, press down 1.5 inches, 30 compressions then 2 breaths. Continue until help arrives.
+what_not_to_do: Do not tilt head back as far as you would for an adult. Do not use full hand for compressions. Do not blow hard into baby's mouth. Do not shake the baby.
+keywords: baby not breathing, infant not breathing, newborn unconscious, baby limp, baby unresponsive, infant cpr, baby stopped breathing
+
+[182]
+body_part: mouth/throat
+symptoms: swallowed bleach or drain cleaner, burning in mouth and throat, drooling, difficulty swallowing, chest or stomach pain, vomiting
+condition: Caustic ingestion (swallowed bleach, drain cleaner or acid)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. If the person is awake and able to swallow, give small sips of water or milk to dilute the chemical. Keep them sitting upright - do not let them lie flat. Take the container or its label to the hospital.
+what_not_to_do: Do not make the person vomit. Do not give anything by mouth if they are drowsy, unconscious, or having seizures. Do not give activated charcoal. Do not try to neutralise the chemical with vinegar, baking soda, or lemon juice.
+keywords: swallowed bleach, swallowed chemicals, drank bleach, caustic ingestion, swallowed drain cleaner, drank acid, swallowed cleaning product, poison swallowed, chemical burn in throat
+
+[183]
+body_part: brain
+symptoms: slow or stopped breathing, pinpoint pupils, unconscious, blue lips, snoring or gurgling sounds
+condition: Opioid overdose (heroin, fentanyl, strong painkillers)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. If they are not breathing normally, start rescue breaths or CPR. Give naloxone (Narcan) if available, into the nose or muscle, and repeat every 2-3 minutes until they breathe. Put them in the recovery position on their side.
+what_not_to_do: Do not leave them alone or let them sleep it off. Do not give food, drink, or a cold shower. Do not slap or hurt them to wake them. Do not stop naloxone and rescue breaths until help arrives.
+keywords: opioid overdose, heroin overdose, fentanyl overdose, slow breathing, pinpoint pupils, overdose on pills, blue lips, snoring breathing, won't wake up, narcan
+
+[184]
+body_part: mouth/throat
+symptoms: swallowed a lot of pills or unknown medicine, drowsy or confused, vomiting, unresponsive, empty medicine bottle nearby
+condition: Drug overdose by ingestion (swallowed pills or unknown medicine)
+severity: CRITICAL
+immediate_action: Call emergency services or a poison control centre immediately. Keep the person awake and sitting upright if they are conscious. Collect the pill bottles, packaging, or what is left of the substance and take it to the hospital.
+what_not_to_do: Do not make the person vomit unless a professional tells you to. Do not give food, drink, or milk. Do not leave them alone. Do not wait for symptoms to get worse before calling for help.
+keywords: overdose, took too many pills, swallowed tablets, took too much medicine, whole bottle of pills, mixed pills, drug overdose, poisoning by medicine, empty pill bottle
+
+[185]
+body_part: stomach
+symptoms: drank a lot of alcohol, vomiting, confusion, slow breathing, cold or clammy skin, unresponsive
+condition: Alcohol poisoning (dangerous blood alcohol level)
+severity: CRITICAL
+immediate_action: Call emergency services immediately. Keep them sitting up if awake and put them on their side if drowsy so they do not choke on vomit. Keep them warm and stay with them, checking their breathing.
+what_not_to_do: Do not let them sleep it off. Do not give coffee, food, or a cold shower. Do not make them walk it off. Do not leave them alone or lying on their back while vomiting.
+keywords: alcohol poisoning, drank too much, drunk and unresponsive, passed out drunk, vomiting drunk, alcohol overdose, won't wake up drunk
+
+[186]
+body_part: brain
+symptoms: diabetic with shakiness, sweating, confusion, hunger, blurred vision, or becoming unresponsive
+condition: Hypoglycaemia (severe low blood sugar / diabetic coma)
+severity: CRITICAL
+immediate_action: If the person is awake and able to swallow, give fast sugar such as glucose tablets, fruit juice, or a sugary drink. If they are unconscious or cannot swallow, call emergency services immediately and give nothing by mouth while placing them on their side.
+what_not_to_do: Do not give food or drink to an unconscious person. Do not give insulin for low blood sugar. Do not leave the person alone. Do not use diet or sugar-free drinks.
+keywords: low blood sugar, hypoglycaemia, hypoglycemia, diabetic coma, diabetic emergency, sugar low, shaky and sweaty diabetic, confused diabetic, insulin reaction
+
+[187]
+body_part: blood
+symptoms: very high blood sugar, deep fast breathing, fruity or acetone breath, vomiting, thirst, confusion, drowsy
+condition: Diabetic ketoacidosis (dangerously high blood sugar)
+severity: CRITICAL
+immediate_action: Call emergency services immediately, as this needs hospital treatment. Keep the person sitting up and give water to drink if they are fully awake. Do not delay, because ketoacidosis can become fatal within hours.
+what_not_to_do: Do not give more insulin without medical advice. Do not give sugary food or drinks. Do not leave the person alone if they are drowsy. Do not wait to see if they improve.
+keywords: high blood sugar, ketoacidosis, dka, hyperglycaemia, hyperglycemia, fruity breath, sugar high, diabetic emergency, very high sugar, deep fast breathing diabetic
+
+[188]
+body_part: heart
+symptoms: touched a live wire or socket, burns at the contact points, irregular or stopped heartbeat, unconscious, muscle spasms
+condition: Electric shock / electrocution
+severity: CRITICAL
+immediate_action: Do not touch the person until the power is switched off or the source is moved away with a dry non-conducting object. Then call emergency services and check breathing. Start CPR if they are not breathing normally.
+what_not_to_do: Do not touch the person while they are still connected to the electricity. Do not use anything wet or metal to move the source. Do not assume they are fine after a shock, because heart rhythm problems can appear later.
+keywords: electric shock, electrocuted, electrical shock, touched live wire, shocked by electricity, electric burn, lightning strike, socket shock
+
+[189]
+body_part: lungs
+symptoms: headache and dizziness, nausea, confusion, drowsiness, several people unwell in the same building, cherry-red skin
+condition: Carbon monoxide poisoning (faulty heaters, fires, or exhaust)
+severity: CRITICAL
+immediate_action: Get everyone into fresh air immediately and open doors and windows. Call emergency services. Switch off the appliance if it is safe to do so. Give oxygen if available and keep the person warm and resting.
+what_not_to_do: Do not stay in the building to find the leak. Do not ignore a headache and nausea when others in the same place feel the same. Do not re-enter until the source is fixed. Do not leave the person alone.
+keywords: carbon monoxide, co poisoning, gas leak, faulty heater, exhaust fumes, headache and dizziness together, cherry red skin, everyone in the house sick, gas poisoning
+
+[190]
+body_part: skin
+symptoms: bite from a snake, spider, or scorpion, two puncture marks, pain and swelling, nausea, sweating, drooping eyelids, difficulty breathing
+condition: Snake bite / venomous animal bite
+severity: CRITICAL
+immediate_action: Call emergency services immediately and get to hospital for antivenom. Keep the person still and calm, keep the bitten limb still and below the level of the heart, and remove rings or tight items before swelling starts. Note the time of the bite.
+what_not_to_do: Do not cut or suck the wound. Do not use a tight tourniquet. Do not apply ice. Do not let the person walk or run. Do not try to catch or kill the snake.
+keywords: snake bite, spider bite, scorpion sting, venomous bite, two puncture marks, bitten by snake, animal bite, swelling after bite, dog bite
+
+[191]
+body_part: skin
+symptoms: very cold, shivering then stopped shivering, confusion, slurred speech, drowsiness, pale or blue skin, slow pulse
+condition: Hypothermia (dangerously low body temperature)
+severity: CRITICAL
+immediate_action: Move the person out of the cold and remove wet clothing. Warm the centre of the body first, the chest, neck, head, and groin, with blankets, skin-to-skin contact, or warm (not hot) packs. Call emergency services and handle them gently.
+what_not_to_do: Do not warm the arms and legs first. Do not rub the skin or give alcohol or caffeine. Do not use direct high heat such as a hot bath, heat lamp, or hot water bottle. Do not let them walk or move suddenly.
+keywords: hypothermia, too cold, very cold and confused, freezing, low body temperature, shivering stopped, cold and drowsy, exposure to cold
+
+[192]
+body_part: brain
+symptoms: talking about wanting to die, self-harm, feeling hopeless, giving away belongings, sudden calm after depression
+condition: Suicidal thoughts / mental health crisis
+severity: CRITICAL
+immediate_action: Stay with the person and take them seriously. Remove access to means such as pills, sharp objects, or weapons if you can do so safely. Call emergency services or a suicide crisis helpline, and do not leave them alone.
+what_not_to_do: Do not leave the person alone. Do not dismiss, argue, or lecture. Do not promise to keep it a secret. Do not leave them with access to medications or weapons.
+keywords: suicidal, suicide, want to die, kill myself, self harm, self-harm, feeling hopeless, mental health crisis, suicidal thoughts
+
+---DUPLICATES MERGED---
+None (no two entries shared the same body_part and condition).
+
+---CLEANING REPORT---
+Total entries input: 192
+Duplicates removed: 0
+Fields auto-filled with "not specified": 0
+Entries fixed for severity: 0
+Entries fixed for immediate_action: 82
+Entries fixed for keywords: 13
+Total entries output: 192
+
+Late addition - entries 181-192 appended after the initial clean.
+These entries arrived already clean, so no duplicate, severity, action or keyword fixes were needed.
