@@ -1,0 +1,6 @@
+---IMPORT REPORT---
+emergency_numbers.db: 251 rows, indexes: country_code
+medicines.db: 295 rows, indexes: medicine_name, aliases
+body_symptoms.db: 192 rows, indexes: body_part, severity, keywords
+Status: READY FOR APP INTEGRATION
+---DONE---
