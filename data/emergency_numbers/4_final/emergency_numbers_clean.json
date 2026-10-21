@@ -1,0 +1,2862 @@
+[
+  {
+    "country": "Abkhazia",
+    "country_code": "AB",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Afghanistan",
+    "country_code": "AF",
+    "police": "119",
+    "ambulance": "112",
+    "fire": "119",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Akrotiri and Dhekelia",
+    "country_code": "XA",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Åland Islands",
+    "country_code": "AX",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Non-emergency police": "018 527 100",
+      "Poison control": "09 471 977"
+    }
+  },
+  {
+    "country": "Albania",
+    "country_code": "AL",
+    "police": "129",
+    "ambulance": "127",
+    "fire": "128",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "126",
+      "Emergency at sea": "125",
+      "Mobile phones ambulance": "112"
+    }
+  },
+  {
+    "country": "Algeria",
+    "country_code": "DZ",
+    "police": "1548",
+    "ambulance": "14",
+    "fire": "14",
+    "regional_notes": "not available",
+    "other": {
+      "Gendarme": "1055"
+    }
+  },
+  {
+    "country": "American Samoa",
+    "country_code": "AS",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Andorra",
+    "country_code": "AD",
+    "police": "110",
+    "ambulance": "116",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {
+      "Mountain / Sky Rescue collaboration with Spanish (Catalan) and French authorities": "112"
+    }
+  },
+  {
+    "country": "Angola",
+    "country_code": "AO",
+    "police": "113",
+    "ambulance": "112, 116",
+    "fire": "115",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Anguilla",
+    "country_code": "AI",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Antarctica",
+    "country_code": "AQ",
+    "police": "McMurdo Station : 911 (fire and medical emergency dispatch)",
+    "ambulance": "McMurdo Station : 911 (fire and medical emergency dispatch)",
+    "fire": "McMurdo Station : 911 (fire and medical emergency dispatch)",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "country_code": "AG",
+    "police": "911 or 999",
+    "ambulance": "911 or 999",
+    "fire": "911 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Argentina",
+    "country_code": "AR",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "112 redirects to 911 on mobile phones",
+    "other": {
+      "Police": "101",
+      "Ambulance": "107",
+      "Fire": "100",
+      "Civil defense": "103",
+      "Forest fire": "105",
+      "Coast guard": "106"
+    }
+  },
+  {
+    "country": "Armenia",
+    "country_code": "AM",
+    "police": "112 or 911",
+    "ambulance": "112 or 911",
+    "fire": "112 or 911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "102",
+      "Ambulance": "103",
+      "Fire": "101",
+      "Gas emergency": "104",
+      "Traffic police": "177",
+      "Search & rescue": "108"
+    }
+  },
+  {
+    "country": "Aruba",
+    "country_code": "AW",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Ascension Island",
+    "country_code": "XX",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Australia",
+    "country_code": "AU",
+    "police": "000",
+    "ambulance": "000",
+    "fire": "000",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112 or 000",
+      "State Emergency Service": "132 500",
+      "National relay service": "106",
+      "Non-emergency police": "131 444 ( NSW , QLD , VIC , SA , WA , NT , TAS & ACT )",
+      "Crime Stoppers": "1800 333 000",
+      "Threats to national security": "1800 123 400",
+      "Poison control": "13 11 26",
+      "Lifeline": "13 11 14"
+    }
+  },
+  {
+    "country": "Austria",
+    "country_code": "AT",
+    "police": "112 or 133",
+    "ambulance": "144",
+    "fire": "122",
+    "regional_notes": "The emergency telephone number 112 will be answered by the police, but will also handle other emergency services",
+    "other": {
+      "Gas emergency": "128",
+      "Mountain rescue": "140",
+      "Doctors": "141",
+      "Crisis hotline": "142",
+      "Support for children and teens": "147",
+      "Non-emergency police": "059 133",
+      "Deaf fax/SMS": "0800 133 133",
+      "Poisoning Informations Center": "01 406 43 43"
+    }
+  },
+  {
+    "country": "Azerbaijan",
+    "country_code": "AZ",
+    "police": "112 or 102",
+    "ambulance": "112 or 103",
+    "fire": "112 or 101",
+    "regional_notes": "not available",
+    "other": {
+      "Gas Service": "104",
+      "Traffic police": "902",
+      "Electricity emergency": "199",
+      "Emergency": "112"
+    }
+  },
+  {
+    "country": "The Bahamas",
+    "country_code": "BS",
+    "police": "911 or 919",
+    "ambulance": "911 or 919",
+    "fire": "911 or 919",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Bahrain",
+    "country_code": "BH",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112",
+      "Traffic police": "199",
+      "Coast Guard": "994"
+    }
+  },
+  {
+    "country": "Bangladesh",
+    "country_code": "BD",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Anti Corruption Commission": "106",
+      "Agricultural Information Services": "16123",
+      "Health Services": "16263",
+      "Dhaka WASA": "16162",
+      "Women and Children Ministry": "109",
+      "Legal Services": "16430",
+      "National Information Service": "333",
+      "IEDCR Helpline for COVID-19": "10655"
+    }
+  },
+  {
+    "country": "Barbados",
+    "country_code": "BB",
+    "police": "211",
+    "ambulance": "511",
+    "fire": "311",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Belarus",
+    "country_code": "BY",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101",
+    "regional_notes": "not available",
+    "other": {
+      "Gas emergency": "104"
+    }
+  },
+  {
+    "country": "Belgium",
+    "country_code": "BE",
+    "police": "101 or 112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Non-emergency number for the fire department": "1722"
+    }
+  },
+  {
+    "country": "Belize",
+    "country_code": "BZ",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Benin",
+    "country_code": "BJ",
+    "police": "117",
+    "ambulance": "112",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Bermuda",
+    "country_code": "BM",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Bhutan",
+    "country_code": "BT",
+    "police": "113",
+    "ambulance": "112",
+    "fire": "110",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Bolivia",
+    "country_code": "BO",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "110",
+      "Ambulance": "118",
+      "Fire": "119",
+      "Civil protection": "114",
+      "National police": "120"
+    }
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "country_code": "BA",
+    "police": "122",
+    "ambulance": "124",
+    "fire": "123",
+    "regional_notes": "not available",
+    "other": {
+      "Civil protection": "121"
+    }
+  },
+  {
+    "country": "Botswana",
+    "country_code": "BW",
+    "police": "999",
+    "ambulance": "997",
+    "fire": "998",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Brazil",
+    "country_code": "BR",
+    "police": "190",
+    "ambulance": "192",
+    "fire": "193",
+    "regional_notes": "Municipal guard – 153; 112 and 911 redirect to 190 on mobile phones",
+    "other": {
+      "Federal highway police": "191",
+      "Federal police": "194",
+      "Civil police": "197",
+      "State highway police": "198",
+      "Civil defense": "199",
+      "Municipal guard": "153",
+      "Human rights": "100",
+      "Emergency in Mercosul area": "128",
+      "Hotline Help": "188"
+    }
+  },
+  {
+    "country": "British Indian Ocean Territory",
+    "country_code": "IO",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "British Virgin Islands",
+    "country_code": "VG",
+    "police": "911 or 999",
+    "ambulance": "911 or 999",
+    "fire": "911 or 999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "311"
+    }
+  },
+  {
+    "country": "Brunei",
+    "country_code": "BN",
+    "police": "993",
+    "ambulance": "991",
+    "fire": "995",
+    "regional_notes": "not available",
+    "other": {
+      "Search and Rescue": "998"
+    }
+  },
+  {
+    "country": "Bulgaria",
+    "country_code": "BG",
+    "police": "112 or 166",
+    "ambulance": "112 or 150",
+    "fire": "112 or 160",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Burkina Faso",
+    "country_code": "BF",
+    "police": "17",
+    "ambulance": "112",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Burundi",
+    "country_code": "BI",
+    "police": "117",
+    "ambulance": "112",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Cabo Verde",
+    "country_code": "CV",
+    "police": "132",
+    "ambulance": "130",
+    "fire": "131",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Cambodia",
+    "country_code": "KH",
+    "police": "117",
+    "ambulance": "119",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {
+      "Child helpline": "1280"
+    }
+  },
+  {
+    "country": "Cameroon",
+    "country_code": "CM",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "117",
+      "Ambulance": "119",
+      "Fire": "118",
+      "Electricity emergency": "8010"
+    }
+  },
+  {
+    "country": "Canada",
+    "country_code": "CA",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "Municipal services – 311 (metros only); 112 may redirect to 911 on certain mobile phones",
+    "other": {
+      "Suicide hotline": "988",
+      "Nonemergency social services": "211",
+      "Municipal services": "311 (metros only)"
+    }
+  },
+  {
+    "country": "Caribbean Netherlands",
+    "country_code": "BQ",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Cayman Islands",
+    "country_code": "KY",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Central African Republic",
+    "country_code": "CF",
+    "police": "117",
+    "ambulance": "1220",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Chad",
+    "country_code": "TD",
+    "police": "17",
+    "ambulance": "2251-4242",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {
+      "Ambulance": "2251-1237"
+    }
+  },
+  {
+    "country": "Chile",
+    "country_code": "CL",
+    "police": "133",
+    "ambulance": "131",
+    "fire": "132",
+    "regional_notes": "Useful mnemonic is ABC123 :; 911 and 112 redirect to 133",
+    "other": {
+      "A mbulancia (Ambulance)": "13 1",
+      "B omberos (Fire)": "13 2",
+      "C arabineros (Police)": "13 3"
+    }
+  },
+  {
+    "country": "Christmas Island",
+    "country_code": "CX",
+    "police": "000",
+    "ambulance": "000",
+    "fire": "000",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Clipperton Island",
+    "country_code": "XX",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Cocos (Keeling) Islands",
+    "country_code": "CC",
+    "police": "000",
+    "ambulance": "000",
+    "fire": "000",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Colombia",
+    "country_code": "CO",
+    "police": "112",
+    "ambulance": "125",
+    "fire": "119",
+    "regional_notes": "not available",
+    "other": {
+      "General emergency": "123",
+      "Anti-kidnapping and extortion hotline": "165"
+    }
+  },
+  {
+    "country": "Comoros",
+    "country_code": "KM",
+    "police": "17",
+    "ambulance": "772-03-73",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {
+      "Ambulance": "773-26-04"
+    }
+  },
+  {
+    "country": "Cook Islands",
+    "country_code": "CK",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Costa Rica",
+    "country_code": "CR",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "country_code": "CI",
+    "police": "110 or 111 or 170",
+    "ambulance": "185",
+    "fire": "180",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Croatia",
+    "country_code": "HR",
+    "police": "112 or 192",
+    "ambulance": "112 or 194",
+    "fire": "112 or 193",
+    "regional_notes": "not available",
+    "other": {
+      "Search and rescue at sea": "112 or 195",
+      "Road help": "1987"
+    }
+  },
+  {
+    "country": "Cuba",
+    "country_code": "CU",
+    "police": "106",
+    "ambulance": "104",
+    "fire": "105",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Curaçao",
+    "country_code": "CW",
+    "police": "911",
+    "ambulance": "910 and 912",
+    "fire": "911",
+    "regional_notes": "Calls to 112 forward to 911; Please consult the current list for Emergency Services",
+    "other": {}
+  },
+  {
+    "country": "Cyprus",
+    "country_code": "CY",
+    "police": "112 or 199",
+    "ambulance": "112 or 199",
+    "fire": "112 or 199",
+    "regional_notes": "not available",
+    "other": {
+      "Air/sea rescue": "1441",
+      "Anti-drug support": "1410 or 1498",
+      "Poison control": "1401"
+    }
+  },
+  {
+    "country": "Czech Republic",
+    "country_code": "CZ",
+    "police": "112 or 158",
+    "ambulance": "112 or 155",
+    "fire": "112 or 150",
+    "regional_notes": "Municipal police – 156",
+    "other": {
+      "Municipal police": "156",
+      "Mountain rescue": "1210"
+    }
+  },
+  {
+    "country": "Democratic People's Republic of Korea",
+    "country_code": "KP",
+    "police": "not available",
+    "ambulance": "not available",
+    "fire": "110 or 8119",
+    "regional_notes": "Police: local numbers only; Ambulance: local numbers only",
+    "other": {}
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "country_code": "CD",
+    "police": "112",
+    "ambulance": "not available",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Denmark",
+    "country_code": "DK",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Non-emergency police": "114"
+    }
+  },
+  {
+    "country": "Djibouti",
+    "country_code": "DJ",
+    "police": "17",
+    "ambulance": "19",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Dominica",
+    "country_code": "DM",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Dominican Republic",
+    "country_code": "DO",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "112 redirects to 911 on mobile phones",
+    "other": {}
+  },
+  {
+    "country": "Ecuador",
+    "country_code": "EC",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "101",
+      "Ambulance": "131",
+      "Fire": "102",
+      "Emergency in Guayaquil": "112",
+      "Traffic police in Guayaquil": "103"
+    }
+  },
+  {
+    "country": "Egypt",
+    "country_code": "EG",
+    "police": "112 or 122",
+    "ambulance": "123",
+    "fire": "180",
+    "regional_notes": "not available",
+    "other": {
+      "Tourist police": "126",
+      "Traffic police": "128",
+      "Electricity emergency": "121",
+      "Gas emergency": "129",
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "El Salvador",
+    "country_code": "SV",
+    "police": "911",
+    "ambulance": "132",
+    "fire": "913",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Equatorial Guinea",
+    "country_code": "GQ",
+    "police": "114",
+    "ambulance": "115",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "116"
+    }
+  },
+  {
+    "country": "Eritrea",
+    "country_code": "ER",
+    "police": "113",
+    "ambulance": "114",
+    "fire": "116",
+    "regional_notes": "not available",
+    "other": {
+      "Emergency call": "112",
+      "Traffic police": "115"
+    }
+  },
+  {
+    "country": "Estonia",
+    "country_code": "EE",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Eswatini",
+    "country_code": "SZ",
+    "police": "999",
+    "ambulance": "977",
+    "fire": "933",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Ethiopia",
+    "country_code": "ET",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "991",
+      "Ambulance": "907",
+      "Fire": "939",
+      "Traffic police": "945"
+    }
+  },
+  {
+    "country": "Falkland Islands",
+    "country_code": "FK",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Faroe Islands",
+    "country_code": "FO",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Non-emergency police": "114"
+    }
+  },
+  {
+    "country": "Federated States of Micronesia",
+    "country_code": "FM",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Fiji",
+    "country_code": "FJ",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "917",
+      "Fire": "910",
+      "Crime Stoppers": "919"
+    }
+  },
+  {
+    "country": "Finland",
+    "country_code": "FI",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "Medical Helpline – 116 117 (except in Åland ); +358 9 2297 0908 from abroad",
+    "other": {
+      "Maritime rescue": "02 94 1000",
+      "Poison Control": "0800 147 111",
+      "Medical Helpline": "116 117 (except in Åland )",
+      "Report lost or stolen credit card": "020 333 (for most Finnish banks)"
+    }
+  },
+  {
+    "country": "France",
+    "country_code": "FR",
+    "police": "17",
+    "ambulance": "112 or 15",
+    "fire": "112 or 18",
+    "regional_notes": "in 80% of departments 112 will redirect to fire and rescue service in the rest of cases 112 will be handled either by a common platform or by ambulance (SAMU)",
+    "other": {
+      "Deaf FAX/SMS": "114",
+      "Hotline for beaten children": "119",
+      "Missing children": "116 000",
+      "Maritime rescue": "196"
+    }
+  },
+  {
+    "country": "French Guiana",
+    "country_code": "GF",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "French Polynesia",
+    "country_code": "PF",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Gabon",
+    "country_code": "GA",
+    "police": "1730",
+    "ambulance": "1300",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "The Gambia",
+    "country_code": "GM",
+    "police": "117",
+    "ambulance": "116",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "112",
+      "Electricity emergency": "124",
+      "Water emergency": "125"
+    }
+  },
+  {
+    "country": "Georgia",
+    "country_code": "GE",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Germany",
+    "country_code": "DE",
+    "police": "110",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "Traditionally 110 for the police and 112 for the fire brigade and rescue service; Due to EU Directive 112 works also for the police; 911 redirects to 112 on telephones used in USAFE bases; Rescue service additionally (outdating) 19222; Debit and credit card locking call 116 116",
+    "other": {
+      "Non-emergency medical on-call duty": "116 117",
+      "Military police": "0800 190 9999",
+      "Federal (incl. railway) police": "0800 6 888 000"
+    }
+  },
+  {
+    "country": "Ghana",
+    "country_code": "GH",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "191",
+      "Ambulance": "193",
+      "Fire": "192"
+    }
+  },
+  {
+    "country": "Gibraltar",
+    "country_code": "GI",
+    "police": "199 or 112 or 999",
+    "ambulance": "190 or 112 or 999",
+    "fire": "190 or 112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Greece",
+    "country_code": "GR",
+    "police": "100 or 112",
+    "ambulance": "166 or 112",
+    "fire": "199 or 112",
+    "regional_notes": "not available",
+    "other": {
+      "European emergency service line": "112",
+      "Coast guard": "108",
+      "National Child Protection Helpline": "1056",
+      "European Hotline for Missing Children": "116000",
+      "EU Helpline for Children and Teenagers": "116111"
+    }
+  },
+  {
+    "country": "Greenland",
+    "country_code": "GL",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "Mobile phones only; From landline phones dial the local police station, hospital or fire brigade",
+    "other": {}
+  },
+  {
+    "country": "Grenada",
+    "country_code": "GD",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Guadeloupe",
+    "country_code": "GP",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Guam",
+    "country_code": "GU",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Guatemala",
+    "country_code": "GT",
+    "police": "110",
+    "ambulance": "122 CBV (national) 123 CBM (municipal local only) 1554 ASOBOMBD (municipalities associations, national)",
+    "fire": "122 CBV (national) 123 CBM (municipal local only) 1554 ASOBOMBD (municipalities associations, national)",
+    "regional_notes": "Disaster relief (national)",
+    "other": {
+      "Red Cross": "125 limited coverage",
+      "Conred": "119"
+    }
+  },
+  {
+    "country": "Guernsey",
+    "country_code": "GG",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Guinea",
+    "country_code": "GN",
+    "police": "117",
+    "ambulance": "18",
+    "fire": "442-020",
+    "regional_notes": "not available",
+    "other": {
+      "Maritime Emergency Service": "19",
+      "Gendarmerie": "118",
+      "National Gendarmerie": "122"
+    }
+  },
+  {
+    "country": "Guinea-Bissau",
+    "country_code": "GW",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "117",
+      "Ambulance": "119",
+      "Fire": "118"
+    }
+  },
+  {
+    "country": "Guyana",
+    "country_code": "GY",
+    "police": "911",
+    "ambulance": "913",
+    "fire": "912",
+    "regional_notes": "not available",
+    "other": {
+      "Childcare Protection Agency": "227-0979",
+      "Human Trafficking": "227-4083, 623-5030",
+      "Domestic Violence": "914"
+    }
+  },
+  {
+    "country": "Haiti",
+    "country_code": "HT",
+    "police": "114",
+    "ambulance": "116",
+    "fire": "115",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "122"
+    }
+  },
+  {
+    "country": "Honduras",
+    "country_code": "HN",
+    "police": "911",
+    "ambulance": "195",
+    "fire": "198",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Hong Kong",
+    "country_code": "HK",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "911 or 112 (Automatically redirects to 999 )"
+    }
+  },
+  {
+    "country": "Hungary",
+    "country_code": "HU",
+    "police": "112 or 107",
+    "ambulance": "112 or 104",
+    "fire": "112 or 105",
+    "regional_notes": "not available",
+    "other": {
+      "Water emergency": "1817"
+    }
+  },
+  {
+    "country": "Iceland",
+    "country_code": "IS",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "911 redirects to 112 on mobile phones; +354 570 2112 from abroad",
+    "other": {
+      "Non-emergency police Reykjavík area": "444 10 00"
+    }
+  },
+  {
+    "country": "India",
+    "country_code": "IN",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Gas leakage": "1906",
+      "Tourist Helpline": "1363",
+      "Child Helpline": "1098",
+      "Disaster management": "104",
+      "Women Helpline": "181",
+      "Police": "100",
+      "Ambulance": "108",
+      "Fire brigade": "101"
+    }
+  },
+  {
+    "country": "Indonesia",
+    "country_code": "ID",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "110",
+      "Ambulance": "118 or 119",
+      "Fire": "113 or 1131",
+      "Search & rescue": "115",
+      "Natural disasters": "129",
+      "Electricity emergency": "123",
+      "Mental health": "1-500-454"
+    }
+  },
+  {
+    "country": "Iran",
+    "country_code": "IR",
+    "police": "110",
+    "ambulance": "115",
+    "fire": "125",
+    "regional_notes": "General emergencies is also 110; 112 and 911 redirect to 110 on mobile phones",
+    "other": {
+      "Social Emergency": "123",
+      "Roads Traffic Information Center": "141",
+      "Iranian Red Crescent": "112 (non-mobile phones)"
+    }
+  },
+  {
+    "country": "Iraq",
+    "country_code": "IQ",
+    "police": "112 or 911",
+    "ambulance": "112 or 911",
+    "fire": "112 or 911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "104",
+      "Ambulance": "122",
+      "Fire": "115"
+    }
+  },
+  {
+    "country": "Ireland",
+    "country_code": "IE",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "SMS messages can be sent to 112",
+    "other": {}
+  },
+  {
+    "country": "Isle of Man",
+    "country_code": "IM",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Israel",
+    "country_code": "IL",
+    "police": "100",
+    "ambulance": "101",
+    "fire": "102",
+    "regional_notes": "Non-emergency municipal hazards – 106",
+    "other": {
+      "Israel Electric Corporation": "103",
+      "Home Front Command": "104",
+      "Online child abuse hotline": "105",
+      "Non-emergency municipal hazards": "106",
+      "Non-emergency police inquiries": "110",
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Italy",
+    "country_code": "IT",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "The 112 was originally the national emergency number of the Carabinieri; it is now the European single emergency number; NUE 112 is operational throughout Italy (except Veneto and Campania ); In areas where the NUE is operational, calls to the traditional emergency numbers 113 ( Police ), 115 ( Fire ), 118 ( Ambulance ) are routed to the 112 emergency response centre",
+    "other": {
+      "Child abuse": "114",
+      "Financial Gendarmerie": "117",
+      "Forest service": "1515",
+      "Anti-violence and anti-stalking service": "1522",
+      "Environmental emergency": "1525",
+      "Coast guard": "1530"
+    }
+  },
+  {
+    "country": "Jamaica",
+    "country_code": "JM",
+    "police": "119",
+    "ambulance": "110",
+    "fire": "110",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Japan",
+    "country_code": "JP",
+    "police": "110",
+    "ambulance": "119",
+    "fire": "119",
+    "regional_notes": "112 and 911 redirect to 110 on mobile phones and telephones that are present at all United States military installations",
+    "other": {
+      "Coast guard": "118",
+      "Information about emergencies": "#7119 free call; #9110 pay call",
+      "Roadside assistance": "#8139"
+    }
+  },
+  {
+    "country": "Jersey",
+    "country_code": "JE",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Jordan",
+    "country_code": "JO",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Kazakhstan",
+    "country_code": "KZ",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "102",
+      "Ambulance": "103",
+      "Fire": "101",
+      "Gas leaks": "104"
+    }
+  },
+  {
+    "country": "Kenya",
+    "country_code": "KE",
+    "police": "112 or 999 or 911",
+    "ambulance": "112 or 999 or 911",
+    "fire": "112 or 999 or 911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Kiribati",
+    "country_code": "KI",
+    "police": "100 or 999",
+    "ambulance": "100 or 999",
+    "fire": "100 or 999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "192",
+      "Ambulance": "194 and 195",
+      "Fire": "193"
+    }
+  },
+  {
+    "country": "Kosovo",
+    "country_code": "XK",
+    "police": "192",
+    "ambulance": "194",
+    "fire": "193",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Kuwait",
+    "country_code": "KW",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Kyrgyzstan",
+    "country_code": "KG",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Laos",
+    "country_code": "LA",
+    "police": "191",
+    "ambulance": "195",
+    "fire": "190",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Latvia",
+    "country_code": "LV",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "110",
+      "Ambulance": "113",
+      "Gas emergency": "114"
+    }
+  },
+  {
+    "country": "Lebanon",
+    "country_code": "LB",
+    "police": "999 or 112",
+    "ambulance": "140",
+    "fire": "175",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "160",
+      "Civil defense": "125"
+    }
+  },
+  {
+    "country": "Lesotho",
+    "country_code": "LS",
+    "police": "123",
+    "ambulance": "121",
+    "fire": "122",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Liberia",
+    "country_code": "LR",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Libya",
+    "country_code": "LY",
+    "police": "1515",
+    "ambulance": "1515",
+    "fire": "1515",
+    "regional_notes": "not available",
+    "other": {
+      "Ambulance": "193"
+    }
+  },
+  {
+    "country": "Liechtenstein",
+    "country_code": "LI",
+    "police": "117",
+    "ambulance": "144",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Lithuania",
+    "country_code": "LT",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "022",
+      "Ambulance": "033",
+      "Fire": "011"
+    }
+  },
+  {
+    "country": "Luxembourg",
+    "country_code": "LU",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "113"
+    }
+  },
+  {
+    "country": "Macau",
+    "country_code": "MO",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "From mobile phones": "110 or 112 (all redirects to 999 )",
+      "Judiciary Police": "993"
+    }
+  },
+  {
+    "country": "Madagascar",
+    "country_code": "MG",
+    "police": "117",
+    "ambulance": "124",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "3600"
+    }
+  },
+  {
+    "country": "Malawi",
+    "country_code": "MW",
+    "police": "997",
+    "ambulance": "998",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "990"
+    }
+  },
+  {
+    "country": "Malaysia",
+    "country_code": "MY",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "From mobile phones": "112"
+    }
+  },
+  {
+    "country": "Maldives",
+    "country_code": "MV",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "119",
+      "Ambulance": "100",
+      "Fire": "118",
+      "Coastguard": "191",
+      "For Natural Disasters": "115"
+    }
+  },
+  {
+    "country": "Mali",
+    "country_code": "ML",
+    "police": "17",
+    "ambulance": "15",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {
+      "Ambulance": "112",
+      "Fire": "112"
+    }
+  },
+  {
+    "country": "Malta",
+    "country_code": "MT",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Marshall Islands",
+    "country_code": "MH",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Martinique",
+    "country_code": "MQ",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Mauritania",
+    "country_code": "MR",
+    "police": "117",
+    "ambulance": "101",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {
+      "Gendarmerie": "116",
+      "Traffic police": "119"
+    }
+  },
+  {
+    "country": "Mauritius",
+    "country_code": "MU",
+    "police": "112",
+    "ambulance": "114",
+    "fire": "115",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "999",
+      "Fire": "995"
+    }
+  },
+  {
+    "country": "Mayotte",
+    "country_code": "YT",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Mexico",
+    "country_code": "MX",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Emergency": "911",
+      "Anonymous complaint": "089"
+    }
+  },
+  {
+    "country": "Moldova",
+    "country_code": "MD",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Monaco",
+    "country_code": "MC",
+    "police": "17",
+    "ambulance": "112 or 18",
+    "fire": "112 or 18",
+    "regional_notes": "112 and 18 redirects to fire and rescue service which can also handle ambulance service",
+    "other": {}
+  },
+  {
+    "country": "Mongolia",
+    "country_code": "MN",
+    "police": "105",
+    "ambulance": "105",
+    "fire": "105",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "102",
+      "Ambulance": "103",
+      "Fire": "101"
+    }
+  },
+  {
+    "country": "Montenegro",
+    "country_code": "ME",
+    "police": "122 or 112",
+    "ambulance": "124 or 112",
+    "fire": "123 or 112",
+    "regional_notes": "not available",
+    "other": {
+      "Emergency at sea": "129"
+    }
+  },
+  {
+    "country": "Montserrat",
+    "country_code": "MS",
+    "police": "911 or 999",
+    "ambulance": "911 or 999",
+    "fire": "911 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Morocco",
+    "country_code": "MA",
+    "police": "19",
+    "ambulance": "15",
+    "fire": "15",
+    "regional_notes": "not available",
+    "other": {
+      "Royal gendarmerie": "177",
+      "Drugs & alcohol service": "113",
+      "Racial discrimination hotline": "114",
+      "Non-emergency disturbances": "110",
+      "General information": "160",
+      "National Freeway call center": "5050",
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Mozambique",
+    "country_code": "MZ",
+    "police": "119",
+    "ambulance": "117",
+    "fire": "198",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Myanmar",
+    "country_code": "MM",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "199",
+      "Ambulance": "192",
+      "Fire": "191 (can also call for Natural disasters)",
+      "Highway police": "1880",
+      "Relief": "067-340-4222 (Ministry hotline)",
+      "International hotline": "122",
+      "COVID-19 hotline": "2019"
+    }
+  },
+  {
+    "country": "Namibia",
+    "country_code": "NA",
+    "police": "10 111",
+    "ambulance": "not available",
+    "fire": "not available",
+    "regional_notes": "Ambulance: depends on town/city; Fire: depends on town/city",
+    "other": {}
+  },
+  {
+    "country": "Nauru",
+    "country_code": "NR",
+    "police": "110",
+    "ambulance": "111",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Nepal",
+    "country_code": "NP",
+    "police": "100",
+    "ambulance": "102",
+    "fire": "101",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "103",
+      "From mobile phones": "112"
+    }
+  },
+  {
+    "country": "Netherlands",
+    "country_code": "NL",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Text phone": "0800 81 12",
+      "Non-emergency police": "0900 88 44 or 0343 578 844",
+      "Non-emergency police (text phone)": "0900 18 44",
+      "Suicide prevention": "0800-0113",
+      "Animal emergency": "144",
+      "Child abuse": "0900 123 12 30",
+      "Anti-bullying hotline": "0800 90 50"
+    }
+  },
+  {
+    "country": "New Caledonia",
+    "country_code": "NC",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "New Zealand",
+    "country_code": "NZ",
+    "police": "111",
+    "ambulance": "111",
+    "fire": "111",
+    "regional_notes": "Traffic – *555 (mobile phones only); SMS messages can be sent to 111 from registered mobile phones; 112 and 911 redirect to 111 on mobile phones; Dialing 000 and 999 plays a pre-recorded message advising the caller to call 111",
+    "other": {
+      "Traffic": "*555 (mobile phones only)",
+      "Crime Stoppers": "0800 555 111",
+      "Police non-emergency": "105"
+    }
+  },
+  {
+    "country": "Nicaragua",
+    "country_code": "NI",
+    "police": "118",
+    "ambulance": "128",
+    "fire": "115",
+    "regional_notes": "not available",
+    "other": {
+      "Fire": "911"
+    }
+  },
+  {
+    "country": "Niger",
+    "country_code": "NE",
+    "police": "17",
+    "ambulance": "15",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Nigeria",
+    "country_code": "NG",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Niue",
+    "country_code": "NU",
+    "police": "(+683) 4333",
+    "ambulance": "(+683) 4202",
+    "fire": "(+683) 4133",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "North Macedonia",
+    "country_code": "MK",
+    "police": "192 or 112",
+    "ambulance": "194 or 112",
+    "fire": "193 or 112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "192",
+      "Ambulance": "194",
+      "Fire": "193"
+    }
+  },
+  {
+    "country": "Northern Cyprus",
+    "country_code": "XX",
+    "police": "155",
+    "ambulance": "112",
+    "fire": "199",
+    "regional_notes": "not available",
+    "other": {
+      "Forest Fire": "177",
+      "Coast Guard": "158",
+      "Civil Defense": "101"
+    }
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "country_code": "MP",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Norway",
+    "country_code": "NO",
+    "police": "112",
+    "ambulance": "113",
+    "fire": "110",
+    "regional_notes": "911 redirects to 112",
+    "other": {
+      "Emergency at sea": "120",
+      "non-emergency police": "02 800",
+      "child abuse and family violence": "116 111",
+      "text phone": "1412",
+      "nearest health care outside office hours": "116 117"
+    }
+  },
+  {
+    "country": "Oman",
+    "country_code": "OM",
+    "police": "9999",
+    "ambulance": "9999",
+    "fire": "9999",
+    "regional_notes": "not available",
+    "other": {
+      "From mobile phones": "112"
+    }
+  },
+  {
+    "country": "Pakistan",
+    "country_code": "PK",
+    "police": "15",
+    "ambulance": "115 and 1122",
+    "fire": "16",
+    "regional_notes": "not available",
+    "other": {
+      "Ambulance": "1122",
+      "Traffic police": "1915",
+      "Mobile phones": "112",
+      "Punjab Women's toll free helpline": "1043",
+      "Tourist police": "1422",
+      "National Highways & Motorway Police": "130",
+      "Child Protection & Welfare Bureau": "1121"
+    }
+  },
+  {
+    "country": "Palau",
+    "country_code": "PW",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Palestine",
+    "country_code": "PS",
+    "police": "100",
+    "ambulance": "101",
+    "fire": "102",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Panama",
+    "country_code": "PA",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "104",
+      "Fire": "103"
+    }
+  },
+  {
+    "country": "Papua New Guinea",
+    "country_code": "PG",
+    "police": "112",
+    "ambulance": "111",
+    "fire": "110",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Paraguay",
+    "country_code": "PY",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "912",
+      "Ambulance": "141",
+      "Fire": "132",
+      "Rescue": "131"
+    }
+  },
+  {
+    "country": "People's Republic of China",
+    "country_code": "CN",
+    "police": "110",
+    "ambulance": "120",
+    "fire": "119",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic accident reports": "122",
+      "Coast guard": "95110"
+    }
+  },
+  {
+    "country": "Peru",
+    "country_code": "PE",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "105",
+      "Ambulance (SAMU)": "106",
+      "Fire": "116",
+      "Civil defense": "115",
+      "Domestic violence": "100"
+    }
+  },
+  {
+    "country": "Philippines",
+    "country_code": "PH",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Child abuse ( Bantay Bata )": "163",
+      "Human trafficking": "1343",
+      "From mobile phones": "112"
+    }
+  },
+  {
+    "country": "Poland",
+    "country_code": "PL",
+    "police": "997 or 112",
+    "ambulance": "999 or 112",
+    "fire": "998 or 112",
+    "regional_notes": "Municipal police (where operating) – 986; Warsaw additionally maintains some local emergency numbers. 911 redirects to 112",
+    "other": {
+      "Road help": "981",
+      "Elevator emergency": "982",
+      "Veterinary emergency": "983",
+      "Rescue on lakes and rivers": "984 or +48 601 100 100",
+      "Sea and mountain rescue": "985 or +48 601 100 300",
+      "Municipal police (where operating)": "986",
+      "Crisis Management Centre (focus depends on voivodeship)": "987",
+      "Electricity emergency": "991",
+      "Gas emergency": "992",
+      "Heat engineering emergency": "993",
+      "Water emergency": "994",
+      "Child alert (operated by Police)": "995",
+      "Counterterrorism emergency": "996",
+      "Missing children (EU hotline)": "116 000"
+    }
+  },
+  {
+    "country": "Portugal",
+    "country_code": "PT",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "911 redirects to 112 on telephones located at Lajes Air Station",
+    "other": {
+      "Forest fire": "117",
+      "Social emergency": "144"
+    }
+  },
+  {
+    "country": "Puerto Rico",
+    "country_code": "PR",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Qatar",
+    "country_code": "QA",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Republic of Korea",
+    "country_code": "KR",
+    "police": "112",
+    "ambulance": "119",
+    "fire": "119",
+    "regional_notes": "not available",
+    "other": {
+      "Non Emergency": "110",
+      "National security": "111",
+      "Reporting spies": "113",
+      "Narcotics Report": "127",
+      "Lost and Found Center": "182",
+      "Travel Hotline": "1330"
+    }
+  },
+  {
+    "country": "Republic of the Congo",
+    "country_code": "CG",
+    "police": "117",
+    "ambulance": "not available",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Réunion",
+    "country_code": "RE",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Romania",
+    "country_code": "RO",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "911 redirects to 112",
+    "other": {}
+  },
+  {
+    "country": "Russia",
+    "country_code": "RU",
+    "police": "102 or 112",
+    "ambulance": "103 or 112",
+    "fire": "101 or 112",
+    "regional_notes": "112 came into effect (for any emergency) in 2013",
+    "other": {
+      "Gas emergency": "104"
+    }
+  },
+  {
+    "country": "Rwanda",
+    "country_code": "RW",
+    "police": "112",
+    "ambulance": "912",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "113"
+    }
+  },
+  {
+    "country": "Saint Barthélemy",
+    "country_code": "BL",
+    "police": "17",
+    "ambulance": "17",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Saint Helena",
+    "country_code": "SH",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "country_code": "KN",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Saint Lucia",
+    "country_code": "LC",
+    "police": "911 or 999",
+    "ambulance": "911 or 999",
+    "fire": "911 or 999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Saint Martin",
+    "country_code": "MF",
+    "police": "17",
+    "ambulance": "15",
+    "fire": "18",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "country_code": "PM",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "17",
+      "Ambulance": "15",
+      "Fire": "18"
+    }
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "country_code": "VC",
+    "police": "999 or 911 or 112",
+    "ambulance": "999 or 911 or 112",
+    "fire": "999 or 911 or 112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Samoa",
+    "country_code": "WS",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "995",
+      "Ambulance": "996",
+      "Fire": "994"
+    }
+  },
+  {
+    "country": "San Marino",
+    "country_code": "SM",
+    "police": "112 or 113",
+    "ambulance": "118",
+    "fire": "115",
+    "regional_notes": "112, 113 and 115 reach the Interforce Operations Centre",
+    "other": {}
+  },
+  {
+    "country": "São Tomé and Príncipe",
+    "country_code": "ST",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Saudi Arabia",
+    "country_code": "SA",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "999",
+      "Ambulance": "997",
+      "Fire": "998",
+      "Traffic police": "993"
+    }
+  },
+  {
+    "country": "Senegal",
+    "country_code": "SN",
+    "police": "17",
+    "ambulance": "18",
+    "fire": "1515",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Serbia",
+    "country_code": "RS",
+    "police": "192 or 112",
+    "ambulance": "194",
+    "fire": "193",
+    "regional_notes": "112 redirects to 192 . It is possible to dial 112 and get direct connection with the emergency services by pressing 1 for police, 2 for ambulance and 3 for fire on Vip operator mobile phones",
+    "other": {
+      "Civil protection": "1985"
+    }
+  },
+  {
+    "country": "Seychelles",
+    "country_code": "SC",
+    "police": "112 or 999",
+    "ambulance": "112 or 999",
+    "fire": "112 or 999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "133",
+      "Ambulance": "151"
+    }
+  },
+  {
+    "country": "Sierra Leone",
+    "country_code": "SL",
+    "police": "019",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Singapore",
+    "country_code": "SG",
+    "police": "999",
+    "ambulance": "995",
+    "fire": "995",
+    "regional_notes": "not available",
+    "other": {
+      "Mobile phones": "112 or 911",
+      "Non-emergency ambulance": "1777",
+      "Police hotline": "1800 255 0000",
+      "Traffic police": "6547 0000"
+    }
+  },
+  {
+    "country": "Sint Maarten",
+    "country_code": "SX",
+    "police": "911",
+    "ambulance": "912",
+    "fire": "919",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Slovakia",
+    "country_code": "SK",
+    "police": "112 or 158",
+    "ambulance": "112 or 155",
+    "fire": "112 or 150",
+    "regional_notes": "Municipal police – 159",
+    "other": {
+      "Municipal police": "159"
+    }
+  },
+  {
+    "country": "Slovenia",
+    "country_code": "SI",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "113",
+      "Road help": "1987",
+      "Emergency at sea": "080 18 00"
+    }
+  },
+  {
+    "country": "Solomon Islands",
+    "country_code": "SB",
+    "police": "911 or 999",
+    "ambulance": "911 or 999",
+    "fire": "911 or 999",
+    "regional_notes": "In cities, local numbers exist which connect more quickly than either 911 or 999",
+    "other": {
+      "Police": "999",
+      "Ambulance": "111",
+      "Fire": "988"
+    }
+  },
+  {
+    "country": "Somalia",
+    "country_code": "SO",
+    "police": "888",
+    "ambulance": "999",
+    "fire": "555",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "777"
+    }
+  },
+  {
+    "country": "South Africa",
+    "country_code": "ZA",
+    "police": "10 111",
+    "ambulance": "10 177",
+    "fire": "10 177",
+    "regional_notes": "Emergency in Cape Town – 107",
+    "other": {
+      "Emergency in Cape Town": "107",
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "South Georgia and the South Sandwich Islands",
+    "country_code": "GS",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "South Ossetia",
+    "country_code": "XX",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "South Sudan",
+    "country_code": "SS",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Spain",
+    "country_code": "ES",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "Municipal Police – 092; Local Firefighters – 080",
+    "other": {
+      "National Police": "091",
+      "Civil Guard": "062",
+      "Autonomic Police": "112",
+      "Municipal Police": "092",
+      "Local Firefighters": "080",
+      "Autonomic Firefighters": "085",
+      "SAMUR": "061",
+      "Civil Protection": "1006",
+      "Maritime Rescue": "902 202 202",
+      "Red Cross": "901 222 222"
+    }
+  },
+  {
+    "country": "Sri Lanka",
+    "country_code": "LK",
+    "police": "119",
+    "ambulance": "110",
+    "fire": "110",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "112 691 111"
+    }
+  },
+  {
+    "country": "Sudan",
+    "country_code": "SD",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "777 777"
+    }
+  },
+  {
+    "country": "Suriname",
+    "country_code": "SR",
+    "police": "115",
+    "ambulance": "115",
+    "fire": "115",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "115",
+      "Ambulance": "113",
+      "Fire": "110"
+    }
+  },
+  {
+    "country": "Sweden",
+    "country_code": "SE",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Non-emergency police": "114 14",
+      "Non-emergency medical advice": "1177",
+      "Information during accidents and crises": "113 13"
+    }
+  },
+  {
+    "country": "Switzerland",
+    "country_code": "CH",
+    "police": "117",
+    "ambulance": "144",
+    "fire": "118",
+    "regional_notes": "Air-Glaciers air-rescue ( Valais only) – 1415; The emergency number 112 is used differently based on the Canton . While in some cantons 112, 117, 118 and 114 are routed to a common emergency call center, in other cantons 112 together with 117 is directly routed to the police",
+    "other": {
+      "Poison control": "145",
+      "Road help": "0800 140 140",
+      "Psychological support": "143",
+      "Psychological support for teens and children": "147",
+      "Rega air rescue": "1414 or by radio on 161.300 MHz",
+      "Air-Glaciers air-rescue ( Valais only)": "1415"
+    }
+  },
+  {
+    "country": "Syria",
+    "country_code": "SY",
+    "police": "112",
+    "ambulance": "110",
+    "fire": "113",
+    "regional_notes": "not available",
+    "other": {
+      "Traffic police": "115"
+    }
+  },
+  {
+    "country": "Taiwan",
+    "country_code": "TW",
+    "police": "110",
+    "ambulance": "119",
+    "fire": "119",
+    "regional_notes": "112 on mobile phones – after call is connected 0 redirects 110 and 9 redirects 119",
+    "other": {
+      "Domestic violence": "113",
+      "Coast guard": "118"
+    }
+  },
+  {
+    "country": "Tajikistan",
+    "country_code": "TJ",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "102",
+      "Ambulance": "103",
+      "Fire": "101",
+      "Gas leaks": "104"
+    }
+  },
+  {
+    "country": "Tanzania",
+    "country_code": "TZ",
+    "police": "112",
+    "ambulance": "114",
+    "fire": "115",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "999",
+      "Health call centre": "199"
+    }
+  },
+  {
+    "country": "Thailand",
+    "country_code": "TH",
+    "police": "191",
+    "ambulance": "1669",
+    "fire": "199",
+    "regional_notes": "Ambulance (Bangkok only) – 1646; Traffic control center (Bangkok Metro only) – 1197; It's been proposed that the number 1669 be discontinued and be replaced with 191 . However, as of 2026, the number 191, 199 and 1669 remain available",
+    "other": {
+      "Ambulance (Bangkok only)": "1646",
+      "Tourist police": "1155",
+      "Traffic control center (Bangkok Metro only)": "1197",
+      "Highway patrol": "1193",
+      "Mobile Phones": "112"
+    }
+  },
+  {
+    "country": "Timor-Leste",
+    "country_code": "TL",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Togo",
+    "country_code": "TG",
+    "police": "117",
+    "ambulance": "8200",
+    "fire": "118",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Tokelau",
+    "country_code": "TK",
+    "police": "(+690) 2116",
+    "ambulance": "(+690) 2112",
+    "fire": "not available",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Tonga",
+    "country_code": "TO",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "922",
+      "Ambulance": "933",
+      "Fire": "999"
+    }
+  },
+  {
+    "country": "Transnistria",
+    "country_code": "XX",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "country_code": "TT",
+    "police": "999 or 911",
+    "ambulance": "811",
+    "fire": "990",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Tristan da Cunha",
+    "country_code": "XX",
+    "police": "999",
+    "ambulance": "911",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Tunisia",
+    "country_code": "TN",
+    "police": "197",
+    "ambulance": "190",
+    "fire": "198",
+    "regional_notes": "not available",
+    "other": {
+      "National guard": "193"
+    }
+  },
+  {
+    "country": "Turkey",
+    "country_code": "TR",
+    "police": "112 or 911 or 153",
+    "ambulance": "112 or 911",
+    "fire": "112 or 911",
+    "regional_notes": "Municipal police – 153 ( 112 connects to national police ); 911 automatically connects to 112; Current service is the result of consolidation of firefighter, emergency police, Gendarmerie , Coast Guard , forest fire, search and rescue, natural disaster and medical emergency numbers into medical emergency former solo number 112",
+    "other": {
+      "Municipal police": "153 ( 112 connects to national police )",
+      "Gas emergency and outages": "187",
+      "Electricity emergency and outages": "186",
+      "Water emergency and outages": "185",
+      "Non-emergency medical consultation": "184",
+      "Child abuse and family violence": "183",
+      "Telephone emergency and outages": "121",
+      "Poison control": "114"
+    }
+  },
+  {
+    "country": "Turkmenistan",
+    "country_code": "TM",
+    "police": "02",
+    "ambulance": "03",
+    "fire": "01",
+    "regional_notes": "For mobile phones",
+    "other": {
+      "Fire": "001",
+      "Police": "002",
+      "Ambulance": "003",
+      "Gas leak": "004",
+      "For gas leaks": "04 on landline"
+    }
+  },
+  {
+    "country": "Turks and Caicos",
+    "country_code": "TC",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Tuvalu",
+    "country_code": "TV",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "911",
+      "Ambulance": "999",
+      "Fire": "000"
+    }
+  },
+  {
+    "country": "Uganda",
+    "country_code": "UG",
+    "police": "112",
+    "ambulance": "911",
+    "fire": "112",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "999",
+      "Fire": "999"
+    }
+  },
+  {
+    "country": "Ukraine",
+    "country_code": "UA",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101",
+    "regional_notes": "not available",
+    "other": {
+      "General emergencies": "112",
+      "Gas emergency": "104"
+    }
+  },
+  {
+    "country": "United Arab Emirates",
+    "country_code": "AE",
+    "police": "999",
+    "ambulance": "998",
+    "fire": "997",
+    "regional_notes": "not available",
+    "other": {
+      "Coast guard": "996",
+      "Non-emergency police": "901",
+      "Water failure": "922",
+      "Electricity failure": "991"
+    }
+  },
+  {
+    "country": "United Kingdom",
+    "country_code": "GB",
+    "police": "999 or 112",
+    "ambulance": "999 or 112",
+    "fire": "999 or 112",
+    "regional_notes": "SMS messages can be sent to 999 after registration by sending a text message with the word 'Register' to 999 . 911 redirects to 999 on mobile phones/public phonebooths and on telephones used in USAFE bases",
+    "other": {
+      "Non-emergency police": "101",
+      "Power outages": "105",
+      "Non-emergency health issues": "111",
+      "COVID-19 testing helpline": "119",
+      "gas leaks": "0800 111 999"
+    }
+  },
+  {
+    "country": "United States of America",
+    "country_code": "US",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "Text-to-9-1-1 is available in many regions and will respond with an error anywhere else; Various services available through regional or national N11 codes (e.g.: 211 and 311 for non-emergency police or city services) in certain areas; Calling #77 from a mobile phone may reach the highway patrol in some states; Calling 112 from a mobile phone may redirect to 911 in some states/localities, but emergency officials recommend callers use the standard 911",
+    "other": {
+      "Suicide hotline": "988"
+    }
+  },
+  {
+    "country": "United States Virgin Islands",
+    "country_code": "VI",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Uruguay",
+    "country_code": "UY",
+    "police": "911",
+    "ambulance": "911",
+    "fire": "911",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "109",
+      "Ambulance": "105",
+      "Fire": "104"
+    }
+  },
+  {
+    "country": "Uzbekistan",
+    "country_code": "UZ",
+    "police": "102",
+    "ambulance": "103",
+    "fire": "101",
+    "regional_notes": "112 is being introduced as the number for all emergencies on 1 January 2024 in Uzbekistan by the end of 2024",
+    "other": {
+      "Emergency service": "1050",
+      "Gas leaks": "104",
+      "Housing and communal services": "1055"
+    }
+  },
+  {
+    "country": "Vanuatu",
+    "country_code": "VU",
+    "police": "111",
+    "ambulance": "112",
+    "fire": "113",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Vatican City",
+    "country_code": "VA",
+    "police": "112",
+    "ambulance": "112",
+    "fire": "112",
+    "regional_notes": "Emergency calls are handled by the Gendarmerie Corps; The Fire Brigade can also be reached at +39 06 698112",
+    "other": {}
+  },
+  {
+    "country": "Venezuela",
+    "country_code": "VE",
+    "police": "911 and 171",
+    "ambulance": "911 and 171",
+    "fire": "911 and 171",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Vietnam",
+    "country_code": "VN",
+    "police": "113",
+    "ambulance": "115",
+    "fire": "114",
+    "regional_notes": "not available",
+    "other": {
+      "Child abuse": "111",
+      "Livesaving services": "112"
+    }
+  },
+  {
+    "country": "Wallis and Futuna",
+    "country_code": "WF",
+    "police": "15",
+    "ambulance": "15",
+    "fire": "15",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Western Sahara",
+    "country_code": "EH",
+    "police": "150",
+    "ambulance": "150",
+    "fire": "150",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Yemen",
+    "country_code": "YE",
+    "police": "194",
+    "ambulance": "191",
+    "fire": "191",
+    "regional_notes": "not available",
+    "other": {}
+  },
+  {
+    "country": "Zambia",
+    "country_code": "ZM",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "911",
+      "Ambulance": "992",
+      "Fire": "993",
+      "Mobile phones": "112"
+    }
+  },
+  {
+    "country": "Zimbabwe",
+    "country_code": "ZW",
+    "police": "999",
+    "ambulance": "999",
+    "fire": "999",
+    "regional_notes": "not available",
+    "other": {
+      "Police": "995",
+      "Ambulance": "994",
+      "Fire": "993",
+      "Mobile phones": "112"
+    }
+  }
+]
