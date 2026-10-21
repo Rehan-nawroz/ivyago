@@ -1,0 +1,15 @@
+---COUNTRY CODE REPORT---
+Total entries processed: 251
+Codes assigned (ISO standard): 194
+Codes assigned (territory/custom): 51
+Entries marked XX (needs review): 6
+
+---ENTRIES MARKED XX---
+Ascension Island
+Clipperton Island
+Northern Cyprus
+South Ossetia
+Transnistria
+Tristan da Cunha
+
+---DONE---
