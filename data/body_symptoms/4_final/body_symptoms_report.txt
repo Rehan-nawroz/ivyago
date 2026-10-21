@@ -1,0 +1,6 @@
+Total scenarios: 192
+CRITICAL entries: 98
+URGENT entries: 63
+MODERATE entries: 31
+Body parts covered: abdomen, arms, back, blood, brain, chest, ears, eyes, feet, hands, head, heart, kidneys, legs, liver, lungs, mouth/throat, neck, nervous system, nose, reproductive system, skin, spine, stomach, urinary system
+Status: READY FOR SQLITE IMPORT
