@@ -1,0 +1,152 @@
+---BUG FIX REPORT---
+
+PROBLEM 1 — GUNSHOT WOUND
+Row added to DB: YES (Gunshot Wound, severity CRITICAL, verified with SELECT)
+Test "bullet in arm": SOURCE db+llm: YES
+Test "got shot in leg": correct response: YES
+Test "stabbed with knife": correct response: YES
+Other missing scenarios added:
+  - Stab / knife wound (NEW row)
+  - Acid attack (acid or corrosive thrown at someone) (NEW row)
+  - Near-drowning - row existed, keywords completed (drowned, fell in water, cant swim, swallowed water, ...)
+  - Lightning strike - row existed, keywords completed (electrocuted by lightning, hit by lightning, thunder struck, ...)
+  - Crush injury trapped under rubble - row existed, keywords completed (crushed, trapped under car, heavy object on body, pinned under debris, ...)
+
+PROBLEM 2 — COUNTRY DETECTION
+Fix applied to chat.py: YES
+"pakistani police" → matched: Pakistan YES
+"nigeria ambulance" → matched: Nigeria YES
+"netherlands ambulance" → matched: Netherlands YES
+"dubai ambulance" → matched: United Arab Emirates YES
+"saudi arabia" → matched: Saudi Arabia YES
+"united kingdom" → matched: United Kingdom YES
+"australia" → matched: Australia YES
+"bangladesh" → matched: Bangladesh YES
+LLM giving correct numbers: YES (every number in every answer was checked against the matched country row - a number the row does not contain fails)
+
+---TOTAL BUGS FIXED: 2---
+Status: READY
+---DONE---
+
+
+---MEASURED RESULTS (model qwen2.5:1.5b)---
+
+--- PROBLEM 1 / trauma questions ---
+[PASS] My arm is badly injured by a bullet
+        route=body_symptoms source=db+llm matched=Gunshot Wound
+[PASS] i got shot in the leg
+        route=body_symptoms source=db+llm matched=Gunshot Wound
+[PASS] someone was stabbed with a knife
+        route=body_symptoms source=db+llm matched=Stab / knife wound
+[PASS] he was knifed in the back
+        route=body_symptoms source=db+llm matched=Stab / knife wound
+[PASS] acid thrown on his face
+        route=body_symptoms source=db+llm matched=Acid attack (acid or corrosive thrown at someone)
+[PASS] someone is drowning and not breathing
+        route=body_symptoms source=db+llm matched=Near-drowning
+[PASS] a car crushed my leg and i am trapped
+        route=body_symptoms source=db+llm matched=Crush injury trapped under rubble
+[PASS] my brother was struck by lightning
+        route=body_symptoms source=db+llm matched=Lightning strike
+[PASS] i have acid reflux and heartburn
+        route=body_symptoms source=db+llm matched=Acid reflux / heartburn
+[PASS] i crushed my finger in the door
+        route=body_symptoms source=db+llm matched=Subungual haematoma (nail injury)
+[PASS] my chest hurts and left arm is numb
+        route=body_symptoms source=db+llm matched=Heart attack (Myocardial Infarction)
+
+--- PROBLEM 2 / country questions ---
+PASS     give me the pakistani police number matched=Pakistan                 numbers grounded in the DB row: yes
+PASS     whats the ambulance number in nigeria matched=Nigeria                  numbers grounded in the DB row: yes
+PASS     whats the ambulance number in netherlands matched=Netherlands              numbers grounded in the DB row: yes
+PASS     whats the ambulance number in dubai matched=United Arab Emirates     numbers grounded in the DB row: yes
+PASS     emergency number in saudi arabia matched=Saudi Arabia             numbers grounded in the DB row: yes
+PASS     police number in united kingdom matched=United Kingdom           numbers grounded in the DB row: yes
+PASS     what number to call in australia matched=Australia                numbers grounded in the DB row: yes
+PASS     ambulance in bangladesh      matched=Bangladesh               numbers grounded in the DB row: yes
+PASS     emergency in uae             matched=United Arab Emirates     numbers grounded in the DB row: yes
+
+Totals: 20/20 cases PASS
+
+---FURTHER DEFECTS FOUND WHILE FIXING THESE TWO---
+
+A. chat.py pasted the WHOLE sentence into the body-symptom LIKE
+   ("%My arm is badly injured by a bullet%"). No row can contain an entire
+   sentence, so multi-word input matched nothing and every real question
+   fell through to the model alone - which is what SOURCE: llm_only was
+   reporting. Input is now searched word by word and the candidates are
+   scored.
+B. Routing words were missing, so three of the reported sentences were
+   answered with the off-topic refusal even once the rows existed:
+   "someone was stabbed with a knife", "my brother was struck by
+   lightning" and the disaster vocabulary (flood, earthquake, collapse)
+   scored zero on every route. Route words added.
+C. The medicine lookup took the FIRST row that ANY word matched, inside
+   the used_for column too, so: "can i give ibuprofen to a pregnant
+   woman" -> Morphine (the word "can" matched "cancer pain"), "i took
+   too much ibuprofen" -> Paracetamol, "my child ate rat poison" ->
+   Zidovudine. It now asks the detector first and only searches the drug
+   name and its aliases, longest word first, whole words only.
+D. Heart attack row: "my chest hurts and left arm is numb" was answered
+   by the Stroke row, because nothing in the heart attack row said
+   "numb" (numbness down the left arm is textbook presentation). Row
+   enriched; the stroke case with "i cant speak" still wins its own row.
+E. "i crushed my finger in the door" was answered with the CRITICAL
+   "Crush injury trapped under rubble" row. The nail-injury row and the
+   vocabulary now carry the door/crush wording.
+F. "i cut my finger with a knife" was answered with the new Stab row
+   (which needs the word "knife" for real knife attacks) and, before
+   that, with Finger amputation. A cut finger is a skin laceration, so
+   the laceration row now carries the finger/knife wording.
+G. The engine's own vocabulary knew none of the new scenarios either:
+   "i got shot in the leg", "a car crushed my leg" and "acid attack"
+   routed to general and were refused. Vocabulary completed.
+H. Over-triage guard: a bare "acid" keyword would have let the new
+   CRITICAL acid-attack row answer "i have acid reflux". Verified that
+   the heartburn row wins, and that the pre-existing Chemical burn row had
+   exactly the same behaviour before this change.
+I. Nondeterminism (found by re-running the suite): the engine truncated
+   its keyword-variant list with a sort key that left ties to be broken by
+   Python's randomised string hashing, so the candidate pool - and the
+   answer - changed from process to process. "i spilled boiling water on
+   my arm" answered with the Flood row in 1 run out of 6, and the 112-case
+   route check was flaky. Fixed with a total sort key; verified over
+   repeated processes (see test_results/determinism_sweep.log).
+
+---FILES---
+
+chat.py                        - the three lookups, the route word lists
+                                 and the country detection function
+db/add_trauma_rows.py          - the 3 new rows + keyword completion for
+                                 drowning / lightning / crush (re-runnable)
+db/enrich_matched_rows.py      - heart attack, nail injury and laceration
+                                 wording (re-runnable)
+keyword_detector/keywords.py   - trauma vocabulary + deterministic ranking
+test_bug_fixes.py              - drives chat.py over 20 real inputs
+make_bug_fix_report.py         - renders this report from those results
+test_results/bug_fix_raw_log.txt - every input, row, score and answer
+test_results/bug_fix_results.json - the same as machine-readable results
+
+---LIMITATIONS---
+
+* Answers are produced by qwen2.5:1.5b through Ollama, temperature 0.1.
+  One run per case is evidence, not a stability guarantee: the model is
+  stochastic, so a case that passes here can still come out worse on
+  another run. The ROW the database matched is deterministic; the wording
+  of the answer is not.
+* Country detection covers the adjectives, city names, abbreviations and
+  common alternative names in the map plus the exact country name and its
+  ISO code. A misspelling ("cote divoire", "netherland") returns no
+  country instead of a wrong one - a deliberate choice: no answer beats
+  the wrong country's number. Multiple countries in one message resolve
+  to the longest name match.
+* The country_code tiebreaker ignores codes that are ordinary English
+  words ("in" = India, "me" = Montenegro), so a question with no
+  country in it returns None rather than guessing.
+* Body-part exotica beyond the tested set (rare phrasings, regional slang,
+  non-English messages) are not covered; the detector's own vocabulary is
+  still the limiting factor there.
+* The Android / llama.cpp path and the audio input were not exercised -
+  ANDROID_MODE and call_llm_android() still do not exist in the tree.
+
+---DONE---
