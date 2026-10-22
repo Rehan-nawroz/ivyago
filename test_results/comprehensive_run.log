@@ -1,0 +1,142 @@
+[OK ]  1/112 body     route=body_symptoms      sev=CRITICAL row=Heart attack (Myocardial Infarction)
+[OK ]  2/112 body     route=body_symptoms      sev=CRITICAL row=Choking / airway obstruction
+[OK ]  3/112 body     route=body_symptoms      sev=CRITICAL row=Coma / reduced consciousness
+[OK ]  4/112 body     route=body_symptoms      sev=CRITICAL row=Seizure
+[OK ]  5/112 body     route=body_symptoms      sev=CRITICAL row=Stroke
+[OK ]  6/112 body     route=body_symptoms      sev=CRITICAL row=Stroke
+[OK ]  7/112 body     route=body_symptoms      sev=CRITICAL row=Infant Cardiac Arrest / Respiratory Arrest
+[OK ]  8/112 body     route=body_symptoms      sev=CRITICAL row=Choking / airway obstruction
+[OK ]  9/112 body     route=body_symptoms      sev=CRITICAL row=Near-drowning
+[OK ] 10/112 body     route=body_symptoms      sev=CRITICAL row=Anaphylaxis with throat swelling
+[OK ] 11/112 body     route=body_symptoms      sev=URGENT   row=Hand burns
+[OK ] 12/112 body     route=body_symptoms      sev=CRITICAL row=Deep skin laceration
+[OK ] 13/112 body     route=body_symptoms      sev=URGENT   row=Leg fracture
+[OK ] 14/112 body     route=body_symptoms      sev=CRITICAL row=Concussion / head injury
+[OK ] 15/112 body     route=body_symptoms      sev=URGENT   row=Cauda equina syndrome / spinal emergency
+[OK ] 16/112 body     route=body_symptoms      sev=URGENT   row=Neck injury / spinal cord injury
+[OK ] 17/112 body     route=body_symptoms      sev=CRITICAL row=Electric shock / electrocution
+[OK ] 18/112 body     route=body_symptoms      sev=CRITICAL row=Anaphylaxis with throat swelling
+[OK ] 19/112 body     route=body_symptoms      sev=URGENT   row=Chemical eye injury
+[OK ] 20/112 body     route=body_symptoms      sev=URGENT   row=Peptic ulcer
+[OK ] 21/112 body     route=body_symptoms      sev=CRITICAL row=Hypoglycaemia (severe low blood sugar / diabetic coma)
+[OK ] 22/112 body     route=body_symptoms      sev=URGENT   row=Miscarriage with heavy bleeding
+[OK ] 23/112 body     route=body_symptoms      sev=URGENT   row=Panic attack
+[OK ] 24/112 body     route=body_symptoms      sev=URGENT   row=Suicidal thoughts / mental health crisis
+[OK ] 25/112 body     route=body_symptoms      sev=CRITICAL row=Heat stroke
+[OK ] 26/112 body     route=body_symptoms      sev=CRITICAL row=Hypothermia (dangerously low body temperature)
+[OK ] 27/112 body     route=body_symptoms      sev=CRITICAL row=Snake bite / venomous animal bite
+[OK ] 28/112 body     route=body_symptoms      sev=URGENT   row=Dog bite or animal bite wound
+[OK ] 29/112 body     route=body_symptoms      sev=URGENT   row=Insect sting (bee, wasp, scorpion) with swelling
+[OK ] 30/112 body     route=body_symptoms      sev=CRITICAL row=Near-drowning
+[OK ] 31/112 medicine route=medicines          sev=CRITICAL row=Paracetamol
+[OK ] 32/112 medicine route=medicines          sev=MODERATE row=Ibuprofen
+[OK ] 33/112 medicine route=medicines          sev=MODERATE row=Aspirin
+[OK ] 34/112 medicine route=medicines          sev=CRITICAL row=Zolpidem
+[OK ] 35/112 medicine route=body_symptoms      sev=URGENT   row=Caustic ingestion (swallowed bleach, drain cleaner or acid)
+[OK ] 36/112 medicine route=body_symptoms      sev=CRITICAL row=Rodenticide (rat poison) poisoning
+[OK ] 37/112 medicine route=medicines          sev=CRITICAL row=Metformin
+[OK ] 38/112 medicine route=medicines          sev=CRITICAL row=Warfarin
+[OK ] 39/112 medicine route=medicines          sev=MODERATE row=Insulin glargine
+[OK ] 40/112 medicine route=medicines          sev=MODERATE row=Diazepam
+[OK ] 41/112 medicine route=medicines          sev=MODERATE row=Ibuprofen
+[OK ] 42/112 medicine route=body_symptoms      sev=CRITICAL row=Drug overdose by ingestion (swallowed pills or unknown medicine)
+[OK ] 43/112 medicine route=medicines          sev=MODERATE row=Tetracycline
+[OK ] 44/112 medicine route=body_symptoms      sev=CRITICAL row=Opioid overdose (heroin, fentanyl, strong painkillers)
+[OK ] 45/112 medicine route=medicines          sev=MODERATE row=Amitriptyline
+[OK ] 46/112 disaster route=body_symptoms      sev=CRITICAL row=Earthquake (building collapse / trapped)
+[OK ] 47/112 disaster route=body_symptoms      sev=CRITICAL row=Crush injury trapped under rubble
+[OK ] 48/112 disaster route=body_symptoms      sev=CRITICAL row=Flood / rising flood water
+[OK ] 49/112 disaster route=body_symptoms      sev=CRITICAL row=Wildfire / forest fire approaching
+[OK ] 50/112 disaster route=body_symptoms      sev=CRITICAL row=Carbon monoxide poisoning (faulty heaters, fires, or exhaust)
+[OK ] 51/112 disaster route=body_symptoms      sev=CRITICAL row=Building fire / how to escape
+[OK ] 52/112 disaster route=body_symptoms      sev=URGENT   row=Near-drowning
+[OK ] 53/112 disaster route=body_symptoms      sev=CRITICAL row=Tornado / severe storm
+[OK ] 54/112 disaster route=body_symptoms      sev=CRITICAL row=Tsunami
+[OK ] 55/112 disaster route=body_symptoms      sev=CRITICAL row=Landslide / mudslide
+[OK ] 56/112 disaster route=body_symptoms      sev=CRITICAL row=Chemical spill / toxic gas release
+[OK ] 57/112 disaster route=body_symptoms      sev=CRITICAL row=Downed / live power lines
+[OK ] 58/112 disaster route=body_symptoms      sev=URGENT   row=Lost / stranded in the mountains or wilderness
+[OK ] 59/112 disaster route=body_symptoms      sev=CRITICAL row=Lightning strike
+[OK ] 60/112 number   route=emergency_numbers  sev=URGENT   row=Pakistan
+        note: verified number(s) ['1122', '115', '15', '16'] present
+[OK ] 61/112 number   route=emergency_numbers  sev=URGENT   row=India
+        note: verified number(s) ['112'] present
+[OK ] 62/112 number   route=emergency_numbers  sev=URGENT   row=United Kingdom
+        note: verified number(s) ['112', '999'] present
+[OK ] 63/112 number   route=emergency_numbers  sev=URGENT   row=Australia
+        note: verified number(s) ['000'] present
+[OK ] 64/112 number   route=emergency_numbers  sev=URGENT   row=United States of America
+        note: verified number(s) ['911'] present
+[OK ] 65/112 number   route=emergency_numbers  sev=URGENT   row=Germany
+        note: verified number(s) ['110', '112'] present
+[OK ] 66/112 number   route=emergency_numbers  sev=URGENT   row=France
+        note: verified number(s) ['112', '15', '17', '18'] present
+[OK ] 67/112 number   route=emergency_numbers  sev=URGENT   row=Saudi Arabia
+        note: verified number(s) ['911'] present
+[OK ] 68/112 number   route=emergency_numbers  sev=URGENT   row=United Arab Emirates
+        note: verified number(s) ['997', '998', '999'] present
+[OK ] 69/112 number   route=emergency_numbers  sev=URGENT   row=Nigeria
+        note: verified number(s) ['112'] present
+[OK ] 70/112 number   route=emergency_numbers  sev=URGENT   row=Canada
+        note: verified number(s) ['911'] present
+[OK ] 71/112 number   route=emergency_numbers  sev=URGENT   row=Bangladesh
+        note: verified number(s) ['999'] present
+[OK ] 72/112 number   route=emergency_numbers  sev=URGENT   row=Pakistan
+        note: verified number(s) ['1122', '115', '15'] present
+[OK ] 73/112 number   route=emergency_numbers  sev=URGENT   row=Turkey
+        note: verified number(s) ['112', '153', '911'] present
+[OK ] 74/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 75/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 76/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 77/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 78/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 79/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 80/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 81/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 82/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 83/112 offtopic route=general            sev=UNKNOWN  row=(none)
+[OK ] 84/112 body     route=body_symptoms      sev=CRITICAL row=Sepsis / septicaemia
+[OK ] 85/112 body     route=body_symptoms      sev=URGENT   row=Ear bleeding / CSF leak after head injury
+[OK ] 86/112 body     route=body_symptoms      sev=URGENT   row=Severe nosebleed
+[OK ] 87/112 body     route=body_symptoms      sev=URGENT   row=Knocked-out tooth (dental avulsion)
+[OK ] 88/112 body     route=body_symptoms      sev=URGENT   row=Meningitis (neck stiffness)
+[OK ] 89/112 body     route=body_symptoms      sev=URGENT   row=Haematuria (blood in urine)
+[OK ] 90/112 body     route=body_symptoms      sev=URGENT   row=Scald burn from hot liquid or steam
+[OK ] 91/112 body     route=body_symptoms      sev=URGENT   row=Seizure
+[OK ] 92/112 body     route=body_symptoms      sev=URGENT   row=Prolapsed umbilical cord
+[OK ] 93/112 body     route=body_symptoms      sev=URGENT   row=Bradycardia (slow heart rate)
+[OK ] 94/112 body     route=body_symptoms      sev=URGENT   row=Deep skin laceration
+[OK ] 95/112 body     route=body_symptoms      sev=URGENT   row=Stroke (arm weakness)
+[OK ] 96/112 body     route=body_symptoms      sev=URGENT   row=Ear infection (otitis media)
+[OK ] 97/112 body     route=body_symptoms      sev=URGENT   row=Ankle sprain
+[OK ] 98/112 body     route=body_symptoms      sev=URGENT   row=Seizure
+[OK ] 99/112 body     route=body_symptoms      sev=CRITICAL row=Alcohol poisoning (dangerous blood alcohol level)
+[OK ] 100/112 body     route=body_symptoms      sev=URGENT   row=Retinal artery occlusion / sudden vision loss
+[OK ] 101/112 body     route=body_symptoms      sev=URGENT   row=Spinal fracture
+[OK ] 102/112 body     route=body_symptoms      sev=CRITICAL row=Peritonitis
+[OK ] 103/112 medicine route=medicines          sev=CRITICAL row=Zolpidem
+[OK ] 104/112 medicine route=medicines          sev=MODERATE row=Aspirin
+[OK ] 105/112 medicine route=medicines          sev=MODERATE row=Paracetamol
+[OK ] 106/112 medicine route=medicines          sev=MODERATE row=Atenolol
+[OK ] 107/112 medicine route=medicines          sev=CRITICAL row=Morphine
+[OK ] 108/112 number   route=emergency_numbers  sev=URGENT   row=Philippines
+        note: verified number(s) ['911'] present
+[OK ] 109/112 number   route=emergency_numbers  sev=URGENT   row=South Africa
+        note: verified number(s) ['10', '111', '177'] present
+[OK ] 110/112 number   route=emergency_numbers  sev=URGENT   row=United States of America
+        note: verified number(s) ['911'] present
+[OK ] 111/112 number   route=emergency_numbers  sev=URGENT   row=United Kingdom
+        note: verified number(s) ['112', '999'] present
+[OK ] 112/112 number   route=emergency_numbers  sev=URGENT   row=Lebanon
+        note: verified number(s) ['112', '140', '175', '999'] present
+
+raw log -> C:\Users\Rana\Documents\ivyago-DB\emergency-ai\test_results\comprehensive_raw_log.txt
+
+CATEGORY     YES  PART    NO  TOTAL
+body          49     0     0     49
+medicine      20     0     0     20
+disaster      14     0     0     14
+number        19     0     0     19
+offtopic      10     0     0     10
+
+TOTAL: 112/112 YES in 756.1s (6.8s per case)
