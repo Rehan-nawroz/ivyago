@@ -1,0 +1,23 @@
+GENERIC-SYMPTOM SWEEP - BEFORE vs AFTER (routes only, no LLM)
+before: 2026-10-22 (original pre-fix run)   6/15 passed
+after:  2026-10-22T11:06:00   15/15 passed
+
+CASE                       ROUTE before -> after              TOP ROW before -> after                VERDICT
+------------------------------------------------------------------------------------------------------------------------
+med_for_headache           body_symptoms -> medicines         Hypertensive cris -> Paracetamol       FIXED
+headache_plain             body_symptoms -> body_symptoms     Hypertensive cris -> Migraine headache FIXED
+head_hurts                 body_symptoms -> body_symptoms     Meningitis (CRITI -> Concussion / head FIXED
+dizzy                      body_symptoms -> body_symptoms     Carbon monoxide p -> Bradycardia (slow FIXED
+fever                      body_symptoms -> body_symptoms     Sepsis / septicae -> Pneumonia (URGENT FIXED
+vomiting                   body_symptoms -> body_symptoms     Haematemesis (vom -> Gastroenteritis ( FIXED
+stomach_pain               body_symptoms -> body_symptoms     Peptic ulcer (URG -> Peptic ulcer (URG OK (unchanged)
+weakness                   body_symptoms -> body_symptoms     Cardiogenic shock -> Weakness / fatigu FIXED
+sore_throat                body_symptoms -> body_symptoms     Epiglottitis (CRI -> Persistent hoarse FIXED
+rash                       body_symptoms -> body_symptoms     Allergic contact  -> Allergic contact  FIXED
+worst_headache             body_symptoms -> body_symptoms     Hypertensive cris -> Hypertensive cris OK (unchanged)
+headache_stiffneck_fever   body_symptoms -> body_symptoms     Meningitis (neck  -> Meningitis (neck  OK (unchanged)
+thunderclap                body_symptoms -> body_symptoms     Subarachnoid hemo -> Subarachnoid hemo OK (unchanged)
+chest_pain_breathless      body_symptoms -> body_symptoms     Heart attack (Myo -> Heart attack (Myo OK (unchanged)
+named_drug_overdose        medicines -> medicines             Paracetamol -> Paracetamol             OK (unchanged)
+------------------------------------------------------------------------------------------------------------------------
+before total: 6/15   after total: 15/15   regressions: 0
