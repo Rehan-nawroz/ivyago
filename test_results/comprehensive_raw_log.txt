@@ -1,7 +1,7 @@
 ---COMPREHENSIVE RAW LOG---
 mode: full
 cases: 112
-seconds: 756.1
+seconds: 747.3
 
 ------------------------------------------------------------
 INPUT: my chest hurts and left arm is numb
@@ -12,11 +12,11 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. **Emergency - ACT NOW**
-- Call emergency services immediately.
-- Have the person sit or lie down and loosen tight clothing.
-- If available and not allergic, give one adult aspirin (325mg) to chew slowly.
-- Stay with them until help arrives.
+EMERGENCY - ACT NOW
+1. Call emergency services immediately.
+2. Have the person sit or lie down and loosen tight clothing.
+3. If available and not allergic, give one adult aspirin (325mg) to chew slowly.
+4. Stay with them until help arrives.
 ------------------------------------------------------------
 INPUT: i cant breathe
 CATEGORY: body
@@ -69,9 +69,6 @@ EMERGENCY - ACT NOW
 2. Note the time symptoms began.
 3. Keep the person still and give nothing by mouth.
 4. Remember FAST: Face, Arms, Speech, Time.
-5. Do not give aspirin without medical instruction.
-6. Do not let them eat or drink.
-7. Do not wait to see if it passes.
 ------------------------------------------------------------
 INPUT: my face is drooping on one side
 CATEGORY: body
@@ -123,8 +120,11 @@ SOURCE: db+llm
 RESULT: YES
 RESPONSE:
 EMERGENCY - ACT NOW
-1. CALL EMERGENCY SERVICES AND START CPR WITH REScue Breaths IF TRAINED.
-2. IF BREATHING, PLACE IN THE RECOVERY POSITION AND KEEP THEM WARM.
+1. Call emergency services immediately.
+2. Start CPR with rescue breaths if trained.
+3. If breathing, place the person in the recovery position.
+4. Keep the person warm.
+5. If the person vomits, clear the mouth and continue CPR.
 ------------------------------------------------------------
 INPUT: severe allergic reaction swollen throat
 CATEGORY: body
@@ -136,6 +136,7 @@ RESULT: YES
 RESPONSE:
 1. Use an adrenaline autoinjector into the outer thigh at once if available.
 2. Call emergency services immediately.
+3. Lay the person flat with legs raised if breathing allows.
 ------------------------------------------------------------
 INPUT: i burned my hand on the stove
 CATEGORY: body
@@ -157,7 +158,6 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
 1. Apply firm direct pressure to the deep cut.
 2. Raise the area if possible.
 3. Seek medical help for stitches if the wound is deep or gaping.
@@ -171,8 +171,8 @@ SOURCE: db+llm
 RESULT: YES
 RESPONSE:
 1. Find a safe place to immobilize the leg.
-2. Apply a cold pack to reduce swelling and pain.
-3. Keep the person still until medical help arrives.
+2. Apply a cold pack to the leg.
+3. Keep the person still until help arrives.
 ------------------------------------------------------------
 INPUT: someone hit their head and is confused
 CATEGORY: body
@@ -183,7 +183,7 @@ SOURCE: db+llm
 RESULT: YES
 RESPONSE:
 1. Keep the person resting.
-2. Stay with them.
+2. Stay with the person.
 3. Watch for worsening drowsiness, vomiting, or confusion.
 4. Seek medical care the same day.
 ------------------------------------------------------------
@@ -195,8 +195,11 @@ SEVERITY: URGENT
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. Go to an emergency department IMMEDIATELY.
+1. Go to an emergency department immediately.
 2. Keep the person still and note when bladder or bowel control was lost.
+3. Do not wait for the pain to settle.
+4. Do not let them bend or lift.
+5. Do not treat it as ordinary back pain.
 ------------------------------------------------------------
 INPUT: i think i broke my neck
 CATEGORY: body
@@ -245,8 +248,10 @@ SOURCE: db+llm
 RESULT: YES
 RESPONSE:
 1. Call emergency services immediately.
-2. Irrigate the eye with clean water or saline for at least 15-20 minutes.
-3. Hold the lids open.
+2. Irrigate the eye with clean water or saline for at least 15-20 minutes, holding the lids open.
+3. Do not rub the eye.
+4. Do not try to neutralize the chemical.
+5. Do not stop rinsing to wait for help.
 ------------------------------------------------------------
 INPUT: i have severe stomach pain
 CATEGORY: body
@@ -362,11 +367,12 @@ SEVERITY: URGENT
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1) Control the bleeding by pressing firmly on the wound with a clean cloth.
-2) Once bleeding slows, wash the wound with running water and soap for at least 15 minutes.
-3) Cover it with a clean, dry dressing.
-4) Go to a clinic the same day: a tetanus booster and rabies vaccination may be needed.
-5) Note the animal and whether it is known, and report the bite to the local authority.
+1. Control the bleeding by pressing firmly on the wound with a clean cloth.
+2. Once bleeding slows, wash the wound with running water and soap for at least 15 minutes.
+3. Cover it with a clean, dry dressing.
+4. Go to a clinic the same day.
+5. A tetanus booster and rabies vaccination may be needed.
+6. Note the animal and whether it is known, and report the bite to the local authority.
 ------------------------------------------------------------
 INPUT: i got stung by something and arm is swelling
 CATEGORY: body
@@ -390,6 +396,7 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
+EMERGENCY - ACT NOW
 1. Call emergency services immediately.
 2. Start CPR with rescue breaths if trained.
 3. If breathing, place the person in the recovery position.
@@ -423,8 +430,10 @@ RESPONSE:
 1. Call emergency services or poison control immediately.
 2. Go to the hospital.
 3. Do NOT induce vomiting unless told to.
-4. Do NOT use any other NSAIDs or aspirin.
-5. Take with food.
+4. Do NOT consume any more ibuprofen.
+5. Do NOT take other NSAIDs or aspirin.
+6. Do NOT combine ibuprofen with other NSAIDs or aspirin.
+7. Do NOT take with food.
 ------------------------------------------------------------
 INPUT: child swallowed adult aspirin
 CATEGORY: medicine
@@ -434,11 +443,14 @@ SEVERITY: MODERATE
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-Aspirin
-Pregnancy: Not established as safe -- consult a doctor.
-Maximum adult dose: 325-650mg every 4-6 hours for pain (max 4g per 24 hours); 75-100mg daily for heart protection
-If too much was taken: Call emergency services immediately. Go to hospital for blood monitoring and possible dialysis. Do NOT induce vomiting unless told to.
-Warnings: Never give to children or teenagers with fever or flu-like illness (Reye's syndrome). Increases bleeding. Avoid with stomach ulcers. Not during labor.
+1. **Stop the child from eating the aspirin**.
+2. **Call emergency services** immediately.
+3. **Go to the hospital** for blood monitoring and possible dialysis.
+4. **Do NOT induce vomiting** unless told to.
+5. **Do NOT give aspirin to children or teenagers with fever or flu-like illness (Reye's syndrome).**
+6. **Increase bleeding** if the child has a fever or viral illness.
+7. **Avoid with stomach ulcers**.
+8. **Do not give aspirin to children or teenagers during labor**.
 ------------------------------------------------------------
 INPUT: i took too many sleeping pills
 CATEGORY: medicine
@@ -452,7 +464,7 @@ RESPONSE:
 2. Keep airway open.
 3. Lay the person on their side.
 4. Administer flumazenil if the person cannot be woken or breathes slowly.
-5. Do not combine with alcohol.
+5. Call emergency services again if the person's breathing is slow or does not improve.
 ------------------------------------------------------------
 INPUT: someone drank bleach
 CATEGORY: medicine
@@ -491,12 +503,11 @@ RESULT: YES
 RESPONSE:
 1. Go to the nearest hospital immediately.
 2. Dial 911 for emergency services.
-3. Inform the emergency services of the overdose.
-4. Have the person lie down and elevate their legs.
-5. Administer a hemodialysis if indicated.
-6. Have the person rest in a comfortable position.
-7. Monitor the person's condition closely.
-8. Follow up with the emergency services for further instructions.
+3. Inform the medical personnel about the overdose.
+4. Have the patient lie down and rest.
+5. Administer hemodialysis if indicated.
+6. Monitor the patient's condition closely.
+7. Follow up with the medical personnel for further instructions.
 ------------------------------------------------------------
 INPUT: what is the antidote for warfarin overdose
 CATEGORY: medicine
@@ -534,7 +545,11 @@ SEVERITY: MODERATE
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-You should know that mixing alcohol with Diazepam can lead to a dangerous overdose. This combination is known to cause deep drowsiness, confusion, slurred speech, unsteadiness, breathing depression, and even death. If you suspect someone has an overdose, call emergency services immediately. If the person is hard to wake or breathing slowly, give flumazenil (hospital) — but only professionals use it. Keep airway open and lay the person on their side. Do not give flumazenil to someone who is hard to wake or breathing slowly. Diazepam is not recommended for use in children. It is not safe to use in pregnant women. It is not recommended to use this combination for long periods of time. It can impair driving for many hours. Always consult a doctor before using this combination.
+Diazepam
+Pregnancy: Not established as safe -- consult a doctor.
+Maximum adult dose: 2-10mg, 2-4 times daily depending on condition (max 30mg per 24 hours anxiety; 60mg muscle spasm under supervision)
+If too much was taken: Call emergency services IMMEDIATELY if the person is hard to wake or breathing slowly. Give flumazenil (hospital) — but only professionals use it. Keep airway open, lay on side.
+Warnings: Extremely habit-forming. NEVER combine with alcohol, opioids, or other sedatives — this combination kills. Do not stop suddenly after long use — seizures and hallucinations possible. Impairs driving for many hours.
 ------------------------------------------------------------
 INPUT: can i give ibuprofen to a pregnant woman
 CATEGORY: medicine
@@ -570,11 +585,18 @@ SEVERITY: MODERATE
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-Tetracycline
-Pregnancy: NOT safe in pregnancy (verified) -- avoid.
-Maximum adult dose: 250-500mg every 6 hours
-If too much was taken: Call poison control. Do NOT induce vomiting unless told to. NEVER use expired tetracycline — discard. Supportive care.
-Warnings: Expired capsules can cause kidney damage (Fanconi syndrome). Avoid milk, antacids, iron within 2 hours. Strong photosensitivity. Not for children under 8 or pregnancy.
+1. Expiration warning: The medicine is expired and should not be taken.
+2. Expiration action: Do not induce vomiting unless told to.
+3. Expiration use: NEVER use expired tetracycline.
+4. Expiration support: Supportive care.
+5. Expiration antidote: None specific.
+6. Expiration maximum: 250-500mg every 6 hours.
+7. Expiration pregnancy: NOT safe in pregnancy (verified).
+8. Expiration maximum child: NOT FOR CHILDREN under 8 years.
+9. Expiration warnings: Expired capsules can cause kidney damage (Fanconi syndrome).
+10. Expiration warnings: Avoid milk, antacids, iron within 2 hours.
+11. Expiration warnings: Strong photosensitivity.
+12. Expiration warnings: NOT for children under 8 or pregnancy.
 ------------------------------------------------------------
 INPUT: someone overdosed on opioids not breathing
 CATEGORY: medicine
@@ -610,12 +632,10 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. Drop to hands and knees.
-2. Take cover under a sturdy table.
-3. Hold on until the shaking stops.
-4. If you are outdoors, move to open ground away from buildings, walls, trees and power lines.
-5. If you are trapped, cover your mouth with cloth and tap on a pipe or wall so rescuers can hear you.
-6. Treat bleeding with firm pressure and keep the person warm.
+1. Drop to hands and knees, take cover under a sturdy table and hold on until the shaking stops.
+2. If you are outdoors, move to open ground away from buildings, walls, trees and power lines.
+3. If you are trapped, cover your mouth with cloth and tap on a pipe or wall so rescuers can hear you.
+4. Treat bleeding with firm pressure and keep the person warm.
 ------------------------------------------------------------
 INPUT: i am trapped under rubble
 CATEGORY: disaster
@@ -639,9 +659,10 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-Condition: Flood / rising flood water
-Do this now: 1) Move to higher ground immediately - do not wait to be told. 2) If you are in a building, go to the highest floor and take water, food and a torch. 3) Signal for help from a window or roof. 4) If you must cross water, it is safer to walk on higher ground than through it.
-Do NOT: Do not walk or drive through moving water - 15 cm of moving water can knock an adult down. Do not touch electrical equipment if it is wet. Do not drink flood water. Do not swim to help someone unless you are trained and have a float.
+1) Move to higher ground immediately - do not wait to be told.
+2) If you are in a building, go to the highest floor and take water, food, and a torch.
+3) Signal for help from a window or roof.
+4) If you must cross water, it is safer to walk on higher ground than through it.
 ------------------------------------------------------------
 INPUT: there is a wildfire near my house
 CATEGORY: disaster
@@ -651,10 +672,10 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. Leave early, before the fire arrives - follow the evacuation route away from the fire, not with the wind.
-2. Close all windows and doors and turn off gas.
-3. Cover your nose and mouth with a damp cloth and stay low under the smoke.
-4. If you are trapped, go to a cleared area or a large open space and call emergency services with your location.
+1) Leave early, before the fire arrives - follow the evacuation route away from the fire, not with the wind.
+2) Close all windows and doors and turn off gas.
+3) Cover your nose and mouth with a damp cloth and stay low under the smoke.
+4) If you are trapped, go to a cleared area or a large open space and call emergency services with your location.
 ------------------------------------------------------------
 INPUT: there is a gas leak in my house
 CATEGORY: disaster
@@ -732,10 +753,10 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. Move out of the path of the slide - go to the nearest high, stable ground away from the slope.
-2. If escape is impossible, curl into a ball and protect your head with your arms.
-3. Once clear, stay away from the slide area and report anyone missing.
-4. Treat injuries the usual way - control bleeding and keep the person warm.
+1) Move out of the path of the slide - go to the nearest high, stable ground away from the slope.
+2) If escape is impossible, curl into a ball and protect your head with your arms.
+3) Once clear, stay away from the slide area and report anyone missing.
+4) Treat injuries the usual way - control bleeding and keep the person warm.
 ------------------------------------------------------------
 INPUT: there is a chemical spill near me
 CATEGORY: disaster
@@ -759,12 +780,11 @@ SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. Stay at least 10 metres away from the downed power lines.
-2. Keep everyone else back from the downed power lines.
-3. Treat every wire as live, even if it looks dead.
-4. If the wire is on a vehicle, tell the people inside to stay in the car and wait for help.
-5. Call emergency services and the electricity company and warn passers-by.
-6. If someone is in contact with a wire, do not touch them until the power is off.
+1. Stay at least 10 metres away and keep everyone else back.
+2. Treat every wire as live, even if it looks dead.
+3. If the wire is on a vehicle, tell the people inside to stay in the car and wait for help.
+4. Call emergency services and the electricity company and warn passers-by.
+5. If someone is in contact with a wire, do not touch them until the power is off.
 ------------------------------------------------------------
 INPUT: i am lost in the mountains
 CATEGORY: disaster
@@ -803,7 +823,9 @@ SOURCE: db+llm
 RESULT: YES
 NOTE: verified number(s) ['1122', '115', '15', '16'] present
 RESPONSE:
-Police: 15 | Ambulance: 115 and 1122 | Fire: 16
+15 for police
+115 and 1122 for ambulance
+16 for fire
 ------------------------------------------------------------
 INPUT: ambulance number in india
 CATEGORY: number
@@ -838,7 +860,7 @@ SOURCE: db+llm
 RESULT: YES
 NOTE: verified number(s) ['000'] present
 RESPONSE:
-Fire: 000, Police: 000, Ambulance: 000
+Call Australia: police 000, ambulance 000, fire 000.
 ------------------------------------------------------------
 INPUT: emergency number in united states
 CATEGORY: number
@@ -849,7 +871,7 @@ SOURCE: db+llm
 RESULT: YES
 NOTE: verified number(s) ['911'] present
 RESPONSE:
-Call United States of America: police 911, ambulance 911, fire 911.
+Police: 911 | Ambulance: 911 | Fire: 911
 ------------------------------------------------------------
 INPUT: rescue number in germany
 CATEGORY: number
@@ -895,7 +917,9 @@ SOURCE: db+llm
 RESULT: YES
 NOTE: verified number(s) ['997', '998', '999'] present
 RESPONSE:
-Country: United Arab Emirates | Police: 999 | Ambulance: 998 | Fire: 997 | Emergency: 112
+1. Police: 999
+2. Ambulance: 998
+3. Fire: 997
 ------------------------------------------------------------
 INPUT: what number do i call in nigeria
 CATEGORY: number
@@ -1078,9 +1102,6 @@ RESPONSE:
 1. Call emergency services immediately.
 2. Cover the ear lightly with a clean pad.
 3. Keep the head still and level.
-4. Do not plug the ear canal.
-5. Do not put anything inside the ear.
-6. Do not move the head or neck.
 ------------------------------------------------------------
 INPUT: she has a nosebleed that wont stop
 CATEGORY: body
@@ -1091,7 +1112,7 @@ SOURCE: db+llm
 RESULT: YES
 RESPONSE:
 1. Pinch continuously for 10-15 minutes.
-2. Go to an emergency department immediately.
+2. Go to an emergency department.
 3. Keep the person sitting upright and calm.
 4. Do not tilt the head back.
 5. Do not swallow blood - spit it out.
@@ -1130,10 +1151,12 @@ SEVERITY: URGENT
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-1. Take a urine sample for testing.
+1. Take the user's urine to a doctor as soon as possible.
 2. Drink plenty of fluids to help flush out the blood.
 3. Note any clots or pain in the urinary tract.
-4. Seek medical attention promptly.
+4. Do not ignore blood in urine.
+5. Do not take blood thinners without advice.
+6. Do not delay assessment.
 ------------------------------------------------------------
 INPUT: i spilled boiling water on my arm
 CATEGORY: body
@@ -1172,8 +1195,6 @@ RESPONSE:
 1. Call emergency services IMMEDIATELY.
 2. Have the woman kneel or lie with the hips raised (knee-chest or head-down).
 3. Do NOT push the cord back.
-4. Do NOT let the woman sit or walk.
-5. Do not delay - the baby needs urgent delivery.
 ------------------------------------------------------------
 INPUT: i feel very dizzy and my heart is racing
 CATEGORY: body
@@ -1185,9 +1206,6 @@ RESULT: YES
 RESPONSE:
 1. Lay the person down with the legs raised.
 2. Call emergency services if they faint or feel very unwell.
-3. Do not give stimulants to speed the heart.
-4. Do not let them stand up quickly.
-5. Do not delay if they faint.
 ------------------------------------------------------------
 INPUT: i cut my finger with a knife
 CATEGORY: body
@@ -1294,25 +1312,22 @@ RESULT: YES
 RESPONSE:
 1. Call emergency services immediately.
 2. Immobilize the spine, keeping the person flat and still until help arrives.
-3. Keep the person in a supine position until medical help arrives.
+3. Keep the person in a head-down, neck-level position until help arrives.
 4. Do not move the person.
-5. Do not let the person sit or walk.
+5. Do not let them sit or walk.
 6. Do not remove a helmet.
 ------------------------------------------------------------
 INPUT: i have a deep wound in my stomach after a stabbing
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
-DB ROW MATCHED: Peritonitis
+DB ROW MATCHED: Abdominal aortic aneurysm rupture
 SEVERITY: CRITICAL
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
 1. Call emergency services immediately.
-2. Keep the person lying still with the knees slightly bent and give nothing by mouth.
-3. Do not give food or drink.
-4. Do not give painkillers by mouth.
-5. Do not press repeatedly on the abdomen.
+2. Keep the person lying still and flat.
+3. Keep them warm.
 ------------------------------------------------------------
 INPUT: i took my whole bottle of sleeping tablets
 CATEGORY: medicine
@@ -1325,8 +1340,8 @@ RESPONSE:
 1. Call emergency services immediately.
 2. Keep airway open.
 3. Lay the person on their side.
-4. Administer flumazenil (hospital-only) as directed.
-5. Monitor the person's breathing and alert the emergency services if necessary.
+4. Administer flumazenil if the person cannot be woken or breathes slowly.
+5. Call emergency services again if the person's breathing is slow or irregular.
 ------------------------------------------------------------
 INPUT: is it safe to take aspirin during pregnancy
 CATEGORY: medicine
@@ -1356,22 +1371,18 @@ SEVERITY: MODERATE
 SOURCE: db+llm
 RESULT: YES
 RESPONSE:
-If your child ingested Atenolol tablets, it's important to act quickly. Here's what you should know:
-1. **Immediate Action**: Call emergency services immediately if your child faints or experiences any of the following symptoms:
-- Very slow heart rate
-- Low blood pressure
-- Dizziness
-- Tiredness
-- Breathing difficulty in asthmatics
-- Heart block
-2. **Hospital Monitoring**: If your child faints, hospital monitoring is crucial. Atropine and glucagon may be given to help stabilize the heart rate. Do NOT induce vomiting unless told to.
-3. **Antidote**: Glucagon and atropine are used in hospital to help control heart rate and blood pressure. High-dose insulin is also used in severe cases.
-4. **Maximum Adult Dose**: 50-100mg once daily. This is the maximum dose for adults.
-5. **Pregnancy**: Not established as safe for pregnant women. Consult a doctor.
-6. **Maximum Child Dose**: NOT FOR CHILDREN (specialist dosing only). This is the maximum dose for children.
-7. **Warnings**: Never stop suddenly — rebound angina and heart attack risk (taper 1-2 weeks). Caution in asthma, diabetes, poor circulation, and poor circulation.
-8. **Check Pulse Daily**: Do not take if under 50-55 bpm without advice.
-Remember, these are general guidelines and should be followed by a healthcare professional.
+If your child ingested your blood pressure tablets, you should be aware of the following:
+1. **Immediate Medical Attention**: Your child should be taken to the emergency room immediately. Symptoms such as very slow heart rate, low blood pressure, dizziness, tiredness, breathing difficulty in asthmatics, heart block, and heart attack risk are potential signs of a severe overdose.
+2. **Call Emergency Services**: If your child faints, call emergency services immediately. This is a critical step in the emergency response.
+3. **Hospital Monitoring**: Hospital monitoring is recommended. Atropine and glucagon may be given to manage the symptoms.
+4. **Do NOT Induce Vomiting**: Do not induce vomiting unless told to. This can lead to rebound angina and heart attack risk.
+5. **Glucagon and Atropine**: Glucagon and atropine are used in hospital to manage severe cases of hypotension. High-dose insulin protocol may be used for severe cases.
+6. **Maximum Adult Dose**: The maximum adult dose is 50-100mg once daily.
+7. **Pregnancy**: Not established as safe -- consult a doctor.
+8. **Maximum Child Dose**: Not for children (specialist dosing only).
+9. **Warnings**: Never stop suddenly — rebound angina and heart attack risk (taper 1-2 weeks).
+10. **Caution in Asthma, Diabetes, and Poor Circulation**: Check pulse daily — do not take if under 50-55 bpm without advice.
+Always follow the instructions of a doctor or a pharmacist when administering medication to children.
 ------------------------------------------------------------
 INPUT: what is the antidote for morphine overdose
 CATEGORY: medicine
