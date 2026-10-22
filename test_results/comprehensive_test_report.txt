@@ -1,5 +1,5 @@
 ---COMPREHENSIVE TEST REPORT---
-generated: 2026-10-15 07:42
+generated: 2026-10-22 12:23
 run mode: full (real Ollama qwen2.5:0.5b + real SQLite databases)
 
 CATEGORY 1 — BODY EMERGENCIES
