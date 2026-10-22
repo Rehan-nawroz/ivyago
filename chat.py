@@ -709,25 +709,34 @@ def ask_llm(system_prompt, user_prompt):
 
 # ── BUILD PROMPTS ─────────────────────────────────
 def get_system_prompt(severity):
+    persona = (
+        "You are IVYAGO, a calm and practical offline AI assistant designed "
+        "for critical situations. Understand the user's actual question "
+        "before answering. Use the optional local reference data when it "
+        "clearly applies, but never force an unrelated database entry into "
+        "the answer. If the question is unclear, ask one focused question. "
+        "If you do not know, say so and give the safest useful next step. "
+        "Keep answers concise and actionable."
+    )
     if severity == "CRITICAL":
-        return ("You are an offline emergency assistant. "
+        return (persona + " "
                 "A life is at risk RIGHT NOW. "
                 "Start with EMERGENCY - ACT NOW. "
                 "Give ONLY immediate numbered steps. "
                 "Simple short sentences. No theory. No disclaimers.")
     elif severity == "URGENT":
-        return ("You are an offline emergency assistant. "
+        return (persona + " "
                 "This needs prompt attention. "
                 "Give clear numbered steps. Keep language simple.")
     elif severity == "MODERATE":
-        return ("You are an offline emergency assistant. "
+        return (persona + " "
                 "Give clear numbered first aid steps. "
                 "End with signs that would make this more serious.")
     else:
-        return ("You are an offline emergency assistant. "
-                "Only help with emergencies, first aid, "
-                "natural disasters, and emergency numbers. "
-                "Refuse anything else politely.")
+        return (persona + " "
+                "Answer ordinary questions too when you can do so safely. "
+                "For emergency topics, prioritize immediate safety over "
+                "background explanation.")
 
 def build_prompt(user_input, route, db_result, safe_template=None):
     if safe_template:
@@ -742,18 +751,24 @@ invent doses: use only what the guidance above says, in calm wording."""
     if route == "body_symptoms" and db_result:
         return f"""User message: {user_input}
 
-VERIFIED EMERGENCY DATA — use this exactly:
+OPTIONAL LOCAL EMERGENCY REFERENCE — use it only if it clearly matches the
+user's situation. Do not force this reference into the answer or present an
+unrelated condition as a diagnosis:
 Condition: {db_result.get('condition','')}
 Severity: {db_result.get('severity','')}
 Immediate action: {db_result.get('immediate_action','')}
 What NOT to do: {db_result.get('what_not_to_do','')}
 
-Format as numbered steps."""
+Answer the user's actual question. For a genuine emergency, give concise
+numbered safety steps. If the reference does not fit, rely on your general
+knowledge, ask a focused question, or say what you do not know."""
 
     elif route == "medicines" and db_result:
         return f"""User message: {user_input}
 
-VERIFIED MEDICINE DATA — use this exactly:
+OPTIONAL LOCAL MEDICINE REFERENCE — use it only if it clearly matches the
+medicine and question. Do not force it into the answer and do not invent a
+dose:
 Medicine: {db_result.get('medicine_name','')}
 Also known as: {db_result.get('aliases','')}
 Overdose symptoms: {db_result.get('overdose_symptoms','')}
@@ -761,20 +776,24 @@ Overdose action: {db_result.get('overdose_action','')}
 Antidote: {db_result.get('antidote','')}
 Warnings: {db_result.get('warnings','')}
 
-Format overdose action as numbered steps."""
+Answer the user's actual question. If this is an overdose, prioritize the
+reference's emergency action. Otherwise, answer the medicine question
+directly and use only relevant reference fields."""
 
     elif route == "emergency_numbers" and db_result:
         other = db_result.get('other','{}')
         return f"""User message: {user_input}
 
-VERIFIED EMERGENCY NUMBERS — use exactly these, never guess:
+OPTIONAL LOCAL EMERGENCY-NUMBER REFERENCE — use it when the country matches.
+Never invent, change, or reassign a number:
 Country: {db_result.get('country','')}
 Police: {db_result.get('police','')}
 Ambulance: {db_result.get('ambulance','')}
 Fire: {db_result.get('fire','')}
 Other: {other}
 
-Tell the user exactly which number to call."""
+Tell the user exactly which listed number to call. If the country is unclear,
+ask which country they are in instead of guessing."""
 
     else:
         return user_input
@@ -791,19 +810,9 @@ BANNERS = {
 def chat(user_input):
     route = detect_route(user_input)
 
-    # Hard refusal for off-topic
-    safe = any(w in user_input.lower() for w in OFF_TOPIC_SAFE_WORDS)
-    if route == "general" and not safe:
-        print("\nℹ️  GENERAL ASSISTANCE")
-        print("─" * 40)
-        print("I am an offline emergency assistant.")
-        print("I can only help with medical emergencies,")
-        print("first aid, natural disasters, and")
-        print("emergency contact numbers.")
-        print(f"\n[SOURCE: hardcoded_refusal]")
-        return
-
-    # Query correct DB
+    # Query a relevant DB when the local detector finds a likely match. A
+    # missing or unrelated row is not a reason to refuse the user's question;
+    # the offline model can answer from its general knowledge instead.
     db_result = None
     severity = "UNKNOWN"
     safe_template = None
