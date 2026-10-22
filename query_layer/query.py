@@ -20,11 +20,13 @@ Position in the full pipeline:
     app displays banner + response
 
 Design guarantees:
-    * temperature stays at 0.1 so the LLM cannot get creative with
-      medical facts -- the DB rows are the single source of truth.
+    * temperature stays at 0.1 so the LLM stays conservative with
+      safety-critical facts -- local DB rows are optional reference material,
+      not a forced answer for every question.
     * the LLM is NEVER called without a system prompt.
-    * DB data is ALWAYS injected into the user prompt when the detector
-      found any -- the LLM never guesses what the detector already knew.
+    * Relevant DB data is injected as optional context when the detector finds
+      a likely match. The model must still answer the user's actual question
+      and must not force an unrelated row into the response.
     * every failure mode (Ollama down, timeout, bad payload) degrades to
       a friendly "ERROR: ..." string. A traceback never reaches the user.
 """
@@ -61,9 +63,18 @@ OLLAMA_TIMEOUT = 30  # seconds before giving up on the LLM
 
 
 def build_system_prompt(severity: str) -> str:
+    persona = (
+        "You are IVYAGO, a calm and practical offline AI assistant designed "
+        "for critical situations. Understand the user's actual question "
+        "before answering. Optional local reference data may be provided; "
+        "use it when it clearly applies, but never force an unrelated row "
+        "into the answer. If the question is unclear, ask one focused "
+        "question. If you do not know, say so and give the safest useful "
+        "next step. Keep answers concise and actionable.\n"
+    )
     if severity == "CRITICAL":
         return (
-            "You are an offline emergency assistant.\n"
+            persona +
             "A life may be at risk RIGHT NOW.\n"
             "Give ONLY the immediate actions the person must take.\n"
             "Use simple short sentences.\n"
@@ -76,7 +87,7 @@ def build_system_prompt(severity: str) -> str:
         )
     if severity == "URGENT":
         return (
-            "You are an offline emergency assistant.\n"
+            persona +
             "This situation needs prompt attention.\n"
             "Give clear step by step instructions.\n"
             "Number every step.\n"
@@ -85,7 +96,7 @@ def build_system_prompt(severity: str) -> str:
         )
     if severity == "MODERATE":
         return (
-            "You are an offline emergency assistant.\n"
+            persona +
             "Give helpful, clear first aid or medical guidance.\n"
             "Number the steps.\n"
             "Keep language simple and calm.\n"
@@ -93,14 +104,9 @@ def build_system_prompt(severity: str) -> str:
         )
     # UNKNOWN -- and the safe default for any unexpected severity value.
     return (
-        "You are an offline emergency assistant.\n"
-        "You only help with medical emergencies, first aid,\n"
-        "natural disasters, and emergency contact numbers.\n"
-        "If the question is outside these topics respond with\n"
-        "exactly this:\n"
-        "I am an offline emergency assistant. I can only help\n"
-        "with medical emergencies, first aid, and disaster\n"
-        "situations.\n"
+        persona +
+        "Answer ordinary questions too when you can do so safely. For an "
+        "emergency, prioritize immediate safety over background explanation.\n"
         "Keep all answers simple and clear."
     )
 
@@ -177,13 +183,16 @@ def build_user_prompt(user_input: str, db_results: list, route: str) -> str:
     if route == "body_symptoms" and db_results:
         return f"""User message: {user_input}
 
-VERIFIED EMERGENCY DATA (use this, do not change it):
+OPTIONAL LOCAL EMERGENCY REFERENCE (use only if it clearly matches the
+user's situation; never force an unrelated condition into the answer):
 Condition: {top_result.get('condition', '')}
 Severity: {top_result.get('severity', '')}
 Immediate action: {top_result.get('immediate_action', '')}
 What NOT to do: {top_result.get('what_not_to_do', '')}
 
-Using the verified data above, give the user clear step by step instructions. Do not add or change any medical facts. Format the immediate action as numbered steps."""
+Answer the user's actual question. For a genuine emergency, give concise
+numbered safety steps. If the reference does not fit, rely on general
+knowledge, ask a focused question, or say what you do not know."""
 
     if route == "medicines" and db_results:
         # A drug-safety question ("is ibuprofen safe in pregnancy") must not be
@@ -193,30 +202,31 @@ Using the verified data above, give the user clear step by step instructions. Do
         lowered = user_input.lower()
         if _is_overdose_question(lowered):
             instruction = (
-                "The person has taken too much. Using the verified data above, "
-                "give the immediate steps. Format the overdose action as "
-                "numbered steps. Do not change any medical facts."
+                "The person has taken too much. If this reference matches the "
+                "medicine, use its overdose action and format immediate steps "
+                "as numbered points. Do not invent a dose or antidote."
             )
         elif _is_expiry_question(lowered):
             instruction = _EXPIRY_INSTRUCTION
         elif _is_safety_question(lowered):
             instruction = (
-                "Answer the user's safety question directly and briefly using "
-                "only the fields above. Use the exact field that was asked "
+                "Answer the user's safety question directly and briefly. Use "
+                "the relevant fields above when they match. Use the exact field that was asked "
                 "about (Pregnancy / Maximum adult dose / Maximum child dose / "
-                "Warnings) and repeat its meaning faithfully. NEVER say a "
-                "medicine is safe in pregnancy unless the verified pregnancy "
-                "line says it is safe. Do NOT give overdose, poisoning or "
-                "emergency steps unless the user described an overdose."
+                "Warnings) and repeat its meaning faithfully. Do not say a "
+                "medicine is safe in pregnancy unless the reference says it "
+                "is safe. Do NOT give overdose, poisoning or emergency steps "
+                "unless the user described an overdose."
             )
         else:
             instruction = (
-                "Using the verified data above, clearly explain what the "
-                "person should know right now. Do not change any medical facts."
+                "Clearly explain what the person should know right now. Use "
+                "only the relevant reference fields when they match, and do "
+                "not invent medical facts."
             )
         return f"""User message: {user_input}
 
-VERIFIED MEDICINE DATA (use this, do not change it):
+OPTIONAL LOCAL MEDICINE REFERENCE:
 Medicine: {top_result.get('medicine_name', '')}
 Also known as: {top_result.get('aliases', '')}
 Overdose symptoms: {top_result.get('overdose_symptoms', '')}
@@ -237,7 +247,8 @@ Warnings: {top_result.get('warnings', '')}
         )
         return f"""User message: {user_input}
 
-VERIFIED EMERGENCY NUMBERS (use exactly these numbers, do not change or guess any number):
+OPTIONAL LOCAL EMERGENCY-NUMBER REFERENCE (use it when the country matches;
+never invent, change, or reassign a number):
 {number_lines}
 
 Tell the user exactly which numbers to call based on their situation. Keep every number with the service it is listed under (police / ambulance / fire) - never move a number to a different service, and never add a service that is not in the list. Never guess a number not in this list."""
@@ -245,8 +256,10 @@ Tell the user exactly which numbers to call based on their situation. Keep every
     # route == "general", or a DB-backed route that returned no rows.
     return f"""User message: {user_input}
 
-Answer based on your emergency knowledge only.
-If this is not an emergency topic, politely refuse."""
+Answer the user's actual question using your offline knowledge when useful.
+If the question is unclear, ask one focused question. If you do not know,
+say so rather than inventing facts. For an emergency, give the safest
+immediate next step first."""
 
 
 def call_llm(system_prompt: str, user_prompt: str) -> str:
@@ -370,8 +383,8 @@ _PROMPT_ECHO_MARKERS = (
 # Shown when the model echoed an instruction AND there is no verified row to
 # fall back on, so the user never reads a prompt instruction as an answer.
 _ECHO_SAFE_REPLY = (
-    "I am an offline emergency assistant. Please describe the emergency "
-    "and I will give you the immediate steps."
+    "I am IVYAGO, an offline assistant for critical situations. "
+    "Please restate your question and I will give the safest useful next step."
 )
 
 
@@ -519,54 +532,9 @@ def answer(user_input: str) -> dict:
     db_results = detection.get("db_results", [])
     db_result_count = detection.get("db_result_count", 0)
 
-    # SAFETY CHECK -- never hard-refuse if there is any chance this is an
-    # emergency related question. Off-topic chatter gets an instant local
-    # refusal (no LLM call); anything that mentions an emergency word is
-    # handed to the LLM, or forced onto the emergency_numbers route as a
-    # fallback so a possible emergency is never bounced with a refusal.
-    emergency_related = [
-        "emergency", "number", "call", "ambulance",
-        "police", "fire", "help", "rescue", "hospital",
-        "doctor", "hurt", "pain", "bleeding", "burn",
-        "accident", "disaster", "flood", "earthquake",
-        "medicine", "pill", "tablet", "overdose", "poison",
-        "breathe", "breathing", "unconscious", "attack",
-        "stroke", "choking", "drowning", "injured", "injury",
-        "baby", "child", "pregnant", "blood", "wound",
-        "broken", "fracture", "allergy", "swallowed",
-    ]
-
-    user_lower = user_input.lower()
-
-    # If ANY emergency word is in the input -> do NOT hard refuse,
-    # let the LLM handle it.
-    is_emergency_related = any(
-        word in user_lower for word in emergency_related
-    )
-
-    if detection["route"] == "general" and not is_emergency_related:
-        return {
-            "banner": "\u2139\ufe0f  GENERAL ASSISTANCE",
-            "response": "I am an offline emergency assistant. "
-                        "I can only help with medical emergencies, "
-                        "first aid, natural disasters, and emergency "
-                        "contact numbers. Please describe your "
-                        "emergency and I will help you.",
-            "route": "general",
-            "severity": "UNKNOWN",
-            "critical_override": False,
-            "db_results_used": 0,
-            "source": "hardcoded_refusal",
-        }
-
-    # If emergency related but route is still general -> force route to
-    # emergency_numbers as a safety fallback.
-    if detection["route"] == "general" and is_emergency_related:
-        detection["route"] = "emergency_numbers"
-        detection["severity_hint"] = "URGENT"
-        # Keep the local variables in sync with the mutated detection.
-        route = detection["route"]
-        severity_hint = detection["severity_hint"]
+    # A general question still goes to the offline model. The detector only
+    # decides whether optional local reference context is available; it is not
+    # a gate that can refuse or reroute an unexpected question.
 
     # Step 2 -- build prompts (system prompt is mandatory, never empty).
     system_prompt = build_system_prompt(severity_hint)
