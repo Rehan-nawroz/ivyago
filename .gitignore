@@ -13,3 +13,4 @@ Thumbs.db
 /prompts
 /.freebuff
 /docs
+test_optional_database.py
