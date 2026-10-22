@@ -1,0 +1,9 @@
+---QUERY LAYER TEST REPORT---
+Tests run: 10
+LLM responded: 10/10
+DB data injected: 10/10
+CRITICAL banner fired: 7 times
+Correct route used: 10/10
+Issues found: none
+Status: READY
+---DONE---
