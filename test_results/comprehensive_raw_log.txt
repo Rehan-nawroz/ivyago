@@ -1,7 +1,7 @@
 ---COMPREHENSIVE RAW LOG---
-mode: full
+mode: routes-only
 cases: 112
-seconds: 747.3
+seconds: 228.5
 
 ------------------------------------------------------------
 INPUT: my chest hurts and left arm is numb
@@ -9,1445 +9,1117 @@ CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Heart attack (Myocardial Infarction)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Call emergency services immediately.
-2. Have the person sit or lie down and loosen tight clothing.
-3. If available and not allergic, give one adult aspirin (325mg) to chew slowly.
-4. Stay with them until help arrives.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i cant breathe
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Choking / airway obstruction
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Encourage forceful coughing.
-2. If the person cannot breathe, give 5 back blows between the shoulder blades, then 5 abdominal thrusts.
-3. Repeat.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my friend is not waking up
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Coma / reduced consciousness
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services.
-2. Place the person on their side in the recovery position.
-3. Keep the airway open.
-4. Check breathing.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone is having a seizure
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Seizure
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Call emergency services immediately.
-2. Protect the head, clear the area, and place the person on their side once the shaking stops.
-3. Time the seizure.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i think i am having a stroke
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Stroke
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Call emergency services IMMEDIATELY.
-2. Note the time symptoms began.
-3. Keep the person still and give nothing by mouth.
-4. Remember FAST: Face, Arms, Speech, Time.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my face is drooping on one side
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Stroke
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services IMMEDIATELY.
-2. Note the time symptoms began.
-3. Keep the person still and give nothing by mouth.
-4. Remember FAST: Face, Arms, Speech, Time.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: baby is not breathing
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Infant Cardiac Arrest / Respiratory Arrest
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Place baby on firm flat surface.
-3. Tilt head back very slightly (less than adult).
-4. Give 2 small gentle puffs covering mouth AND nose.
-5. Start chest compressions with 2 fingers on center of chest, press down 1.5 inches, 30 compressions then 2 breaths.
-6. Continue until help arrives.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone is choking
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Choking / airway obstruction
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Encourage forceful coughing.
-2. If the person cannot breathe, give 5 back blows between the shoulder blades, then 5 abdominal thrusts.
-3. Repeat.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i am drowning help
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Near-drowning
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Call emergency services immediately.
-2. Start CPR with rescue breaths if trained.
-3. If breathing, place the person in the recovery position.
-4. Keep the person warm.
-5. If the person vomits, clear the mouth and continue CPR.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: severe allergic reaction swollen throat
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Anaphylaxis with throat swelling
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Use an adrenaline autoinjector into the outer thigh at once if available.
-2. Call emergency services immediately.
-3. Lay the person flat with legs raised if breathing allows.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i burned my hand on the stove
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Hand burns
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Cool the burn under cool running water for at least 20 minutes.
-2. Remove rings from the burn.
-3. Cover the burn loosely with a clean non-stick dressing.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i have a deep cut that wont stop bleeding
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Deep skin laceration
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Apply firm direct pressure to the deep cut.
-2. Raise the area if possible.
-3. Seek medical help for stitches if the wound is deep or gaping.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i fell and my leg looks broken
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Leg fracture
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Find a safe place to immobilize the leg.
-2. Apply a cold pack to the leg.
-3. Keep the person still until help arrives.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone hit their head and is confused
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Concussion / head injury
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Keep the person resting.
-2. Stay with the person.
-3. Watch for worsening drowsiness, vomiting, or confusion.
-4. Seek medical care the same day.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my back hurts and i cant feel my legs
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Cauda equina syndrome / spinal emergency
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Go to an emergency department immediately.
-2. Keep the person still and note when bladder or bowel control was lost.
-3. Do not wait for the pain to settle.
-4. Do not let them bend or lift.
-5. Do not treat it as ordinary back pain.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i think i broke my neck
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Neck injury / spinal cord injury
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Keep the head and neck perfectly still, holding them in line with the body.
-3. Do not remove a helmet.
-4. Do not move the person unless they are in immediate danger.
-5. Do not twist or bend the neck.
-6. Do not let the person sit up.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone got electrocuted
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Electric shock / electrocution
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Do not touch the person until the power is switched off or the source is moved away with a dry non-conducting object.
-2. Then call emergency services and check breathing.
-3. Start CPR if they are not breathing normally.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i swallowed something and throat is swelling
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Anaphylaxis with throat swelling
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Use an adrenaline autoinjector into the outer thigh at once if available.
-2. Call emergency services immediately.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my eye got chemical in it
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Chemical eye injury
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Irrigate the eye with clean water or saline for at least 15-20 minutes, holding the lids open.
-3. Do not rub the eye.
-4. Do not try to neutralize the chemical.
-5. Do not stop rinsing to wait for help.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i have severe stomach pain
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Peptic ulcer
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Condition: Peptic ulcer
-Do this now: Do see a doctor. Avoid alcohol, smoking, and anti-inflammatory painkillers, and take prescribed acid-suppressing medicine.
-Do NOT: Do not take aspirin or ibuprofen. Do not drink alcohol. Do not ignore black stools or vomiting blood.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: diabetic person is unconscious
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Hypoglycaemia (severe low blood sugar / diabetic coma)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Condition: Hypoglycaemia (severe low blood sugar / diabetic coma)
-Do this now: If the person is awake and able to swallow, give fast sugar such as glucose tablets, fruit juice, or a sugary drink. If they are unconscious or cannot swallow, call emergency services immediately and give nothing by mouth while placing them on their side.
-Do NOT: Do not give food or drink to an unconscious person. Do not give insulin for low blood sugar. Do not leave the person alone. Do not use diet or sugar-free drinks.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: pregnant woman is bleeding
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Miscarriage with heavy bleeding
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services if bleeding is heavy or there is faintness.
-2. Lie flat with the legs raised and keep any passed tissue for the doctor.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i am having a panic attack
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Panic attack
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Calm the person.
-2. Encourage slow steady breathing.
-3. Move the person to a quiet place.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone is having a mental health crisis
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Suicidal thoughts / mental health crisis
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Stay with the person and take them seriously.
-2. Remove access to means such as pills, sharp objects, or weapons if you can do so safely.
-3. Call emergency services or a suicide crisis helpline, and do not leave them alone.
-4. Do not dismiss, argue, or lecture.
-5. Do not promise to keep it a secret.
-6. Do not leave them with access to medications or weapons.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: heatstroke person is not sweating and confused
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Heat stroke
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Call emergency services immediately.
-2. Move the person to shade and start cooling at once - remove excess clothing, wet the skin, and fan them.
-3. Do not give fluids to an unconscious person.
-4. Do not use ice-cold immersion on the elderly.
-5. Do not delay cooling to wait for help.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: hypothermia person is shivering uncontrollably
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Hypothermia (dangerously low body temperature)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Move the person out of the cold.
-2. Remove wet clothing.
-3. Warm the centre of the body first, the chest, neck, head, and groin.
-4. Call emergency services.
-5. Handle them gently.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: snake bite on the leg
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Snake bite / venomous animal bite
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Get to hospital for antivenom.
-3. Keep the person still and calm.
-4. Keep the bitten limb still and below the level of the heart.
-5. Remove rings or tight items before swelling starts.
-6. Note the time of the bite.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: dog bite deep wound
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Dog bite or animal bite wound
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Control the bleeding by pressing firmly on the wound with a clean cloth.
-2. Once bleeding slows, wash the wound with running water and soap for at least 15 minutes.
-3. Cover it with a clean, dry dressing.
-4. Go to a clinic the same day.
-5. A tetanus booster and rabies vaccination may be needed.
-6. Note the animal and whether it is known, and report the bite to the local authority.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i got stung by something and arm is swelling
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Insect sting (bee, wasp, scorpion) with swelling
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Scrape the sting out sideways with a fingernail or card - do not squeeze it.
-2. Wash the area with soap and water.
-3. Apply a cold pack wrapped in cloth for 10-20 minutes.
-4. Keep the limb still and raised, and give an antihistamine if available.
-5. Watch closely for the next 30 minutes: swelling of the face or throat, breathing difficulty, dizziness or collapse means CALL EMERGENCY SERVICES at once - that is anaphylaxis.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone fell in water and not breathing
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Near-drowning
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-EMERGENCY - ACT NOW
-1. Call emergency services immediately.
-2. Start CPR with rescue breaths if trained.
-3. If breathing, place the person in the recovery position.
-4. Keep the person warm.
-5. If the person vomits, clear the mouth and continue CPR.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i took too many paracetamol tablets
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Paracetamol
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Go to the nearest hospital immediately.
-2. Do NOT induce vomiting.
-3. Antidote must be given within 8 hours for best effect.
-4. Antidote: N-acetylcysteine (NAC) — hospital administration only.
-5. Do not take with alcohol.
-6. Do not exceed dose.
-7. Dangerous for people with liver disease.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone swallowed too much ibuprofen
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Ibuprofen
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services or poison control immediately.
-2. Go to the hospital.
-3. Do NOT induce vomiting unless told to.
-4. Do NOT consume any more ibuprofen.
-5. Do NOT take other NSAIDs or aspirin.
-6. Do NOT combine ibuprofen with other NSAIDs or aspirin.
-7. Do NOT take with food.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: child swallowed adult aspirin
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Aspirin
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. **Stop the child from eating the aspirin**.
-2. **Call emergency services** immediately.
-3. **Go to the hospital** for blood monitoring and possible dialysis.
-4. **Do NOT induce vomiting** unless told to.
-5. **Do NOT give aspirin to children or teenagers with fever or flu-like illness (Reye's syndrome).**
-6. **Increase bleeding** if the child has a fever or viral illness.
-7. **Avoid with stomach ulcers**.
-8. **Do not give aspirin to children or teenagers during labor**.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i took too many sleeping pills
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Zolpidem
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Keep airway open.
-3. Lay the person on their side.
-4. Administer flumazenil if the person cannot be woken or breathes slowly.
-5. Call emergency services again if the person's breathing is slow or does not improve.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone drank bleach
 CATEGORY: medicine
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Caustic ingestion (swallowed bleach, drain cleaner or acid)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. If the person is awake and able to swallow, give small sips of water or milk to dilute the chemical.
-3. Keep them sitting upright - do not let them lie flat.
-4. Take the container or its label to the hospital.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone swallowed rat poison
 CATEGORY: medicine
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Rodenticide (rat poison) poisoning
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services or a poison centre immediately and say which poison was swallowed and how long ago.
-2. Do not make the person vomit.
-3. Take the poison packet, box or a photo of it to hospital.
-4. The antidote is vitamin K1 and it must be given by a doctor - bleeding can start 1 to 3 days after swallowing it, so go even if the person feels completely well.
-5. If there is bleeding, press on it firmly and go to hospital immediately.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i accidentally took double dose of metformin
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Metformin
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Go to the nearest hospital immediately.
-2. Dial 911 for emergency services.
-3. Inform the medical personnel about the overdose.
-4. Have the patient lie down and rest.
-5. Administer hemodialysis if indicated.
-6. Monitor the patient's condition closely.
-7. Follow up with the medical personnel for further instructions.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is the antidote for warfarin overdose
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Warfarin
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately for serious bleeding (head injury, black stools, coughing blood).
-2. Go to hospital for INR check and vitamin K.
-3. Do NOT induce vomiting unless told to.
-4. Do NOT start/stop other medicines without INR check.
-5. Report unusual bruising or bleeding.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone injected too much insulin
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Insulin glargine
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Insulin glargine
-Pregnancy: Considered safe in pregnancy (verified).
-Maximum adult dose: Consult a doctor (individualized; usually once daily same time)
-If too much was taken: Give glucose or a sweet drink immediately if conscious and able to swallow. If unconscious, do NOT give anything by mouth — call emergency services and lay on side. Give glucagon injection if available and trained.
-Warnings: NEVER share insulin pens or needles. Never shake glargine (clouds). Do not inject the same spot repeatedly (lipodystrophy) — rotate sites. Never stop insulin in type 1 diabetes — diabetic ketoacidosis is fatal. Keep spare vials refrigerated but NOT frozen; in hot climates keep cool.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i mixed alcohol with diazepam
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Diazepam
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Diazepam
-Pregnancy: Not established as safe -- consult a doctor.
-Maximum adult dose: 2-10mg, 2-4 times daily depending on condition (max 30mg per 24 hours anxiety; 60mg muscle spasm under supervision)
-If too much was taken: Call emergency services IMMEDIATELY if the person is hard to wake or breathing slowly. Give flumazenil (hospital) — but only professionals use it. Keep airway open, lay on side.
-Warnings: Extremely habit-forming. NEVER combine with alcohol, opioids, or other sedatives — this combination kills. Do not stop suddenly after long use — seizures and hallucinations possible. Impairs driving for many hours.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: can i give ibuprofen to a pregnant woman
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Ibuprofen
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Ibuprofen
-Pregnancy: NOT safe in pregnancy (verified) -- avoid.
-Maximum adult dose: 400mg per dose OTC, max 1200mg per 24 hours OTC (prescription max 3200mg), every 6-8 hours
-If too much was taken: Call emergency services or poison control immediately. Go to hospital. Do NOT induce vomiting unless told to.
-Warnings: Avoid in stomach ulcers, kidney disease, heart failure, dengue, and bleeding disorders. Do not combine with other NSAIDs or aspirin. Take with food.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: child swallowed unknown white pills
 CATEGORY: medicine
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Drug overdose by ingestion (swallowed pills or unknown medicine)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Condition: Drug overdose by ingestion (swallowed pills or unknown medicine)
-Do this now: Call emergency services or a poison control centre immediately. Keep the person awake and sitting upright if they are conscious. Collect the pill bottles, packaging, or what is left of the substance and take it to the hospital.
-Do NOT: Do not make the person vomit unless a professional tells you to. Do not give food, drink, or milk. Do not leave them alone. Do not wait for symptoms to get worse before calling for help.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i took expired antibiotics
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Tetracycline
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Expiration warning: The medicine is expired and should not be taken.
-2. Expiration action: Do not induce vomiting unless told to.
-3. Expiration use: NEVER use expired tetracycline.
-4. Expiration support: Supportive care.
-5. Expiration antidote: None specific.
-6. Expiration maximum: 250-500mg every 6 hours.
-7. Expiration pregnancy: NOT safe in pregnancy (verified).
-8. Expiration maximum child: NOT FOR CHILDREN under 8 years.
-9. Expiration warnings: Expired capsules can cause kidney damage (Fanconi syndrome).
-10. Expiration warnings: Avoid milk, antacids, iron within 2 hours.
-11. Expiration warnings: Strong photosensitivity.
-12. Expiration warnings: NOT for children under 8 or pregnancy.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone overdosed on opioids not breathing
 CATEGORY: medicine
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Opioid overdose (heroin, fentanyl, strong painkillers)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Condition: Opioid overdose (heroin, fentanyl, strong painkillers)
-Do this now: Call emergency services immediately. If they are not breathing normally, start rescue breaths or CPR. Give naloxone (Narcan) if available, into the nose or muscle, and repeat every 2-3 minutes until they breathe. Put them in the recovery position on their side.
-Do NOT: Do not leave them alone or let them sleep it off. Do not give food, drink, or a cold shower. Do not slap or hurt them to wake them. Do not stop naloxone and rescue breaths until help arrives.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what medicines should not be given to children
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Amitriptyline
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-Amitriptyline
-Pregnancy: Not established as safe -- consult a doctor.
-Maximum adult dose: 10-25mg at night initially, therapeutic 25-150mg per 24 hours
-If too much was taken: Call emergency services IMMEDIATELY — this is a life-threatening overdose even if the person looks fine. Hospital ECG monitoring is essential. Do NOT induce vomiting unless told to.
-Warnings: Overdose is one of the most lethal of common medicines — keep away from anyone at risk of self-harm. Causes drowsiness, dry mouth, constipation. Do not combine with MAOIs. Caution in heart disease and glaucoma.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: there is an earthquake happening right now
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Earthquake (building collapse / trapped)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Drop to hands and knees, take cover under a sturdy table and hold on until the shaking stops.
-2. If you are outdoors, move to open ground away from buildings, walls, trees and power lines.
-3. If you are trapped, cover your mouth with cloth and tap on a pipe or wall so rescuers can hear you.
-4. Treat bleeding with firm pressure and keep the person warm.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i am trapped under rubble
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Crush injury trapped under rubble
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1) Call for rescue and keep the casualty still and warm while you wait.
-2) Control visible bleeding with firm pressure.
-3) If the person has been trapped for more than 15 minutes, do NOT release the weight on your own - a doctor or rescue team must do it.
-4) Keep talking to them and watch their breathing.
-5) Treat for shock: lie them flat, keep warm, do not give food or drink.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: there is a flood and water is rising
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Flood / rising flood water
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1) Move to higher ground immediately - do not wait to be told.
-2) If you are in a building, go to the highest floor and take water, food, and a torch.
-3) Signal for help from a window or roof.
-4) If you must cross water, it is safer to walk on higher ground than through it.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: there is a wildfire near my house
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Wildfire / forest fire approaching
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1) Leave early, before the fire arrives - follow the evacuation route away from the fire, not with the wind.
-2) Close all windows and doors and turn off gas.
-3) Cover your nose and mouth with a damp cloth and stay low under the smoke.
-4) If you are trapped, go to a cleared area or a large open space and call emergency services with your location.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: there is a gas leak in my house
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Carbon monoxide poisoning (faulty heaters, fires, or exhaust)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Get everyone into fresh air immediately.
-2. Open doors and windows.
-3. Call emergency services.
-4. Switch off the appliance if it is safe to do so.
-5. Give oxygen if available and keep the person warm and resting.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: building is on fire how do i escape
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Building fire / how to escape
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Get low and crawl under the smoke to the nearest exit.
-2. Feel a closed door with the back of your hand before opening it - if it is hot, use another way out.
-3. Leave by the stairs, never the lift.
-4. If your clothes catch fire: stop, drop and roll.
-5. Once outside, stay outside and call the fire service with your address.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i am stuck in a car underwater
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Near-drowning
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Start CPR with rescue breaths if trained.
-3. If breathing, place the person in the recovery position.
-4. Keep the person warm.
-5. If the person vomits, clear the mouth and continue CPR.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: tornado is coming what do i do
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Tornado / severe storm
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Go to the lowest floor of a strong building, into an interior room with no windows.
-2. Crouch down and cover your head and neck with your arms and a mattress or thick blanket.
-3. If you are outdoors, lie flat in a ditch or low ground and cover your head.
-4. Stay there until the storm has clearly passed.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: tsunami warning what do i do
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Tsunami
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Move inland and to high ground immediately.
-2. If you cannot reach high ground, go to the upper floor or roof of a strong concrete building.
-3. Stay there until the authorities say it is safe.
-4. Help children, elderly and disabled people move first.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: landslide is happening near me
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Landslide / mudslide
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1) Move out of the path of the slide - go to the nearest high, stable ground away from the slope.
-2) If escape is impossible, curl into a ball and protect your head with your arms.
-3) Once clear, stay away from the slide area and report anyone missing.
-4) Treat injuries the usual way - control bleeding and keep the person warm.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: there is a chemical spill near me
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Chemical spill / toxic gas release
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Move upwind and uphill, away from the spill, into fresh air.
-2. Move to a high place if the chemical is heavier than air.
-3. Remove contaminated clothing and put it in a sealed bag.
-4. Flush skin and eyes with clean running water for 15-20 minutes.
-5. Call the fire service and tell them exactly what was spilled if you know.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: power lines are down on the road
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Downed / live power lines
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Stay at least 10 metres away and keep everyone else back.
-2. Treat every wire as live, even if it looks dead.
-3. If the wire is on a vehicle, tell the people inside to stay in the car and wait for help.
-4. Call emergency services and the electricity company and warn passers-by.
-5. If someone is in contact with a wire, do not touch them until the power is off.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i am lost in the mountains
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Lost / stranded in the mountains or wilderness
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1) Stop and stay put once you realize you are lost - you are easier to find stationary.
-2) Get out of the wind, keep dry and insulate yourself from the ground.
-3) Make yourself visible: bright clothing, a signal mirror, whistle blasts or three fires in a triangle.
-4) Conserve water and battery, and try one text or call even with no signal bars.
-5) If you must move, follow water downstream but stay on high ground.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone got struck by lightning
 CATEGORY: disaster
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Lightning strike
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Move the person to a safer place if the storm is continuing - lightning victims do not carry a charge and are safe to touch.
-2. Check breathing and pulse; if they are not breathing start CPR immediately and use an AED if available.
-3. Treat burns with cool water and a clean dressing.
-4. Call emergency services and keep the person warm.
-5. Anyone struck needs to be checked in hospital even if they seem fine.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is the emergency number in pakistan
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Pakistan
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['1122', '115', '15', '16'] present
 RESPONSE:
-15 for police
-115 and 1122 for ambulance
-16 for fire
+(routes-only run)
 ------------------------------------------------------------
 INPUT: ambulance number in india
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: India
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112'] present
 RESPONSE:
-112 for police
-112 for ambulance
-112 for fire
+(routes-only run)
 ------------------------------------------------------------
 INPUT: police number in united kingdom
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: United Kingdom
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112', '999'] present
 RESPONSE:
-Call United Kingdom: police 999 or 112, ambulance 999 or 112, fire 999 or 112.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: fire brigade number in australia
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Australia
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['000'] present
 RESPONSE:
-Call Australia: police 000, ambulance 000, fire 000.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency number in united states
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: United States of America
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['911'] present
 RESPONSE:
-Police: 911 | Ambulance: 911 | Fire: 911
+(routes-only run)
 ------------------------------------------------------------
 INPUT: rescue number in germany
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Germany
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['110', '112'] present
 RESPONSE:
-110 for police
-112 for ambulance
-112 for fire
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency services in france
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: France
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112', '15', '17', '18'] present
 RESPONSE:
-Police: 17 | Ambulance: 112 or 15 | Fire: 112 or 18
+(routes-only run)
 ------------------------------------------------------------
 INPUT: ambulance in saudi arabia
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Saudi Arabia
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['911'] present
 RESPONSE:
-Police: 911 | Ambulance: 911 | Fire: 911
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency number in uae
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: United Arab Emirates
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['997', '998', '999'] present
 RESPONSE:
-1. Police: 999
-2. Ambulance: 998
-3. Fire: 997
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what number do i call in nigeria
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Nigeria
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112'] present
 RESPONSE:
-Call Nigeria: police 112, ambulance 112, fire 112.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency services in canada
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Canada
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['911'] present
 RESPONSE:
-Police: 911 | Ambulance: 911 | Fire: 911
+(routes-only run)
 ------------------------------------------------------------
 INPUT: ambulance number in bangladesh
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Bangladesh
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['999'] present
 RESPONSE:
-Call Bangladesh: police 999, ambulance 999, fire 999.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is 911 equivalent in pakistan
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Pakistan
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['1122', '115', '15'] present
 RESPONSE:
-15 for police
-115 for ambulance
-1122 for fire
+(routes-only run)
 ------------------------------------------------------------
 INPUT: who do i call for emergency in turkey
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Turkey
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112', '153', '911'] present
 RESPONSE:
-112 for police
-911 for ambulance
-153 for fire
+(routes-only run)
 ------------------------------------------------------------
 INPUT: write me a poem
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is the capital of france
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: tell me a joke
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: who is the president of usa
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is 2 + 2
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: recommend me a movie
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is bitcoin
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: how do i cook pasta
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: tell me about history
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is the weather today
 CATEGORY: offtopic
 ROUTE DETECTED: general
 DB ROW MATCHED: (none)
 SEVERITY: UNKNOWN
-SOURCE: hardcoded_refusal
+SOURCE: -
 RESULT: YES
 RESPONSE:
-I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my child has a very high fever and is limp
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Sepsis / septicaemia
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services IMMEDIATELY.
-2. Keep the person warm, lying down, and note when the fever or confusion began.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: he is bleeding from his ears after a fall
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Ear bleeding / CSF leak after head injury
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Cover the ear lightly with a clean pad.
-3. Keep the head still and level.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: she has a nosebleed that wont stop
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Severe nosebleed
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Pinch continuously for 10-15 minutes.
-2. Go to an emergency department.
-3. Keep the person sitting upright and calm.
-4. Do not tilt the head back.
-5. Do not swallow blood - spit it out.
-6. Do not stop pinching to check too soon.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my tooth got knocked out
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Knocked-out tooth (dental avulsion)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Hold the tooth by the crown.
-2. Rinse gently in milk or saline.
-3. Reinsert the tooth into the socket if possible.
-4. Bite on a cloth and go to a dentist within 30-60 minutes.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i have a severe headache and stiff neck
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Meningitis (neck stiffness)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Keep the person calm in a quiet darkened room.
-3. Note the time symptoms started.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my urine has blood in it
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Haematuria (blood in urine)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Take the user's urine to a doctor as soon as possible.
-2. Drink plenty of fluids to help flush out the blood.
-3. Note any clots or pain in the urinary tract.
-4. Do not ignore blood in urine.
-5. Do not take blood thinners without advice.
-6. Do not delay assessment.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i spilled boiling water on my arm
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Scald burn from hot liquid or steam
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1) Move away from the heat and cool the burn under cool running water for 20 minutes - start immediately, it still helps up to 3 hours later.
-2) Remove rings, watches, and tight clothing before the area swells.
-3) Cover the burn loosely with cling film or a clean, non-fluffy cloth.
-4) Keep the rest of the person warm.
-5) Give paracetamol or ibuprofen for pain and seek medical help if the burn is larger than the person's palm or on the face, hands, feet, joints or genitals, or if the person is a child or elderly.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: he swallowed his tongue during a fit
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Seizure
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Protect the head, clear the area, and place the person on their side once the shaking stops.
-3. Time the seizure.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: she is 9 months pregnant and the cord came out
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Prolapsed umbilical cord
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services IMMEDIATELY.
-2. Have the woman kneel or lie with the hips raised (knee-chest or head-down).
-3. Do NOT push the cord back.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i feel very dizzy and my heart is racing
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Bradycardia (slow heart rate)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Lay the person down with the legs raised.
-2. Call emergency services if they faint or feel very unwell.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i cut my finger with a knife
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Deep skin laceration
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Apply firm direct pressure to the wound.
-2. Raise the area if possible.
-3. Seek medical help for stitches if the wound is deep or gaping.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my grandfather suddenly cant speak and his arm is weak
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Stroke (arm weakness)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services IMMEDIATELY.
-2. Note the time symptoms began.
-3. Keep the person still and give nothing by mouth.
-4. Use the FAST test: Face, Arms, Speech, Time.
-5. Do not give aspirin without medical instruction.
-6. Do not let them eat or drink.
-7. Do not wait to see if it passes.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: there is pus coming out of my ear
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Ear infection (otitis media)
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Take pain relief such as paracetamol.
-2. Keep the ear dry.
-3. See a doctor, especially for a child under 2 or if there is discharge.
-4. Do not put cotton buds or oil in the ear.
-5. Do not let water enter the ear.
-6. Do not give leftover antibiotics.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my ankle is swollen after i twisted it
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Ankle sprain
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Rest the ankle.
-2. Ice the ankle for 20 minutes every 2 hours.
-3. Compress the ankle with a bandage.
-4. Elevate the ankle.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: someone is having a fit and shaking
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Seizure
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Protect the head.
-3. Clear the area.
-4. Place the person on their side.
-5. Time the seizure.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i drank a lot of alcohol and now i am confused
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Alcohol poisoning (dangerous blood alcohol level)
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Keep them sitting up if awake and put them on their side if drowsy.
-3. Keep them warm.
-4. Stay with them, checking their breathing.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my vision suddenly went black in one eye
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Retinal artery occlusion / sudden vision loss
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Note the exact time vision was lost.
-3. Keep the person calm.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: he fell from a ladder and his back is bent
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Spinal fracture
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Immobilize the spine, keeping the person flat and still until help arrives.
-3. Keep the person in a head-down, neck-level position until help arrives.
-4. Do not move the person.
-5. Do not let them sit or walk.
-6. Do not remove a helmet.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i have a deep wound in my stomach after a stabbing
 CATEGORY: body
 ROUTE DETECTED: body_symptoms
 DB ROW MATCHED: Abdominal aortic aneurysm rupture
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Keep the person lying still and flat.
-3. Keep them warm.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: i took my whole bottle of sleeping tablets
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Zolpidem
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Keep airway open.
-3. Lay the person on their side.
-4. Administer flumazenil if the person cannot be woken or breathes slowly.
-5. Call emergency services again if the person's breathing is slow or irregular.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: is it safe to take aspirin during pregnancy
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Aspirin
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-It is safe to take aspirin during pregnancy, but it is not established as safe for children or teenagers with fever or flu-like illness (Reye's syndrome). Always consult a doctor.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: how much paracetamol can an adult take in a day
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Paracetamol
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-An adult can take 1g of paracetamol per dose, max 4g per 24 hours, every 4-6 hours.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: my child ate my blood pressure tablets
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Atenolol
 SEVERITY: MODERATE
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-If your child ingested your blood pressure tablets, you should be aware of the following:
-1. **Immediate Medical Attention**: Your child should be taken to the emergency room immediately. Symptoms such as very slow heart rate, low blood pressure, dizziness, tiredness, breathing difficulty in asthmatics, heart block, and heart attack risk are potential signs of a severe overdose.
-2. **Call Emergency Services**: If your child faints, call emergency services immediately. This is a critical step in the emergency response.
-3. **Hospital Monitoring**: Hospital monitoring is recommended. Atropine and glucagon may be given to manage the symptoms.
-4. **Do NOT Induce Vomiting**: Do not induce vomiting unless told to. This can lead to rebound angina and heart attack risk.
-5. **Glucagon and Atropine**: Glucagon and atropine are used in hospital to manage severe cases of hypotension. High-dose insulin protocol may be used for severe cases.
-6. **Maximum Adult Dose**: The maximum adult dose is 50-100mg once daily.
-7. **Pregnancy**: Not established as safe -- consult a doctor.
-8. **Maximum Child Dose**: Not for children (specialist dosing only).
-9. **Warnings**: Never stop suddenly — rebound angina and heart attack risk (taper 1-2 weeks).
-10. **Caution in Asthma, Diabetes, and Poor Circulation**: Check pulse daily — do not take if under 50-55 bpm without advice.
-Always follow the instructions of a doctor or a pharmacist when administering medication to children.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: what is the antidote for morphine overdose
 CATEGORY: medicine
 ROUTE DETECTED: medicines
 DB ROW MATCHED: Morphine
 SEVERITY: CRITICAL
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
 RESPONSE:
-1. Call emergency services immediately.
-2. Give naloxone if available.
-3. If breathing has stopped, start CPR and rescue breaths.
-4. Stay with the person.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency number in philippines
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Philippines
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['911'] present
 RESPONSE:
-Call Philippines: police 911, ambulance 911, fire 911.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: ambulance number in south africa
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: South Africa
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['10', '111', '177'] present
 RESPONSE:
-Call South Africa: police 10 111, ambulance 10 177, fire 10 177.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency number in usa
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: United States of America
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['911'] present
 RESPONSE:
-Police: 911 | Ambulance: 911 | Fire: 911
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency number in uk
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: United Kingdom
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112', '999'] present
 RESPONSE:
-Call United Kingdom: police 999 or 112, ambulance 999 or 112, fire 999 or 112.
+(routes-only run)
 ------------------------------------------------------------
 INPUT: emergency number in lebanon
 CATEGORY: number
 ROUTE DETECTED: emergency_numbers
 DB ROW MATCHED: Lebanon
 SEVERITY: URGENT
-SOURCE: db+llm
+SOURCE: -
 RESULT: YES
-NOTE: verified number(s) ['112', '140', '175', '999'] present
 RESPONSE:
-Call Lebanon: police 999 or 112, ambulance 140, fire 175.
+(routes-only run)

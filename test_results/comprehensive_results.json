@@ -9,8 +9,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Have the person sit or lie down and loosen tight clothing.\n3. If available and not allergic, give one adult aspirin (325mg) to chew slowly.\n4. Stay with them until help arrives.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -24,8 +24,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Encourage forceful coughing.\n2. If the person cannot breathe, give 5 back blows between the shoulder blades, then 5 abdominal thrusts.\n3. Repeat.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -39,8 +39,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Call emergency services.\n2. Place the person on their side in the recovery position.\n3. Keep the airway open.\n4. Check breathing.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -54,8 +54,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Protect the head, clear the area, and place the person on their side once the shaking stops.\n3. Time the seizure.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -69,8 +69,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services IMMEDIATELY.\n2. Note the time symptoms began.\n3. Keep the person still and give nothing by mouth.\n4. Remember FAST: Face, Arms, Speech, Time.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -84,8 +84,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services IMMEDIATELY.\n2. Note the time symptoms began.\n3. Keep the person still and give nothing by mouth.\n4. Remember FAST: Face, Arms, Speech, Time.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -99,8 +99,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Place baby on firm flat surface.\n3. Tilt head back very slightly (less than adult).\n4. Give 2 small gentle puffs covering mouth AND nose.\n5. Start chest compressions with 2 fingers on center of chest, press down 1.5 inches, 30 compressions then 2 breaths.\n6. Continue until help arrives.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -114,8 +114,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Encourage forceful coughing.\n2. If the person cannot breathe, give 5 back blows between the shoulder blades, then 5 abdominal thrusts.\n3. Repeat.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -129,8 +129,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Start CPR with rescue breaths if trained.\n3. If breathing, place the person in the recovery position.\n4. Keep the person warm.\n5. If the person vomits, clear the mouth and continue CPR.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -144,8 +144,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Use an adrenaline autoinjector into the outer thigh at once if available.\n2. Call emergency services immediately.\n3. Lay the person flat with legs raised if breathing allows.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -159,8 +159,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Cool the burn under cool running water for at least 20 minutes.\n2. Remove rings from the burn.\n3. Cover the burn loosely with a clean non-stick dressing.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -174,8 +174,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Apply firm direct pressure to the deep cut.\n2. Raise the area if possible.\n3. Seek medical help for stitches if the wound is deep or gaping.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -189,8 +189,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Find a safe place to immobilize the leg.\n2. Apply a cold pack to the leg.\n3. Keep the person still until help arrives.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -204,8 +204,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Keep the person resting.\n2. Stay with the person.\n3. Watch for worsening drowsiness, vomiting, or confusion.\n4. Seek medical care the same day.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -219,8 +219,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Go to an emergency department immediately.\n2. Keep the person still and note when bladder or bowel control was lost.\n3. Do not wait for the pain to settle.\n4. Do not let them bend or lift.\n5. Do not treat it as ordinary back pain.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -234,8 +234,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep the head and neck perfectly still, holding them in line with the body.\n3. Do not remove a helmet.\n4. Do not move the person unless they are in immediate danger.\n5. Do not twist or bend the neck.\n6. Do not let the person sit up.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -249,8 +249,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Do not touch the person until the power is switched off or the source is moved away with a dry non-conducting object.\n2. Then call emergency services and check breathing.\n3. Start CPR if they are not breathing normally.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -264,8 +264,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Use an adrenaline autoinjector into the outer thigh at once if available.\n2. Call emergency services immediately.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -279,8 +279,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Irrigate the eye with clean water or saline for at least 15-20 minutes, holding the lids open.\n3. Do not rub the eye.\n4. Do not try to neutralize the chemical.\n5. Do not stop rinsing to wait for help.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -294,8 +294,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Condition: Peptic ulcer\nDo this now: Do see a doctor. Avoid alcohol, smoking, and anti-inflammatory painkillers, and take prescribed acid-suppressing medicine.\nDo NOT: Do not take aspirin or ibuprofen. Do not drink alcohol. Do not ignore black stools or vomiting blood.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -309,8 +309,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Condition: Hypoglycaemia (severe low blood sugar / diabetic coma)\nDo this now: If the person is awake and able to swallow, give fast sugar such as glucose tablets, fruit juice, or a sugary drink. If they are unconscious or cannot swallow, call emergency services immediately and give nothing by mouth while placing them on their side.\nDo NOT: Do not give food or drink to an unconscious person. Do not give insulin for low blood sugar. Do not leave the person alone. Do not use diet or sugar-free drinks.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -324,8 +324,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services if bleeding is heavy or there is faintness.\n2. Lie flat with the legs raised and keep any passed tissue for the doctor.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -339,8 +339,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Calm the person.\n2. Encourage slow steady breathing.\n3. Move the person to a quiet place.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -354,8 +354,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Stay with the person and take them seriously.\n2. Remove access to means such as pills, sharp objects, or weapons if you can do so safely.\n3. Call emergency services or a suicide crisis helpline, and do not leave them alone.\n4. Do not dismiss, argue, or lecture.\n5. Do not promise to keep it a secret.\n6. Do not leave them with access to medications or weapons.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -369,8 +369,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Move the person to shade and start cooling at once - remove excess clothing, wet the skin, and fan them.\n3. Do not give fluids to an unconscious person.\n4. Do not use ice-cold immersion on the elderly.\n5. Do not delay cooling to wait for help.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -384,8 +384,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Move the person out of the cold.\n2. Remove wet clothing.\n3. Warm the centre of the body first, the chest, neck, head, and groin.\n4. Call emergency services.\n5. Handle them gently.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -399,8 +399,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Get to hospital for antivenom.\n3. Keep the person still and calm.\n4. Keep the bitten limb still and below the level of the heart.\n5. Remove rings or tight items before swelling starts.\n6. Note the time of the bite.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -414,8 +414,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Control the bleeding by pressing firmly on the wound with a clean cloth.\n2. Once bleeding slows, wash the wound with running water and soap for at least 15 minutes.\n3. Cover it with a clean, dry dressing.\n4. Go to a clinic the same day.\n5. A tetanus booster and rabies vaccination may be needed.\n6. Note the animal and whether it is known, and report the bite to the local authority.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -429,8 +429,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Scrape the sting out sideways with a fingernail or card - do not squeeze it.\n2. Wash the area with soap and water.\n3. Apply a cold pack wrapped in cloth for 10-20 minutes.\n4. Keep the limb still and raised, and give an antihistamine if available.\n5. Watch closely for the next 30 minutes: swelling of the face or throat, breathing difficulty, dizziness or collapse means CALL EMERGENCY SERVICES at once - that is anaphylaxis.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -444,8 +444,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Start CPR with rescue breaths if trained.\n3. If breathing, place the person in the recovery position.\n4. Keep the person warm.\n5. If the person vomits, clear the mouth and continue CPR.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -459,8 +459,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Go to the nearest hospital immediately.\n2. Do NOT induce vomiting.\n3. Antidote must be given within 8 hours for best effect.\n4. Antidote: N-acetylcysteine (NAC) \u2014 hospital administration only.\n5. Do not take with alcohol.\n6. Do not exceed dose.\n7. Dangerous for people with liver disease.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -474,8 +474,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Call emergency services or poison control immediately.\n2. Go to the hospital.\n3. Do NOT induce vomiting unless told to.\n4. Do NOT consume any more ibuprofen.\n5. Do NOT take other NSAIDs or aspirin.\n6. Do NOT combine ibuprofen with other NSAIDs or aspirin.\n7. Do NOT take with food.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -489,8 +489,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. **Stop the child from eating the aspirin**.\n2. **Call emergency services** immediately.\n3. **Go to the hospital** for blood monitoring and possible dialysis.\n4. **Do NOT induce vomiting** unless told to.\n5. **Do NOT give aspirin to children or teenagers with fever or flu-like illness (Reye's syndrome).**\n6. **Increase bleeding** if the child has a fever or viral illness.\n7. **Avoid with stomach ulcers**.\n8. **Do not give aspirin to children or teenagers during labor**.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -504,8 +504,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep airway open.\n3. Lay the person on their side.\n4. Administer flumazenil if the person cannot be woken or breathes slowly.\n5. Call emergency services again if the person's breathing is slow or does not improve.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -519,8 +519,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. If the person is awake and able to swallow, give small sips of water or milk to dilute the chemical.\n3. Keep them sitting upright - do not let them lie flat.\n4. Take the container or its label to the hospital.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -534,8 +534,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services or a poison centre immediately and say which poison was swallowed and how long ago.\n2. Do not make the person vomit.\n3. Take the poison packet, box or a photo of it to hospital.\n4. The antidote is vitamin K1 and it must be given by a doctor - bleeding can start 1 to 3 days after swallowing it, so go even if the person feels completely well.\n5. If there is bleeding, press on it firmly and go to hospital immediately.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -549,8 +549,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Go to the nearest hospital immediately.\n2. Dial 911 for emergency services.\n3. Inform the medical personnel about the overdose.\n4. Have the patient lie down and rest.\n5. Administer hemodialysis if indicated.\n6. Monitor the patient's condition closely.\n7. Follow up with the medical personnel for further instructions.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -564,8 +564,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately for serious bleeding (head injury, black stools, coughing blood).\n2. Go to hospital for INR check and vitamin K.\n3. Do NOT induce vomiting unless told to.\n4. Do NOT start/stop other medicines without INR check.\n5. Report unusual bruising or bleeding.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -579,8 +579,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Insulin glargine\nPregnancy: Considered safe in pregnancy (verified).\nMaximum adult dose: Consult a doctor (individualized; usually once daily same time)\nIf too much was taken: Give glucose or a sweet drink immediately if conscious and able to swallow. If unconscious, do NOT give anything by mouth \u2014 call emergency services and lay on side. Give glucagon injection if available and trained.\nWarnings: NEVER share insulin pens or needles. Never shake glargine (clouds). Do not inject the same spot repeatedly (lipodystrophy) \u2014 rotate sites. Never stop insulin in type 1 diabetes \u2014 diabetic ketoacidosis is fatal. Keep spare vials refrigerated but NOT frozen; in hot climates keep cool.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -594,8 +594,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Diazepam\nPregnancy: Not established as safe -- consult a doctor.\nMaximum adult dose: 2-10mg, 2-4 times daily depending on condition (max 30mg per 24 hours anxiety; 60mg muscle spasm under supervision)\nIf too much was taken: Call emergency services IMMEDIATELY if the person is hard to wake or breathing slowly. Give flumazenil (hospital) \u2014 but only professionals use it. Keep airway open, lay on side.\nWarnings: Extremely habit-forming. NEVER combine with alcohol, opioids, or other sedatives \u2014 this combination kills. Do not stop suddenly after long use \u2014 seizures and hallucinations possible. Impairs driving for many hours.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -609,8 +609,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Ibuprofen\nPregnancy: NOT safe in pregnancy (verified) -- avoid.\nMaximum adult dose: 400mg per dose OTC, max 1200mg per 24 hours OTC (prescription max 3200mg), every 6-8 hours\nIf too much was taken: Call emergency services or poison control immediately. Go to hospital. Do NOT induce vomiting unless told to.\nWarnings: Avoid in stomach ulcers, kidney disease, heart failure, dengue, and bleeding disorders. Do not combine with other NSAIDs or aspirin. Take with food.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -624,8 +624,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Condition: Drug overdose by ingestion (swallowed pills or unknown medicine)\nDo this now: Call emergency services or a poison control centre immediately. Keep the person awake and sitting upright if they are conscious. Collect the pill bottles, packaging, or what is left of the substance and take it to the hospital.\nDo NOT: Do not make the person vomit unless a professional tells you to. Do not give food, drink, or milk. Do not leave them alone. Do not wait for symptoms to get worse before calling for help.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -639,8 +639,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Expiration warning: The medicine is expired and should not be taken.\n2. Expiration action: Do not induce vomiting unless told to.\n3. Expiration use: NEVER use expired tetracycline.\n4. Expiration support: Supportive care.\n5. Expiration antidote: None specific.\n6. Expiration maximum: 250-500mg every 6 hours.\n7. Expiration pregnancy: NOT safe in pregnancy (verified).\n8. Expiration maximum child: NOT FOR CHILDREN under 8 years.\n9. Expiration warnings: Expired capsules can cause kidney damage (Fanconi syndrome).\n10. Expiration warnings: Avoid milk, antacids, iron within 2 hours.\n11. Expiration warnings: Strong photosensitivity.\n12. Expiration warnings: NOT for children under 8 or pregnancy.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -654,8 +654,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Condition: Opioid overdose (heroin, fentanyl, strong painkillers)\nDo this now: Call emergency services immediately. If they are not breathing normally, start rescue breaths or CPR. Give naloxone (Narcan) if available, into the nose or muscle, and repeat every 2-3 minutes until they breathe. Put them in the recovery position on their side.\nDo NOT: Do not leave them alone or let them sleep it off. Do not give food, drink, or a cold shower. Do not slap or hurt them to wake them. Do not stop naloxone and rescue breaths until help arrives.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -669,8 +669,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "Amitriptyline\nPregnancy: Not established as safe -- consult a doctor.\nMaximum adult dose: 10-25mg at night initially, therapeutic 25-150mg per 24 hours\nIf too much was taken: Call emergency services IMMEDIATELY \u2014 this is a life-threatening overdose even if the person looks fine. Hospital ECG monitoring is essential. Do NOT induce vomiting unless told to.\nWarnings: Overdose is one of the most lethal of common medicines \u2014 keep away from anyone at risk of self-harm. Causes drowsiness, dry mouth, constipation. Do not combine with MAOIs. Caution in heart disease and glaucoma.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -684,8 +684,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Drop to hands and knees, take cover under a sturdy table and hold on until the shaking stops.\n2. If you are outdoors, move to open ground away from buildings, walls, trees and power lines.\n3. If you are trapped, cover your mouth with cloth and tap on a pipe or wall so rescuers can hear you.\n4. Treat bleeding with firm pressure and keep the person warm.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -699,8 +699,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1) Call for rescue and keep the casualty still and warm while you wait.\n2) Control visible bleeding with firm pressure.\n3) If the person has been trapped for more than 15 minutes, do NOT release the weight on your own - a doctor or rescue team must do it.\n4) Keep talking to them and watch their breathing.\n5) Treat for shock: lie them flat, keep warm, do not give food or drink.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -714,8 +714,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1) Move to higher ground immediately - do not wait to be told.\n2) If you are in a building, go to the highest floor and take water, food, and a torch.\n3) Signal for help from a window or roof.\n4) If you must cross water, it is safer to walk on higher ground than through it.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -729,8 +729,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1) Leave early, before the fire arrives - follow the evacuation route away from the fire, not with the wind.\n2) Close all windows and doors and turn off gas.\n3) Cover your nose and mouth with a damp cloth and stay low under the smoke.\n4) If you are trapped, go to a cleared area or a large open space and call emergency services with your location.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -744,8 +744,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Get everyone into fresh air immediately.\n2. Open doors and windows.\n3. Call emergency services.\n4. Switch off the appliance if it is safe to do so.\n5. Give oxygen if available and keep the person warm and resting.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -759,8 +759,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Get low and crawl under the smoke to the nearest exit.\n2. Feel a closed door with the back of your hand before opening it - if it is hot, use another way out.\n3. Leave by the stairs, never the lift.\n4. If your clothes catch fire: stop, drop and roll.\n5. Once outside, stay outside and call the fire service with your address.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -774,8 +774,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Start CPR with rescue breaths if trained.\n3. If breathing, place the person in the recovery position.\n4. Keep the person warm.\n5. If the person vomits, clear the mouth and continue CPR.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -789,8 +789,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Go to the lowest floor of a strong building, into an interior room with no windows.\n2. Crouch down and cover your head and neck with your arms and a mattress or thick blanket.\n3. If you are outdoors, lie flat in a ditch or low ground and cover your head.\n4. Stay there until the storm has clearly passed.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -804,8 +804,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Move inland and to high ground immediately.\n2. If you cannot reach high ground, go to the upper floor or roof of a strong concrete building.\n3. Stay there until the authorities say it is safe.\n4. Help children, elderly and disabled people move first.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -819,8 +819,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1) Move out of the path of the slide - go to the nearest high, stable ground away from the slope.\n2) If escape is impossible, curl into a ball and protect your head with your arms.\n3) Once clear, stay away from the slide area and report anyone missing.\n4) Treat injuries the usual way - control bleeding and keep the person warm.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -834,8 +834,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Move upwind and uphill, away from the spill, into fresh air.\n2. Move to a high place if the chemical is heavier than air.\n3. Remove contaminated clothing and put it in a sealed bag.\n4. Flush skin and eyes with clean running water for 15-20 minutes.\n5. Call the fire service and tell them exactly what was spilled if you know.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -849,8 +849,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Stay at least 10 metres away and keep everyone else back.\n2. Treat every wire as live, even if it looks dead.\n3. If the wire is on a vehicle, tell the people inside to stay in the car and wait for help.\n4. Call emergency services and the electricity company and warn passers-by.\n5. If someone is in contact with a wire, do not touch them until the power is off.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -864,8 +864,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1) Stop and stay put once you realize you are lost - you are easier to find stationary.\n2) Get out of the wind, keep dry and insulate yourself from the ground.\n3) Make yourself visible: bright clothing, a signal mirror, whistle blasts or three fires in a triangle.\n4) Conserve water and battery, and try one text or call even with no signal bars.\n5) If you must move, follow water downstream but stay on high ground.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -879,8 +879,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Move the person to a safer place if the storm is continuing - lightning victims do not carry a charge and are safe to touch.\n2. Check breathing and pulse; if they are not breathing start CPR immediately and use an AED if available.\n3. Treat burns with cool water and a clean dressing.\n4. Call emergency services and keep the person warm.\n5. Anyone struck needs to be checked in hospital even if they seem fine.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -894,10 +894,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "15 for police\n115 and 1122 for ambulance\n16 for fire",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['1122', '115', '15', '16'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -909,10 +909,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "112 for police\n112 for ambulance\n112 for fire",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -924,10 +924,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call United Kingdom: police 999 or 112, ambulance 999 or 112, fire 999 or 112.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112', '999'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -939,10 +939,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call Australia: police 000, ambulance 000, fire 000.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['000'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -954,10 +954,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Police: 911 | Ambulance: 911 | Fire: 911",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['911'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -969,10 +969,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "110 for police\n112 for ambulance\n112 for fire",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['110', '112'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -984,10 +984,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Police: 17 | Ambulance: 112 or 15 | Fire: 112 or 18",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112', '15', '17', '18'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -999,10 +999,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Police: 911 | Ambulance: 911 | Fire: 911",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['911'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1014,10 +1014,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1. Police: 999\n2. Ambulance: 998\n3. Fire: 997",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['997', '998', '999'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1029,10 +1029,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call Nigeria: police 112, ambulance 112, fire 112.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1044,10 +1044,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Police: 911 | Ambulance: 911 | Fire: 911",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['911'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1059,10 +1059,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call Bangladesh: police 999, ambulance 999, fire 999.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['999'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1074,10 +1074,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "15 for police\n115 for ambulance\n1122 for fire",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['1122', '115', '15'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1089,10 +1089,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "112 for police\n911 for ambulance\n153 for fire",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112', '153', '911'] present"
+  "note": ""
  },
  {
   "category": "offtopic",
@@ -1104,8 +1104,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1119,8 +1119,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1134,8 +1134,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1149,8 +1149,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1164,8 +1164,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1179,8 +1179,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1194,8 +1194,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1209,8 +1209,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1224,8 +1224,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1239,8 +1239,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 0,
-  "source": "hardcoded_refusal",
-  "response": "I am an offline emergency assistant. I can only help with medical emergencies, first aid, natural disasters, and emergency contact numbers. Please describe your emergency and I will help you.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1254,8 +1254,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services IMMEDIATELY.\n2. Keep the person warm, lying down, and note when the fever or confusion began.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1269,8 +1269,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Cover the ear lightly with a clean pad.\n3. Keep the head still and level.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1284,8 +1284,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Pinch continuously for 10-15 minutes.\n2. Go to an emergency department.\n3. Keep the person sitting upright and calm.\n4. Do not tilt the head back.\n5. Do not swallow blood - spit it out.\n6. Do not stop pinching to check too soon.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1299,8 +1299,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Hold the tooth by the crown.\n2. Rinse gently in milk or saline.\n3. Reinsert the tooth into the socket if possible.\n4. Bite on a cloth and go to a dentist within 30-60 minutes.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1314,8 +1314,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep the person calm in a quiet darkened room.\n3. Note the time symptoms started.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1329,8 +1329,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Take the user's urine to a doctor as soon as possible.\n2. Drink plenty of fluids to help flush out the blood.\n3. Note any clots or pain in the urinary tract.\n4. Do not ignore blood in urine.\n5. Do not take blood thinners without advice.\n6. Do not delay assessment.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1344,8 +1344,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "1) Move away from the heat and cool the burn under cool running water for 20 minutes - start immediately, it still helps up to 3 hours later.\n2) Remove rings, watches, and tight clothing before the area swells.\n3) Cover the burn loosely with cling film or a clean, non-fluffy cloth.\n4) Keep the rest of the person warm.\n5) Give paracetamol or ibuprofen for pain and seek medical help if the burn is larger than the person's palm or on the face, hands, feet, joints or genitals, or if the person is a child or elderly.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1359,8 +1359,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Protect the head, clear the area, and place the person on their side once the shaking stops.\n3. Time the seizure.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1374,8 +1374,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Call emergency services IMMEDIATELY.\n2. Have the woman kneel or lie with the hips raised (knee-chest or head-down).\n3. Do NOT push the cord back.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1389,8 +1389,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Lay the person down with the legs raised.\n2. Call emergency services if they faint or feel very unwell.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1404,8 +1404,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Apply firm direct pressure to the wound.\n2. Raise the area if possible.\n3. Seek medical help for stitches if the wound is deep or gaping.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1419,8 +1419,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services IMMEDIATELY.\n2. Note the time symptoms began.\n3. Keep the person still and give nothing by mouth.\n4. Use the FAST test: Face, Arms, Speech, Time.\n5. Do not give aspirin without medical instruction.\n6. Do not let them eat or drink.\n7. Do not wait to see if it passes.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1434,8 +1434,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Take pain relief such as paracetamol.\n2. Keep the ear dry.\n3. See a doctor, especially for a child under 2 or if there is discharge.\n4. Do not put cotton buds or oil in the ear.\n5. Do not let water enter the ear.\n6. Do not give leftover antibiotics.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1449,8 +1449,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Rest the ankle.\n2. Ice the ankle for 20 minutes every 2 hours.\n3. Compress the ankle with a bandage.\n4. Elevate the ankle.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1464,8 +1464,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 2,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Protect the head.\n3. Clear the area.\n4. Place the person on their side.\n5. Time the seizure.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1479,8 +1479,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep them sitting up if awake and put them on their side if drowsy.\n3. Keep them warm.\n4. Stay with them, checking their breathing.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1494,8 +1494,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Note the exact time vision was lost.\n3. Keep the person calm.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1509,8 +1509,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Immobilize the spine, keeping the person flat and still until help arrives.\n3. Keep the person in a head-down, neck-level position until help arrives.\n4. Do not move the person.\n5. Do not let them sit or walk.\n6. Do not remove a helmet.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1524,8 +1524,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep the person lying still and flat.\n3. Keep them warm.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1539,8 +1539,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep airway open.\n3. Lay the person on their side.\n4. Administer flumazenil if the person cannot be woken or breathes slowly.\n5. Call emergency services again if the person's breathing is slow or irregular.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1554,8 +1554,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "It is safe to take aspirin during pregnancy, but it is not established as safe for children or teenagers with fever or flu-like illness (Reye's syndrome). Always consult a doctor.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1569,8 +1569,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "An adult can take 1g of paracetamol per dose, max 4g per 24 hours, every 4-6 hours.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1584,8 +1584,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "If your child ingested your blood pressure tablets, you should be aware of the following:\n1. **Immediate Medical Attention**: Your child should be taken to the emergency room immediately. Symptoms such as very slow heart rate, low blood pressure, dizziness, tiredness, breathing difficulty in asthmatics, heart block, and heart attack risk are potential signs of a severe overdose.\n2. **Call Emergency Services**: If your child faints, call emergency services immediately. This is a critical step in the emergency response.\n3. **Hospital Monitoring**: Hospital monitoring is recommended. Atropine and glucagon may be given to manage the symptoms.\n4. **Do NOT Induce Vomiting**: Do not induce vomiting unless told to. This can lead to rebound angina and heart attack risk.\n5. **Glucagon and Atropine**: Glucagon and atropine are used in hospital to manage severe cases of hypotension. High-dose insulin protocol may be used for severe cases.\n6. **Maximum Adult Dose**: The maximum adult dose is 50-100mg once daily.\n7. **Pregnancy**: Not established as safe -- consult a doctor.\n8. **Maximum Child Dose**: Not for children (specialist dosing only).\n9. **Warnings**: Never stop suddenly \u2014 rebound angina and heart attack risk (taper 1-2 weeks).\n10. **Caution in Asthma, Diabetes, and Poor Circulation**: Check pulse daily \u2014 do not take if under 50-55 bpm without advice.\nAlways follow the instructions of a doctor or a pharmacist when administering medication to children.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1599,8 +1599,8 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
-  "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Give naloxone if available.\n3. If breathing has stopped, start CPR and rescue breaths.\n4. Stay with the person.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
   "note": ""
  },
@@ -1614,10 +1614,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call Philippines: police 911, ambulance 911, fire 911.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['911'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1629,10 +1629,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call South Africa: police 10 111, ambulance 10 177, fire 10 177.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['10', '111', '177'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1644,10 +1644,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Police: 911 | Ambulance: 911 | Fire: 911",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['911'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1659,10 +1659,10 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call United Kingdom: police 999 or 112, ambulance 999 or 112, fire 999 or 112.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112', '999'] present"
+  "note": ""
  },
  {
   "category": "number",
@@ -1674,9 +1674,9 @@
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 1,
-  "source": "db+llm",
-  "response": "Call Lebanon: police 999 or 112, ambulance 140, fire 175.",
+  "source": "-",
+  "response": "(routes-only run)",
   "verdict": "YES",
-  "note": "verified number(s) ['112', '140', '175', '999'] present"
+  "note": ""
  }
 ]
