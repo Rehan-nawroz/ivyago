@@ -510,12 +510,25 @@ BODY_WORDS = [
     # scored zero on every route and was answered with the off-topic refusal
     # even though the Lightning strike row exists.
     "lightning","electrocuted","electrocution","electrified","struck",
+    # Generic symptoms the detector routes but this router lacked, so "i have
+    # a fever", "i am vomiting" and "sore throat" fell to "general" and got
+    # the off-topic refusal instead of a DB answer.
+    "fever","vomit","weak","throat","rash",
     "earthquake","flood","tsunami","tornado","cyclone","hurricane",
     "wildfire","landslide","avalanche","collapse","debris","smoke",
     "suffocat","evacuat"
 ]
 MEDICINE_WORDS = [
     "tablet","pill","medicine","medication","drug",
+    # Medicine-intent PHRASES. This router matches with `w in text`, so a bare
+    # "med" is deliberately absent -- it would also hit "medical". "what med
+    # should i consume if i had headache" used to route to body_symptoms and
+    # answer with Hypertensive crisis.
+    "what med","what meds","med for","which med","med should",
+    "what medicine","which medicine","medicine for","what medication",
+    "which medication","medication for","pill for","what pill",
+    "which pill","what tablet","which tablet","what drug","which drug",
+    "drug for","consume",
     "swallowed","overdose","antidote","dose","took",
     "paracetamol","ibuprofen","aspirin","insulin",
     "warfarin","diazepam","antibiotic","bleach",
@@ -527,6 +540,144 @@ NUMBER_WORDS = [
     "what number","contact","helpline","brigade","emergency"
 ]
 OFF_TOPIC_SAFE_WORDS = BODY_WORDS + MEDICINE_WORDS + NUMBER_WORDS
+
+# Objective red-flag wording. Any of these in the message keeps the strict
+# DB grounding and the row's own severity; the reviewed safe-template path
+# below is only for a benign question with none of these words.
+RED_FLAG_WORDS = [
+    "chest","breath","breathe","breathing","unconscious","not waking",
+    "wont wake","won't wake","bleed","blood","seizure","convulsion",
+    "stiff neck","worst","thunderclap","sudden severe","severe",
+    "confused","confusion","slurred","droop","one side","numb",
+    "vision","overdose","too many","swallowed","poison","drowning",
+    "choking","choked","no pulse","fever","high fever","hit my head",
+    "head injury","stabbed","gunshot","shot","burn","crush","fire",
+    "electrocuted","suicide","kill myself","self harm","paralysis",
+    "cannot move","cant move","blue lips","collapsed","pregnant",
+]
+
+# Human-reviewed safe-care guidance for a benign question that matched a
+# CRITICAL row only through one generic symptom word. The model rewords this
+# instead of being told to repeat a life-threatening row exactly; common OTC
+# options stay "at the dose on the label", and every entry keeps a
+# see-a-doctor / get-emergency-help line.
+SAFE_SELF_CARE = {
+    "headache": (
+        "Rest in a quiet, dim room and drink water. Eat something if a meal "
+        "was missed. Paracetamol or ibuprofen at the dose on the label can "
+        "ease a mild headache if there is no allergy to it and no reason to "
+        "avoid it. See a doctor if it keeps returning or lasts more than a "
+        "day. Get emergency help for a headache that is the worst ever, comes "
+        "with a stiff neck, fever, confusion, weakness on one side, slurred "
+        "speech or vision loss, or follows a head injury."),
+    "dizzy": (
+        "Sit or lie down before you fall. Drink water and eat something, and "
+        "rise slowly from sitting or lying. See a doctor if it keeps "
+        "happening. Get emergency help if dizziness comes with chest pain, "
+        "breathlessness, fainting, a head injury, weakness on one side or "
+        "slurred speech."),
+    "fever": (
+        "Rest and drink plenty of fluids. Wear light clothing and keep the "
+        "room cool. Paracetamol at the dose on the label can lower a fever; "
+        "never give aspirin to a child. See a doctor if the fever lasts more "
+        "than two or three days, or sooner for a baby under three months. Get "
+        "urgent help for a very high fever, a stiff neck, confusion, a rash "
+        "that does not fade when pressed, or difficulty breathing."),
+    "vomit": (
+        "Take small sips of water or an oral rehydration solution, and eat "
+        "bland food when you feel able. Wash your hands and do not share "
+        "food. Get urgent help if there is blood in the vomit, vomit that "
+        "looks like coffee grounds, severe stomach pain, signs of "
+        "dehydration, or vomiting after a head injury or with a stiff neck."),
+    "stomach": (
+        "Rest, sip water and eat small bland meals. Avoid alcohol, spicy or "
+        "fatty food, and painkillers like ibuprofen until it settles. Get "
+        "urgent help for severe or one-sided pain, a rigid or swollen "
+        "abdomen, vomiting blood or black stools, a high fever, or pain that "
+        "started after an injury."),
+    "weak": (
+        "Rest and drink water. Eat something if a meal was missed, avoid "
+        "heavy activity until strength returns, and stand up slowly. Get "
+        "urgent help if the weakness came on suddenly, affects one side of "
+        "the body or the face, or comes with chest pain, breathlessness, "
+        "fainting, confusion or slurred speech."),
+    "throat": (
+        "Drink fluids, rest your voice and gargle with warm salt water. "
+        "Paracetamol at the dose on the label can ease the pain. Get urgent "
+        "help if you cannot swallow, are drooling, have trouble breathing, or "
+        "the throat feels like it is swelling or closing. See a doctor if it "
+        "lasts more than a few days or comes with a high fever."),
+    "rash": (
+        "Keep the area clean and cool, avoid scratching, and avoid whatever "
+        "touched the skin. An antihistamine or a mild hydrocortisone cream "
+        "may help itching when used as the label says and there is no allergy "
+        "to it. Get urgent help if the rash comes with swelling of the lips, "
+        "tongue or throat, difficulty breathing, a fever, or a rash that does "
+        "not fade when pressed."),
+    "default": (
+        "Rest, drink water and avoid anything that makes it worse. Common "
+        "over-the-counter options can help mild symptoms when used at the "
+        "dose on the label and there is no allergy. See a doctor if it does "
+        "not settle. Get emergency help for severe or sudden symptoms, chest "
+        "pain, difficulty breathing, confusion or heavy bleeding."),
+}
+
+
+def _detection(user_input):
+    """The keyword detector's verdict, or {} if it cannot be imported."""
+    try:
+        if BASE_DIR not in sys.path:
+            sys.path.insert(0, BASE_DIR)
+        from keyword_detector.keywords import detect
+        return detect(user_input) or {}
+    except Exception:
+        return {}
+
+
+# The benign symptom family the safe template exists for. A red-flag word
+# that is itself one of these, and is the very thing the user asked about
+# ("fever" in "i have a fever"), is the symptom - not extra danger.
+GENERIC_SYMPTOM_WORDS = (
+    "headache", "head hurts", "head ache", "dizzy", "fever", "vomit",
+    "stomach", "weak", "sore throat", "rash",
+)
+
+
+def _red_flags_present(user_input, detection):
+    low = user_input.lower()
+    matched = [k.lower() for k in (detection.get("matched_keywords") or [])]
+    for word in RED_FLAG_WORDS:
+        if word not in low:
+            continue
+        if (word in GENERIC_SYMPTOM_WORDS
+                and any(word in k for k in matched)):
+            continue
+        return True
+    return False
+
+
+def _safe_template_for(user_input):
+    low = user_input.lower()
+    for key, text in SAFE_SELF_CARE.items():
+        if key != "default" and key in low:
+            return text
+    return SAFE_SELF_CARE["default"]
+
+
+def _thin_symptom_match(user_input, detection, db_result):
+    """True when a benign message was matched by ONE generic symptom word.
+
+    The row may be Migraine, Pneumonia or even a CRITICAL diagnosis, but the
+    message never described it: forcing "use this exactly" on that row is how
+    "i have a headache" became an ACT NOW blood-pressure answer, and how "i
+    have a fever" would be answered as Pneumonia. Red-flag wording (and a
+    forced CRITICAL override) keeps the strict row grounding."""
+    if not db_result:
+        return False
+    if detection.get("critical_override") or _red_flags_present(
+            user_input, detection):
+        return False
+    return len(detection.get("matched_keywords") or []) <= 1
 
 def detect_route(user_input):
     text = user_input.lower()
@@ -578,7 +729,16 @@ def get_system_prompt(severity):
                 "natural disasters, and emergency numbers. "
                 "Refuse anything else politely.")
 
-def build_prompt(user_input, route, db_result):
+def build_prompt(user_input, route, db_result, safe_template=None):
+    if safe_template:
+        return f"""User message: {user_input}
+
+REVIEWED SAFE-CARE GUIDANCE - use this as the basis, reworded naturally:
+{safe_template}
+
+Answer as short numbered steps. Do not name a serious diagnosis and do not
+invent doses: use only what the guidance above says, in calm wording."""
+
     if route == "body_symptoms" and db_result:
         return f"""User message: {user_input}
 
@@ -646,16 +806,30 @@ def chat(user_input):
     # Query correct DB
     db_result = None
     severity = "UNKNOWN"
+    safe_template = None
+    detection = _detection(user_input)
 
     if route == "body_symptoms":
         db_result = query_body_symptoms(user_input)
         if db_result:
             severity = db_result.get('severity', 'URGENT')
+            if _thin_symptom_match(user_input, detection, db_result):
+                # A bare symptom reached a specific (or even life-threatening)
+                # row through one generic word. Answer from the reviewed
+                # benign guidance instead of forcing the row's text as fact.
+                safe_template = _safe_template_for(user_input)
+                severity = "MODERATE"
 
     elif route == "medicines":
         db_result = query_medicine(user_input)
         if db_result:
-            severity = "CRITICAL"
+            # Severity comes from overdose wording, not from the route: a
+            # paracetamol suggestion for a headache is not "a life at risk
+            # RIGHT NOW". The detector already encodes this (CRITICAL only
+            # when overdose keywords matched, MODERATE otherwise).
+            severity = detection.get("severity_hint") or "MODERATE"
+            if severity not in ("CRITICAL", "URGENT", "MODERATE"):
+                severity = "MODERATE"
 
     elif route == "emergency_numbers":
         db_result = query_emergency_numbers(user_input)
@@ -663,14 +837,19 @@ def chat(user_input):
 
     # Build and send to LLM
     system = get_system_prompt(severity)
-    prompt = build_prompt(user_input, route, db_result)
+    prompt = build_prompt(user_input, route, db_result, safe_template)
     response = ask_llm(system, prompt)
 
     # Print result
     banner = BANNERS.get(severity, BANNERS["UNKNOWN"])
-    source = "db+llm" if db_result else "llm_only"
+    if safe_template:
+        source = "safe_template+llm"
+    else:
+        source = "db+llm" if db_result else "llm_only"
     matched = ""
-    if db_result:
+    if db_result and not safe_template:
+        # A safe-template answer is not grounded in that one row, so the row
+        # label is not reported as the match.
         matched = (db_result.get('condition') or
                    db_result.get('medicine_name') or
                    db_result.get('country',''))
