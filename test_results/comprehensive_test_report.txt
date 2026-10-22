@@ -1,0 +1,179 @@
+---COMPREHENSIVE TEST REPORT---
+generated: 2026-10-15 07:42
+run mode: full (real Ollama qwen2.5:0.5b + real SQLite databases)
+
+CATEGORY 1 — BODY EMERGENCIES
+Total tests: 30
+Passed (correct): 30
+Partial: 0
+Failed (wrong): 0
+Rows fixed in DB: 9
+New rows added to DB: 5
+
+CATEGORY 2 — MEDICINE QUESTIONS
+Total tests: 15
+Passed (correct): 15
+Partial: 0
+Failed (wrong): 0
+Rows fixed in DB: 11
+
+CATEGORY 3 — DISASTER SITUATIONS
+Total tests: 14
+Passed (correct): 14
+Partial: 0
+Failed (wrong): 0
+Rows fixed in DB: 0
+
+CATEGORY 4 — EMERGENCY NUMBERS
+Total tests: 14
+Passed (correct): 14
+Partial: 0
+Failed (wrong): 0
+Rows fixed in DB: 0
+
+CATEGORY 5 — OFF TOPIC REFUSAL
+Total tests: 10
+Correctly refused: 10
+Incorrectly answered: 0
+
+---TOTAL TESTS: 83---
+---PASSED: 83/83---
+---PARTIAL: 0---
+---FAILED: 0---
+---DB ROWS FIXED: 20---
+---NEW DB ROWS ADDED: 16---
+
+---EXTRA REAL-USER QUESTIONS (beyond the 83 listed)---
+Total extra tests: 29
+Passed (correct): 29
+Partial: 0
+Failed (wrong): 0
+
+---GRAND TOTAL: 112/112 cases fully correct---
+Status: READY FOR ANDROID INTEGRATION
+
+---DEFECTS FOUND BY THIS SWEEP AND FIXED ---
+1. body_symptoms ranking: the query returned candidates in severity
+   order; scoring now ranks by evidence across keywords/symptoms/
+   condition/body part + severity + site fit.
+2. medicines ranking: the query had NO relevance ranking at all
+   (SELECT ... LIMIT 3 in table order), so "antidote for warfarin
+   overdose" returned Fentanyl and "double dose of metformin"
+   returned Aspirin. Candidates are now scored with the named drug
+   weighted far above incidental word matches.
+3. Country detection: "emergency number in united states" returned
+   the Virgin Islands or the UAE and "uae"/"uk"/"usa" fell back to
+   a top-5 list of the wrong countries. Rewritten to match full names,
+   then word-aligned prefixes, then an alias table, then ISO codes.
+4. Disaster vocabulary: earthquake, flood, wildfire, fire escape,
+   tornado, tsunami, landslide, chemical spill, downed power lines
+   and lost-in-the-wilderness were answered with the hardcoded
+   refusal because neither the keyword list nor the database knew
+   the words existed. 10 new CRITICAL/URGENT rows + vocabulary.
+5. Missing scenarios: scald burns, dog/animal bites, insect stings,
+   crush injury under rubble, lightning strike, rodenticide (rat
+   poison) poisoning - 6 new rows.
+6. Triage priors: chest pain radiating to the arm/jaw/sweating was
+   ranked below Pneumothorax; a head injury with confusion lost to
+   Heat stroke; bleeding in pregnancy lost to Haemophilia; a bent back
+   after a fall lost to the power-line row; underwater/not-breathing
+   lost to Choking; a twisted ankle lost to Anaphylaxis. Priors now
+   PULL the clinically indicated row into the candidate pool and
+   boost it.
+7. Over-triage guard: the anaphylaxis rows are CRITICAL and share the
+   word "swollen" with ordinary local swelling, so they were the
+   answer to "my ankle is swollen after i twisted it" unless the
+   message shows airway/systemic evidence.
+8. Overdose routing: "child swallowed unknown white pills" stayed on
+   the medicines route and returned no rows because the phrase
+   "swallowed pills" was interrupted. The reroute to the ingestion
+   row is now tolerant of filler words.
+9. Medicine aliases: Zolpidem/Zopiclone/Melatonin never said
+   "sleeping pill" (so a whole bottle of sleeping tablets answered
+   with an anti-worm drug) and the antihypertensives never said
+   "blood pressure tablet".
+10. Numbered repetition loop: the answer to "emergency number in
+   united states" was "4. Medical: 911 | 5. Medical: 911 | 6.
+   Medical: 911 ...". Every line differed only by its number, so the
+   duplicate-line test could not see the loop. Lines are now compared
+   again with the list numbering and punctuation stripped.
+11. Empty model output was MASKED: clean_response replaced it with
+   "Please describe your emergency and I will provide guidance." so
+   the Nigeria question was answered with that line while the verified
+   112 sat unused in db_results. That sentinel now triggers the
+   verified database fallback.
+12. Safety-inversion guard hardening: the model answered "Yes, you can
+   give Ibuprofen to a pregnant woman. However ... Always consult a
+   healthcare professional", and the trailing "consult" switched the
+   guard off. A bare consult is no longer treated as a denial, so the
+   verified "NOT safe in pregnancy" text wins.
+13. Rows for a named body part no longer decide whether the keyword
+   search "found something", because that suppressed the loose-search
+   fallback: "i spilled boiling water on my arm" returned NO rows at
+   all while the Scald row carries "boiling water" verbatim.
+14. Expired-medicine questions had no verified field to answer from, so
+   the model invented fragments ("Take expired antibiotics. Do NOT use
+   expired tetracycline."). A standard offline expiry rule is now
+   injected and the model must follow it.
+15. chat.py (the live chat script) pasted the WHOLE sentence into the
+   body-symptom LIKE, so multi-word questions matched no row at all and
+   were answered by the model alone - that is the "bullet in my arm"
+   case reported from user testing. Input is now searched word by word
+   (word-boundary matching, simple stems) and scored, and the app's own
+   detector provides the row first so script and pipeline agree.
+16. The same file's medicine lookup took the first row ANY word matched,
+   inside used_for too: "can i give ibuprofen to a pregnant woman"
+   answered Morphine ("can" matched "cancer pain"), "i took too much
+   ibuprofen" answered Paracetamol and "my child ate rat poison"
+   answered Zolpidem. It now uses the detector, with a fallback that
+   searches the drug name and aliases only, longest word first.
+17. The detector's vocabulary knew none of the new trauma scenarios:
+   "bullet", "shot", "crushed", "acid attack", "drowning",
+   "electrocuted" and the everyday names for heartburn all routed to
+   general and were answered with the off-topic refusal. Added.
+18. NONDETERMINISM (found by re-running this suite): the keyword-variant
+   list was truncated with a sort key whose ties were broken by Python's
+   randomised string hashing, so the candidate pool changed from process
+   to process. "i spilled boiling water on my arm" answered with the
+   Flood row in about 1 run out of 6, which made the route/row result of
+   this suite flaky. The sort key is now total (variant text included);
+   three full 112-case route sweeps in separate processes are byte
+   identical (test_results/determinism_sweep.log).
+
+
+---REMAINING LIMITATIONS ---
+
+* Grading is automated (right database + acceptable top row + LLM
+  text grounded in that row), not clinician review. YES means
+  medically plausible and faithful to the verified row, not
+  verified by a doctor.
+* One run per case: the model is stochastic, so a pass is not a
+  guarantee that the same input passes every time. Every failure
+  reported was reproduced before being fixed.
+* The 112/112 above is a single full 112-case run (LLM included)
+  executed under the final code and databases after all fixes,
+  756s, 6.8s per case, model qwen2.5:0.5b (the engine default;
+  chat.py, the live script, runs qwen2.5:1.5b).
+* The route+row half of every case is deterministic and was swept
+  three times over in separate processes with identical results.
+* Some cases are graded deliberately broadly: "medicines not for
+  children" accepts any medicine whose verified warnings really
+  restrict children, and "expired antibiotics" accepts any row
+  that really is an antibiotic.
+* Performance: about 6.5 s per answer on this PC (detector ~1.5 s,
+  Qwen 0.5B on CPU ~4-5 s). Nothing here was measured on Android.
+* The 0.5B model is still the weak link. The guards (prompt echo,
+  repetition loop, safety inversion, empty output) catch every
+  failure mode seen in this sweep, but subtle unfaithfulness is
+  mitigated, not eliminated.
+* Not exercised here: the Android/llama.cpp path, audio input and
+  non-English messages.
+
+
+Grading: a case is YES only when the detector reached the right
+database, returned a medically acceptable top row, and the LLM
+answer stayed grounded in that row's verified text (no prompt
+echo, no repetition loop, no LLM error). Off-topic cases are YES
+only when the hardcoded refusal fired with no LLM call.
+
+---DONE---
