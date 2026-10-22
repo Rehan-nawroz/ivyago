@@ -31,13 +31,12 @@ DB ROW: {"id": 209, "body_part": "arm, chest, abdomen, leg", "symptoms": "bullet
 🔴 CRITICAL EMERGENCY — ACT NOW
 ────────────────────────────────────────
 1. Call emergency services immediately.
-2. Apply firm direct pressure to the wound with a clean cloth.
-3. Do not remove the cloth even if it soaks through.
-4. If on a limb and bleeding is uncontrollable, apply a tourniquet 2 to 3 inches above the wound and note the time it was applied.
-5. Keep the person still and lying down.
-6. Do not give food or water.
-7. Keep them warm with a blanket.
-8. Talk to them calmly until help arrives.
+2. Apply firm direct pressure to the wound with a clean cloth. Do not remove the cloth even if it soaks through.
+3. If on a limb and bleeding is uncontrollable, apply a tourniquet 2 to 3 inches above the wound and note the time it was applied.
+4. Keep the person still and lying down.
+5. Do not give food or water.
+6. Keep them warm with a blanket.
+7. Talk to them calmly until help arrives.
 
 [ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Gunshot Wound]
 
@@ -101,7 +100,7 @@ DB ROW: {"id": 211, "body_part": "face, eyes, skin, mouth, throat, hands, chest"
 --- USER-VISIBLE OUTPUT ---
 🔴 CRITICAL EMERGENCY — ACT NOW
 ────────────────────────────────────────
-1. Call emergency services immediately.
+1. Call emergency services.
 2. Protect yourself by not touching the chemical or wet clothing.
 3. Brush off any dry powder.
 4. Flush the skin with large amounts of clean cool water for at least 20 minutes, letting water run away from the eyes and unaffected skin.
@@ -142,11 +141,16 @@ DB ROW: {"id": 204, "body_part": "whole body", "symptoms": "person pinned under 
 --- USER-VISIBLE OUTPUT ---
 🔴 CRITICAL EMERGENCY — ACT NOW
 ────────────────────────────────────────
-1) Call for rescue and stay calm while waiting.
-2) Apply firm pressure to any visible bleeding.
-3) Do not attempt to release the weight on your own.
-4) Keep talking and watch for breathing.
-5) Lie them flat, keep warm, and avoid food or drink.
+1) Call for rescue and stay calm.
+2) Keep the casualty still and warm.
+3) Control visible bleeding with firm pressure.
+4) If trapped for more than 15 minutes, do not release the weight.
+5) Keep talking and watch for breathing.
+6) Treat for shock: lie them flat, keep warm, do not give food or drink.
+7) Do not pull the person out by force.
+8) Do not give food or drink.
+9) Do not leave them alone.
+10) Do not apply a tight bandage on a crushed limb.
 
 [ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Crush injury trapped under rubble]
 
@@ -163,11 +167,8 @@ DB ROW: {"id": 203, "body_part": "whole body", "symptoms": "sudden bright flash,
 1) Move the person to a safer place if the storm is continuing.
 2) Check for breathing and pulse; start CPR if necessary.
 3) Treat burns with cool water and a clean dressing.
-4) Call emergency services.
-5) Keep the person warm.
-6) Do not shelter under a tree, near water, or near metal fences.
-7) Do not resume outdoor activity for 30 minutes after the last thunder.
-8) Delay CPR while waiting for help.
+4) Call emergency services and keep the person warm.
+5) Anyone struck needs to be checked in hospital, even if they seem fine.
 
 [ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Lightning strike]
 
@@ -249,14 +250,10 @@ NUMBER GROUNDING: numbers shown: 911, 993 | DB numbers: 911, 993, 997, 998, 999
 --- USER-VISIBLE OUTPUT ---
 🟡 URGENT — NEEDS ATTENTION SOON
 ────────────────────────────────────────
-The correct emergency numbers in Saudi Arabia are:
-
-1. Police: 911
-2. Ambulance: 911
-3. Fire: 911
-4. Traffic police: 993
-
-Always use these numbers, never guess.
+1. For Police: Call 911
+2. For Ambulance: Call 911
+3. For Fire: Call 911
+4. For Traffic Police: Call 993
 
 [ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Saudi Arabia]
 
@@ -271,9 +268,9 @@ NUMBER GROUNDING: numbers shown: 0800, 101, 105, 111, 112, 119, 19, 999 | DB num
 --- USER-VISIBLE OUTPUT ---
 🟡 URGENT — NEEDS ATTENTION SOON
 ────────────────────────────────────────
-1. For police in the United Kingdom, call 999 or 112.
-2. For ambulance, call 999 or 112.
-3. For fire, call 999 or 112.
+1. For police in the United Kingdom, call either 999 or 112.
+2. For ambulance, call either 999 or 112.
+3. For fire, call either 999 or 112.
 4. For non-emergency police, call 101.
 5. For power outages, call 105.
 6. For non-emergency health issues, call 111.
@@ -289,18 +286,25 @@ VERDICT: PASS
 EXPECTED condition/country: Australia
 ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Australia
 DB ROW: {"id": 17, "country": "Australia", "country_code": "AU", "police": "000", "ambulance": "000", "fire": "000", "regional_notes": "not available", "other": "{\"Mobile phones\": \"112 or 000\", \"State Emergency Service\": \"132 500\", \"National relay service\": \"106\", \"Non-emergency police\": \"131 444 ( NSW , QLD , VIC , SA , WA , NT , TAS & ACT )\", \"Crime Stoppers\": \"1800 333 000\", \"Threats to national security\": \"1800 123 400\", \"Poison control\": \"13 11 26\", \"Lifeline\": \"13 11 14\"}"}
-NUMBER GROUNDING: numbers shown: 000, 112 | DB numbers: 000, 106, 11, 112, 123, 13, 131, 132, 14, 1800, 26, 333, 400, 444, 500
+NUMBER GROUNDING: numbers shown: 000, 10, 106, 11, 112, 123, 13, 131, 132, 14, 1800, 26, 333, 400, 444, 500 | DB numbers: 000, 106, 11, 112, 123, 13, 131, 132, 14, 1800, 26, 333, 400, 444, 500
 --- USER-VISIBLE OUTPUT ---
 🟡 URGENT — NEEDS ATTENTION SOON
 ────────────────────────────────────────
-In Australia, the emergency numbers to call are:
+In Australia, the emergency numbers you should call are:
 
 1. Police: 000
 2. Ambulance: 000
 3. Fire: 000
-4. Other: 112 or 000 (for mobile phones, state emergency service, national relay service, non-emergency police, crime stops, threats to national security, poison control, and lifeline)
+4. Other: 112 or 000 (for mobile phones)
+5. State Emergency Service: 132 500
+6. National relay service: 106
+7. Non-emergency police: 131 444 (for NSW, QLD, VIC, SA, WA, NT, TAS, & ACT)
+8. Crime Stoppers: 1800 333 000
+9. Threats to national security: 1800 123 400
+10. Poison control: 13 11 26
+11. Lifeline: 13 11 14
 
-Please use these numbers for any urgent situations.
+Always dial 000 for the most immediate assistance.
 
 [ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Australia]
 
@@ -315,7 +319,7 @@ NUMBER GROUNDING: numbers shown: 10, 106, 10655, 109, 11, 16123, 16162, 16263, 1
 --- USER-VISIBLE OUTPUT ---
 🟡 URGENT — NEEDS ATTENTION SOON
 ────────────────────────────────────────
-The correct emergency numbers to call in Bangladesh are:
+The correct emergency numbers in Bangladesh are:
 
 1. Police: 999
 2. Ambulance: 999
@@ -389,10 +393,10 @@ DB ROW: {"id": 124, "body_part": "hands", "symptoms": "blood under the nail, sev
 ────────────────────────────────────────
 1. Elevate the hand to reduce swelling.
 2. Apply a cold pack to the injured area to reduce swelling and pain.
-3. Seek medical attention to drain the subungual hematoma if there is severe pain or if the pain persists.
+3. Seek medical attention to drain the subungual hematoma if severe pain persists or worsens.
 4. Do not attempt to drill or prick the nail at home.
 5. Do not ignore severe pain.
-6. Do not pull off the nail.
+6. Do not pull off the nail as it may cause further injury.
 
 [ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Subungual haematoma (nail injury)]
 
@@ -402,7 +406,7 @@ INPUT: my chest hurts and left arm is numb
 VERDICT: PASS
 EXPECTED condition/country: Heart attack (Myocardial Infarction)
 ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Heart attack (Myocardial Infarction)
-DB ROW: {"id": 46, "body_part": "chest", "symptoms": "crushing pain, left arm pain, jaw pain, sweating, shortness of breath, numbness or tingling in the left arm, chest hurts, pressure or tightness in the chest", "condition": "Heart attack (Myocardial Infarction)", "severity": "CRITICAL", "immediate_action": "Call emergency services immediately. Have the person sit or lie down and loosen tight clothing. If available and not allergic, give one adult aspirin (325mg) to chew slowly. Stay with them until help arrives.", "what_not_to_do": "Do not let the person walk or climb stairs. Do not give food or water except the aspirin if available. Do not leave them alone.", "keywords": "chest pain, heart attack, left arm pain, jaw pain, crushing chest, sweating chest pain, numb left arm, left arm numb, left arm numbness, arm goes numb with chest pain, chest hurts, chest pain and numb arm, chest pain spreading to the arm, tight chest, chest pressure", "_score": 29}
+DB ROW: {"id": 46, "body_part": "chest", "symptoms": "crushing pain, left arm pain, jaw pain, sweating, shortness of breath, numbness or tingling in the left arm, chest hurts, pressure or tightness in the chest", "condition": "Heart attack (Myocardial Infarction)", "severity": "CRITICAL", "immediate_action": "Call emergency services immediately. Have the person sit or lie down and loosen tight clothing. If available and not allergic, give one adult aspirin (325mg) to chew slowly. Stay with them until help arrives.", "what_not_to_do": "Do not let the person walk or climb stairs. Do not give food or water except the aspirin if available. Do not leave them alone.", "keywords": "chest pain, heart attack, left arm pain, jaw pain, crushing chest, sweating chest pain, numb left arm, left arm numb, left arm numbness, arm goes numb with chest pain, chest hurts, chest pain and numb arm, chest pain spreading to the arm, tight chest, chest pressure", "_score": 34}
 --- USER-VISIBLE OUTPUT ---
 🔴 CRITICAL EMERGENCY — ACT NOW
 ────────────────────────────────────────
@@ -411,9 +415,6 @@ DB ROW: {"id": 46, "body_part": "chest", "symptoms": "crushing pain, left arm pa
 3. Loosen tight clothing.
 4. If available and not allergic, give one adult aspirin (325mg) to chew slowly.
 5. Stay with them until help arrives.
-6. Do not let them walk or climb stairs.
-7. Do not give food or water except the aspirin if available.
-8. Do not leave them alone.
 
 [ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Heart attack (Myocardial Infarction)]
 
