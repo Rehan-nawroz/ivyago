@@ -10,7 +10,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. **Emergency - ACT NOW**\n- Call emergency services immediately.\n- Have the person sit or lie down and loosen tight clothing.\n- If available and not allergic, give one adult aspirin (325mg) to chew slowly.\n- Stay with them until help arrives.",
+  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Have the person sit or lie down and loosen tight clothing.\n3. If available and not allergic, give one adult aspirin (325mg) to chew slowly.\n4. Stay with them until help arrives.",
   "verdict": "YES",
   "note": ""
  },
@@ -70,7 +70,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services IMMEDIATELY.\n2. Note the time symptoms began.\n3. Keep the person still and give nothing by mouth.\n4. Remember FAST: Face, Arms, Speech, Time.\n5. Do not give aspirin without medical instruction.\n6. Do not let them eat or drink.\n7. Do not wait to see if it passes.",
+  "response": "EMERGENCY - ACT NOW\n1. Call emergency services IMMEDIATELY.\n2. Note the time symptoms began.\n3. Keep the person still and give nothing by mouth.\n4. Remember FAST: Face, Arms, Speech, Time.",
   "verdict": "YES",
   "note": ""
  },
@@ -130,7 +130,7 @@
   "row_ok": true,
   "rows_returned": 2,
   "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. CALL EMERGENCY SERVICES AND START CPR WITH REScue Breaths IF TRAINED.\n2. IF BREATHING, PLACE IN THE RECOVERY POSITION AND KEEP THEM WARM.",
+  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Start CPR with rescue breaths if trained.\n3. If breathing, place the person in the recovery position.\n4. Keep the person warm.\n5. If the person vomits, clear the mouth and continue CPR.",
   "verdict": "YES",
   "note": ""
  },
@@ -145,7 +145,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Use an adrenaline autoinjector into the outer thigh at once if available.\n2. Call emergency services immediately.",
+  "response": "1. Use an adrenaline autoinjector into the outer thigh at once if available.\n2. Call emergency services immediately.\n3. Lay the person flat with legs raised if breathing allows.",
   "verdict": "YES",
   "note": ""
  },
@@ -175,7 +175,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Apply firm direct pressure to the deep cut.\n2. Raise the area if possible.\n3. Seek medical help for stitches if the wound is deep or gaping.",
+  "response": "1. Apply firm direct pressure to the deep cut.\n2. Raise the area if possible.\n3. Seek medical help for stitches if the wound is deep or gaping.",
   "verdict": "YES",
   "note": ""
  },
@@ -190,7 +190,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Find a safe place to immobilize the leg.\n2. Apply a cold pack to reduce swelling and pain.\n3. Keep the person still until medical help arrives.",
+  "response": "1. Find a safe place to immobilize the leg.\n2. Apply a cold pack to the leg.\n3. Keep the person still until help arrives.",
   "verdict": "YES",
   "note": ""
  },
@@ -205,7 +205,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Keep the person resting.\n2. Stay with them.\n3. Watch for worsening drowsiness, vomiting, or confusion.\n4. Seek medical care the same day.",
+  "response": "1. Keep the person resting.\n2. Stay with the person.\n3. Watch for worsening drowsiness, vomiting, or confusion.\n4. Seek medical care the same day.",
   "verdict": "YES",
   "note": ""
  },
@@ -220,7 +220,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Go to an emergency department IMMEDIATELY.\n2. Keep the person still and note when bladder or bowel control was lost.",
+  "response": "1. Go to an emergency department immediately.\n2. Keep the person still and note when bladder or bowel control was lost.\n3. Do not wait for the pain to settle.\n4. Do not let them bend or lift.\n5. Do not treat it as ordinary back pain.",
   "verdict": "YES",
   "note": ""
  },
@@ -280,7 +280,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Irrigate the eye with clean water or saline for at least 15-20 minutes.\n3. Hold the lids open.",
+  "response": "1. Call emergency services immediately.\n2. Irrigate the eye with clean water or saline for at least 15-20 minutes, holding the lids open.\n3. Do not rub the eye.\n4. Do not try to neutralize the chemical.\n5. Do not stop rinsing to wait for help.",
   "verdict": "YES",
   "note": ""
  },
@@ -415,7 +415,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1) Control the bleeding by pressing firmly on the wound with a clean cloth.\n2) Once bleeding slows, wash the wound with running water and soap for at least 15 minutes.\n3) Cover it with a clean, dry dressing.\n4) Go to a clinic the same day: a tetanus booster and rabies vaccination may be needed.\n5) Note the animal and whether it is known, and report the bite to the local authority.",
+  "response": "1. Control the bleeding by pressing firmly on the wound with a clean cloth.\n2. Once bleeding slows, wash the wound with running water and soap for at least 15 minutes.\n3. Cover it with a clean, dry dressing.\n4. Go to a clinic the same day.\n5. A tetanus booster and rabies vaccination may be needed.\n6. Note the animal and whether it is known, and report the bite to the local authority.",
   "verdict": "YES",
   "note": ""
  },
@@ -445,7 +445,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Start CPR with rescue breaths if trained.\n3. If breathing, place the person in the recovery position.\n4. Keep the person warm.\n5. If the person vomits, clear the mouth and continue CPR.",
+  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Start CPR with rescue breaths if trained.\n3. If breathing, place the person in the recovery position.\n4. Keep the person warm.\n5. If the person vomits, clear the mouth and continue CPR.",
   "verdict": "YES",
   "note": ""
  },
@@ -475,7 +475,7 @@
   "row_ok": true,
   "rows_returned": 2,
   "source": "db+llm",
-  "response": "1. Call emergency services or poison control immediately.\n2. Go to the hospital.\n3. Do NOT induce vomiting unless told to.\n4. Do NOT use any other NSAIDs or aspirin.\n5. Take with food.",
+  "response": "1. Call emergency services or poison control immediately.\n2. Go to the hospital.\n3. Do NOT induce vomiting unless told to.\n4. Do NOT consume any more ibuprofen.\n5. Do NOT take other NSAIDs or aspirin.\n6. Do NOT combine ibuprofen with other NSAIDs or aspirin.\n7. Do NOT take with food.",
   "verdict": "YES",
   "note": ""
  },
@@ -490,7 +490,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "Aspirin\nPregnancy: Not established as safe -- consult a doctor.\nMaximum adult dose: 325-650mg every 4-6 hours for pain (max 4g per 24 hours); 75-100mg daily for heart protection\nIf too much was taken: Call emergency services immediately. Go to hospital for blood monitoring and possible dialysis. Do NOT induce vomiting unless told to.\nWarnings: Never give to children or teenagers with fever or flu-like illness (Reye's syndrome). Increases bleeding. Avoid with stomach ulcers. Not during labor.",
+  "response": "1. **Stop the child from eating the aspirin**.\n2. **Call emergency services** immediately.\n3. **Go to the hospital** for blood monitoring and possible dialysis.\n4. **Do NOT induce vomiting** unless told to.\n5. **Do NOT give aspirin to children or teenagers with fever or flu-like illness (Reye's syndrome).**\n6. **Increase bleeding** if the child has a fever or viral illness.\n7. **Avoid with stomach ulcers**.\n8. **Do not give aspirin to children or teenagers during labor**.",
   "verdict": "YES",
   "note": ""
  },
@@ -505,7 +505,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep airway open.\n3. Lay the person on their side.\n4. Administer flumazenil if the person cannot be woken or breathes slowly.\n5. Do not combine with alcohol.",
+  "response": "1. Call emergency services immediately.\n2. Keep airway open.\n3. Lay the person on their side.\n4. Administer flumazenil if the person cannot be woken or breathes slowly.\n5. Call emergency services again if the person's breathing is slow or does not improve.",
   "verdict": "YES",
   "note": ""
  },
@@ -550,7 +550,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Go to the nearest hospital immediately.\n2. Dial 911 for emergency services.\n3. Inform the emergency services of the overdose.\n4. Have the person lie down and elevate their legs.\n5. Administer a hemodialysis if indicated.\n6. Have the person rest in a comfortable position.\n7. Monitor the person's condition closely.\n8. Follow up with the emergency services for further instructions.",
+  "response": "1. Go to the nearest hospital immediately.\n2. Dial 911 for emergency services.\n3. Inform the medical personnel about the overdose.\n4. Have the patient lie down and rest.\n5. Administer hemodialysis if indicated.\n6. Monitor the patient's condition closely.\n7. Follow up with the medical personnel for further instructions.",
   "verdict": "YES",
   "note": ""
  },
@@ -595,7 +595,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "You should know that mixing alcohol with Diazepam can lead to a dangerous overdose. This combination is known to cause deep drowsiness, confusion, slurred speech, unsteadiness, breathing depression, and even death. If you suspect someone has an overdose, call emergency services immediately. If the person is hard to wake or breathing slowly, give flumazenil (hospital) \u2014 but only professionals use it. Keep airway open and lay the person on their side. Do not give flumazenil to someone who is hard to wake or breathing slowly. Diazepam is not recommended for use in children. It is not safe to use in pregnant women. It is not recommended to use this combination for long periods of time. It can impair driving for many hours. Always consult a doctor before using this combination.",
+  "response": "Diazepam\nPregnancy: Not established as safe -- consult a doctor.\nMaximum adult dose: 2-10mg, 2-4 times daily depending on condition (max 30mg per 24 hours anxiety; 60mg muscle spasm under supervision)\nIf too much was taken: Call emergency services IMMEDIATELY if the person is hard to wake or breathing slowly. Give flumazenil (hospital) \u2014 but only professionals use it. Keep airway open, lay on side.\nWarnings: Extremely habit-forming. NEVER combine with alcohol, opioids, or other sedatives \u2014 this combination kills. Do not stop suddenly after long use \u2014 seizures and hallucinations possible. Impairs driving for many hours.",
   "verdict": "YES",
   "note": ""
  },
@@ -640,7 +640,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "Tetracycline\nPregnancy: NOT safe in pregnancy (verified) -- avoid.\nMaximum adult dose: 250-500mg every 6 hours\nIf too much was taken: Call poison control. Do NOT induce vomiting unless told to. NEVER use expired tetracycline \u2014 discard. Supportive care.\nWarnings: Expired capsules can cause kidney damage (Fanconi syndrome). Avoid milk, antacids, iron within 2 hours. Strong photosensitivity. Not for children under 8 or pregnancy.",
+  "response": "1. Expiration warning: The medicine is expired and should not be taken.\n2. Expiration action: Do not induce vomiting unless told to.\n3. Expiration use: NEVER use expired tetracycline.\n4. Expiration support: Supportive care.\n5. Expiration antidote: None specific.\n6. Expiration maximum: 250-500mg every 6 hours.\n7. Expiration pregnancy: NOT safe in pregnancy (verified).\n8. Expiration maximum child: NOT FOR CHILDREN under 8 years.\n9. Expiration warnings: Expired capsules can cause kidney damage (Fanconi syndrome).\n10. Expiration warnings: Avoid milk, antacids, iron within 2 hours.\n11. Expiration warnings: Strong photosensitivity.\n12. Expiration warnings: NOT for children under 8 or pregnancy.",
   "verdict": "YES",
   "note": ""
  },
@@ -685,7 +685,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "1. Drop to hands and knees.\n2. Take cover under a sturdy table.\n3. Hold on until the shaking stops.\n4. If you are outdoors, move to open ground away from buildings, walls, trees and power lines.\n5. If you are trapped, cover your mouth with cloth and tap on a pipe or wall so rescuers can hear you.\n6. Treat bleeding with firm pressure and keep the person warm.",
+  "response": "1. Drop to hands and knees, take cover under a sturdy table and hold on until the shaking stops.\n2. If you are outdoors, move to open ground away from buildings, walls, trees and power lines.\n3. If you are trapped, cover your mouth with cloth and tap on a pipe or wall so rescuers can hear you.\n4. Treat bleeding with firm pressure and keep the person warm.",
   "verdict": "YES",
   "note": ""
  },
@@ -715,7 +715,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "Condition: Flood / rising flood water\nDo this now: 1) Move to higher ground immediately - do not wait to be told. 2) If you are in a building, go to the highest floor and take water, food and a torch. 3) Signal for help from a window or roof. 4) If you must cross water, it is safer to walk on higher ground than through it.\nDo NOT: Do not walk or drive through moving water - 15 cm of moving water can knock an adult down. Do not touch electrical equipment if it is wet. Do not drink flood water. Do not swim to help someone unless you are trained and have a float.",
+  "response": "1) Move to higher ground immediately - do not wait to be told.\n2) If you are in a building, go to the highest floor and take water, food, and a torch.\n3) Signal for help from a window or roof.\n4) If you must cross water, it is safer to walk on higher ground than through it.",
   "verdict": "YES",
   "note": ""
  },
@@ -730,7 +730,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "1. Leave early, before the fire arrives - follow the evacuation route away from the fire, not with the wind.\n2. Close all windows and doors and turn off gas.\n3. Cover your nose and mouth with a damp cloth and stay low under the smoke.\n4. If you are trapped, go to a cleared area or a large open space and call emergency services with your location.",
+  "response": "1) Leave early, before the fire arrives - follow the evacuation route away from the fire, not with the wind.\n2) Close all windows and doors and turn off gas.\n3) Cover your nose and mouth with a damp cloth and stay low under the smoke.\n4) If you are trapped, go to a cleared area or a large open space and call emergency services with your location.",
   "verdict": "YES",
   "note": ""
  },
@@ -820,7 +820,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "1. Move out of the path of the slide - go to the nearest high, stable ground away from the slope.\n2. If escape is impossible, curl into a ball and protect your head with your arms.\n3. Once clear, stay away from the slide area and report anyone missing.\n4. Treat injuries the usual way - control bleeding and keep the person warm.",
+  "response": "1) Move out of the path of the slide - go to the nearest high, stable ground away from the slope.\n2) If escape is impossible, curl into a ball and protect your head with your arms.\n3) Once clear, stay away from the slide area and report anyone missing.\n4) Treat injuries the usual way - control bleeding and keep the person warm.",
   "verdict": "YES",
   "note": ""
  },
@@ -850,7 +850,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "1. Stay at least 10 metres away from the downed power lines.\n2. Keep everyone else back from the downed power lines.\n3. Treat every wire as live, even if it looks dead.\n4. If the wire is on a vehicle, tell the people inside to stay in the car and wait for help.\n5. Call emergency services and the electricity company and warn passers-by.\n6. If someone is in contact with a wire, do not touch them until the power is off.",
+  "response": "1. Stay at least 10 metres away and keep everyone else back.\n2. Treat every wire as live, even if it looks dead.\n3. If the wire is on a vehicle, tell the people inside to stay in the car and wait for help.\n4. Call emergency services and the electricity company and warn passers-by.\n5. If someone is in contact with a wire, do not touch them until the power is off.",
   "verdict": "YES",
   "note": ""
  },
@@ -895,7 +895,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "Police: 15 | Ambulance: 115 and 1122 | Fire: 16",
+  "response": "15 for police\n115 and 1122 for ambulance\n16 for fire",
   "verdict": "YES",
   "note": "verified number(s) ['1122', '115', '15', '16'] present"
  },
@@ -940,7 +940,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "Fire: 000, Police: 000, Ambulance: 000",
+  "response": "Call Australia: police 000, ambulance 000, fire 000.",
   "verdict": "YES",
   "note": "verified number(s) ['000'] present"
  },
@@ -955,7 +955,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "Call United States of America: police 911, ambulance 911, fire 911.",
+  "response": "Police: 911 | Ambulance: 911 | Fire: 911",
   "verdict": "YES",
   "note": "verified number(s) ['911'] present"
  },
@@ -1015,7 +1015,7 @@
   "row_ok": true,
   "rows_returned": 1,
   "source": "db+llm",
-  "response": "Country: United Arab Emirates | Police: 999 | Ambulance: 998 | Fire: 997 | Emergency: 112",
+  "response": "1. Police: 999\n2. Ambulance: 998\n3. Fire: 997",
   "verdict": "YES",
   "note": "verified number(s) ['997', '998', '999'] present"
  },
@@ -1270,7 +1270,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Cover the ear lightly with a clean pad.\n3. Keep the head still and level.\n4. Do not plug the ear canal.\n5. Do not put anything inside the ear.\n6. Do not move the head or neck.",
+  "response": "1. Call emergency services immediately.\n2. Cover the ear lightly with a clean pad.\n3. Keep the head still and level.",
   "verdict": "YES",
   "note": ""
  },
@@ -1285,7 +1285,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Pinch continuously for 10-15 minutes.\n2. Go to an emergency department immediately.\n3. Keep the person sitting upright and calm.\n4. Do not tilt the head back.\n5. Do not swallow blood - spit it out.\n6. Do not stop pinching to check too soon.",
+  "response": "1. Pinch continuously for 10-15 minutes.\n2. Go to an emergency department.\n3. Keep the person sitting upright and calm.\n4. Do not tilt the head back.\n5. Do not swallow blood - spit it out.\n6. Do not stop pinching to check too soon.",
   "verdict": "YES",
   "note": ""
  },
@@ -1330,7 +1330,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Take a urine sample for testing.\n2. Drink plenty of fluids to help flush out the blood.\n3. Note any clots or pain in the urinary tract.\n4. Seek medical attention promptly.",
+  "response": "1. Take the user's urine to a doctor as soon as possible.\n2. Drink plenty of fluids to help flush out the blood.\n3. Note any clots or pain in the urinary tract.\n4. Do not ignore blood in urine.\n5. Do not take blood thinners without advice.\n6. Do not delay assessment.",
   "verdict": "YES",
   "note": ""
  },
@@ -1375,7 +1375,7 @@
   "row_ok": true,
   "rows_returned": 2,
   "source": "db+llm",
-  "response": "1. Call emergency services IMMEDIATELY.\n2. Have the woman kneel or lie with the hips raised (knee-chest or head-down).\n3. Do NOT push the cord back.\n4. Do NOT let the woman sit or walk.\n5. Do not delay - the baby needs urgent delivery.",
+  "response": "1. Call emergency services IMMEDIATELY.\n2. Have the woman kneel or lie with the hips raised (knee-chest or head-down).\n3. Do NOT push the cord back.",
   "verdict": "YES",
   "note": ""
  },
@@ -1390,7 +1390,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Lay the person down with the legs raised.\n2. Call emergency services if they faint or feel very unwell.\n3. Do not give stimulants to speed the heart.\n4. Do not let them stand up quickly.\n5. Do not delay if they faint.",
+  "response": "1. Lay the person down with the legs raised.\n2. Call emergency services if they faint or feel very unwell.",
   "verdict": "YES",
   "note": ""
  },
@@ -1510,7 +1510,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Immobilize the spine, keeping the person flat and still until help arrives.\n3. Keep the person in a supine position until medical help arrives.\n4. Do not move the person.\n5. Do not let the person sit or walk.\n6. Do not remove a helmet.",
+  "response": "1. Call emergency services immediately.\n2. Immobilize the spine, keeping the person flat and still until help arrives.\n3. Keep the person in a head-down, neck-level position until help arrives.\n4. Do not move the person.\n5. Do not let them sit or walk.\n6. Do not remove a helmet.",
   "verdict": "YES",
   "note": ""
  },
@@ -1520,12 +1520,12 @@
   "expected_route": "body_symptoms",
   "route": "body_symptoms",
   "severity": "CRITICAL",
-  "row": "Peritonitis",
+  "row": "Abdominal aortic aneurysm rupture",
   "route_ok": true,
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "EMERGENCY - ACT NOW\n1. Call emergency services immediately.\n2. Keep the person lying still with the knees slightly bent and give nothing by mouth.\n3. Do not give food or drink.\n4. Do not give painkillers by mouth.\n5. Do not press repeatedly on the abdomen.",
+  "response": "1. Call emergency services immediately.\n2. Keep the person lying still and flat.\n3. Keep them warm.",
   "verdict": "YES",
   "note": ""
  },
@@ -1540,7 +1540,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "1. Call emergency services immediately.\n2. Keep airway open.\n3. Lay the person on their side.\n4. Administer flumazenil (hospital-only) as directed.\n5. Monitor the person's breathing and alert the emergency services if necessary.",
+  "response": "1. Call emergency services immediately.\n2. Keep airway open.\n3. Lay the person on their side.\n4. Administer flumazenil if the person cannot be woken or breathes slowly.\n5. Call emergency services again if the person's breathing is slow or irregular.",
   "verdict": "YES",
   "note": ""
  },
@@ -1585,7 +1585,7 @@
   "row_ok": true,
   "rows_returned": 3,
   "source": "db+llm",
-  "response": "If your child ingested Atenolol tablets, it's important to act quickly. Here's what you should know:\n1. **Immediate Action**: Call emergency services immediately if your child faints or experiences any of the following symptoms:\n- Very slow heart rate\n- Low blood pressure\n- Dizziness\n- Tiredness\n- Breathing difficulty in asthmatics\n- Heart block\n2. **Hospital Monitoring**: If your child faints, hospital monitoring is crucial. Atropine and glucagon may be given to help stabilize the heart rate. Do NOT induce vomiting unless told to.\n3. **Antidote**: Glucagon and atropine are used in hospital to help control heart rate and blood pressure. High-dose insulin is also used in severe cases.\n4. **Maximum Adult Dose**: 50-100mg once daily. This is the maximum dose for adults.\n5. **Pregnancy**: Not established as safe for pregnant women. Consult a doctor.\n6. **Maximum Child Dose**: NOT FOR CHILDREN (specialist dosing only). This is the maximum dose for children.\n7. **Warnings**: Never stop suddenly \u2014 rebound angina and heart attack risk (taper 1-2 weeks). Caution in asthma, diabetes, poor circulation, and poor circulation.\n8. **Check Pulse Daily**: Do not take if under 50-55 bpm without advice.\nRemember, these are general guidelines and should be followed by a healthcare professional.",
+  "response": "If your child ingested your blood pressure tablets, you should be aware of the following:\n1. **Immediate Medical Attention**: Your child should be taken to the emergency room immediately. Symptoms such as very slow heart rate, low blood pressure, dizziness, tiredness, breathing difficulty in asthmatics, heart block, and heart attack risk are potential signs of a severe overdose.\n2. **Call Emergency Services**: If your child faints, call emergency services immediately. This is a critical step in the emergency response.\n3. **Hospital Monitoring**: Hospital monitoring is recommended. Atropine and glucagon may be given to manage the symptoms.\n4. **Do NOT Induce Vomiting**: Do not induce vomiting unless told to. This can lead to rebound angina and heart attack risk.\n5. **Glucagon and Atropine**: Glucagon and atropine are used in hospital to manage severe cases of hypotension. High-dose insulin protocol may be used for severe cases.\n6. **Maximum Adult Dose**: The maximum adult dose is 50-100mg once daily.\n7. **Pregnancy**: Not established as safe -- consult a doctor.\n8. **Maximum Child Dose**: Not for children (specialist dosing only).\n9. **Warnings**: Never stop suddenly \u2014 rebound angina and heart attack risk (taper 1-2 weeks).\n10. **Caution in Asthma, Diabetes, and Poor Circulation**: Check pulse daily \u2014 do not take if under 50-55 bpm without advice.\nAlways follow the instructions of a doctor or a pharmacist when administering medication to children.",
   "verdict": "YES",
   "note": ""
  },
