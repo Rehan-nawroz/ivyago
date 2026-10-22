@@ -23,7 +23,7 @@
    "matched": "Gunshot Wound",
    "grounded": "n/a",
    "ok": true,
-   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Call emergency services immediately.\n2. Apply firm direct pressure to the wound with a clean cloth.\n3. Do not remove the cloth even if it soaks through.\n4. If on a limb and bleeding is uncontrollable, apply a tourniquet 2 to 3 inches above the wound and note the time it was applied.\n5. Keep the person still and lying down.\n6. Do not give food or water.\n7. Keep them warm with a blanket.\n8. Talk to them calmly until help arrives.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Gunshot Wound]"
+   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Call emergency services immediately.\n2. Apply firm direct pressure to the wound with a clean cloth. Do not remove the cloth even if it soaks through.\n3. If on a limb and bleeding is uncontrollable, apply a tourniquet 2 to 3 inches above the wound and note the time it was applied.\n4. Keep the person still and lying down.\n5. Do not give food or water.\n6. Keep them warm with a blanket.\n7. Talk to them calmly until help arrives.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Gunshot Wound]"
   },
   {
    "label": "stabbed with a knife",
@@ -59,7 +59,7 @@
    "matched": "Acid attack (acid or corrosive thrown at someone)",
    "grounded": "n/a",
    "ok": true,
-   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Call emergency services immediately.\n2. Protect yourself by not touching the chemical or wet clothing.\n3. Brush off any dry powder.\n4. Flush the skin with large amounts of clean cool water for at least 20 minutes, letting water run away from the eyes and unaffected skin.\n5. Remove contaminated clothing while flushing.\n6. If acid is in the eyes, hold the eyelid open and flush with clean water for at least 20 minutes.\n7. Cover the burn loosely with a clean dressing.\n8. Keep the person warm and treat for shock by laying them down, raising the legs, and not giving food or drink.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Acid attack (acid or corrosive thrown at someone)]"
+   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Call emergency services.\n2. Protect yourself by not touching the chemical or wet clothing.\n3. Brush off any dry powder.\n4. Flush the skin with large amounts of clean cool water for at least 20 minutes, letting water run away from the eyes and unaffected skin.\n5. Remove contaminated clothing while flushing.\n6. If acid is in the eyes, hold the eyelid open and flush with clean water for at least 20 minutes.\n7. Cover the burn loosely with a clean dressing.\n8. Keep the person warm and treat for shock by laying them down, raising the legs, and not giving food or drink.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Acid attack (acid or corrosive thrown at someone)]"
   },
   {
    "label": "drowning",
@@ -83,7 +83,7 @@
    "matched": "Crush injury trapped under rubble",
    "grounded": "n/a",
    "ok": true,
-   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1) Call for rescue and stay calm while waiting.\n2) Apply firm pressure to any visible bleeding.\n3) Do not attempt to release the weight on your own.\n4) Keep talking and watch for breathing.\n5) Lie them flat, keep warm, and avoid food or drink.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Crush injury trapped under rubble]"
+   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1) Call for rescue and stay calm.\n2) Keep the casualty still and warm.\n3) Control visible bleeding with firm pressure.\n4) If trapped for more than 15 minutes, do not release the weight.\n5) Keep talking and watch for breathing.\n6) Treat for shock: lie them flat, keep warm, do not give food or drink.\n7) Do not pull the person out by force.\n8) Do not give food or drink.\n9) Do not leave them alone.\n10) Do not apply a tight bandage on a crushed limb.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Crush injury trapped under rubble]"
   },
   {
    "label": "lightning strike",
@@ -95,7 +95,7 @@
    "matched": "Lightning strike",
    "grounded": "n/a",
    "ok": true,
-   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1) Move the person to a safer place if the storm is continuing.\n2) Check for breathing and pulse; start CPR if necessary.\n3) Treat burns with cool water and a clean dressing.\n4) Call emergency services.\n5) Keep the person warm.\n6) Do not shelter under a tree, near water, or near metal fences.\n7) Do not resume outdoor activity for 30 minutes after the last thunder.\n8) Delay CPR while waiting for help.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Lightning strike]"
+   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1) Move the person to a safer place if the storm is continuing.\n2) Check for breathing and pulse; start CPR if necessary.\n3) Treat burns with cool water and a clean dressing.\n4) Call emergency services and keep the person warm.\n5) Anyone struck needs to be checked in hospital, even if they seem fine.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Lightning strike]"
   },
   {
    "label": "pakistani police",
@@ -155,7 +155,7 @@
    "matched": "Saudi Arabia",
    "grounded": "yes",
    "ok": true,
-   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nThe correct emergency numbers in Saudi Arabia are:\n\n1. Police: 911\n2. Ambulance: 911\n3. Fire: 911\n4. Traffic police: 993\n\nAlways use these numbers, never guess.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Saudi Arabia]"
+   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. For Police: Call 911\n2. For Ambulance: Call 911\n3. For Fire: Call 911\n4. For Traffic Police: Call 993\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Saudi Arabia]"
   },
   {
    "label": "united kingdom",
@@ -167,7 +167,7 @@
    "matched": "United Kingdom",
    "grounded": "yes",
    "ok": true,
-   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. For police in the United Kingdom, call 999 or 112.\n2. For ambulance, call 999 or 112.\n3. For fire, call 999 or 112.\n4. For non-emergency police, call 101.\n5. For power outages, call 105.\n6. For non-emergency health issues, call 111.\n7. For the COVID-19 testing helpline, call 119.\n8. For gas leaks, call 0800 111 999.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: United Kingdom]"
+   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. For police in the United Kingdom, call either 999 or 112.\n2. For ambulance, call either 999 or 112.\n3. For fire, call either 999 or 112.\n4. For non-emergency police, call 101.\n5. For power outages, call 105.\n6. For non-emergency health issues, call 111.\n7. For the COVID-19 testing helpline, call 119.\n8. For gas leaks, call 0800 111 999.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: United Kingdom]"
   },
   {
    "label": "australia",
@@ -179,7 +179,7 @@
    "matched": "Australia",
    "grounded": "yes",
    "ok": true,
-   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nIn Australia, the emergency numbers to call are:\n\n1. Police: 000\n2. Ambulance: 000\n3. Fire: 000\n4. Other: 112 or 000 (for mobile phones, state emergency service, national relay service, non-emergency police, crime stops, threats to national security, poison control, and lifeline)\n\nPlease use these numbers for any urgent situations.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Australia]"
+   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nIn Australia, the emergency numbers you should call are:\n\n1. Police: 000\n2. Ambulance: 000\n3. Fire: 000\n4. Other: 112 or 000 (for mobile phones)\n5. State Emergency Service: 132 500\n6. National relay service: 106\n7. Non-emergency police: 131 444 (for NSW, QLD, VIC, SA, WA, NT, TAS, & ACT)\n8. Crime Stoppers: 1800 333 000\n9. Threats to national security: 1800 123 400\n10. Poison control: 13 11 26\n11. Lifeline: 13 11 14\n\nAlways dial 000 for the most immediate assistance.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Australia]"
   },
   {
    "label": "bangladesh",
@@ -191,7 +191,7 @@
    "matched": "Bangladesh",
    "grounded": "yes",
    "ok": true,
-   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nThe correct emergency numbers to call in Bangladesh are:\n\n1. Police: 999\n2. Ambulance: 999\n3. Fire: 999\n4. Anti Corruption Commission: 106\n5. Agricultural Information Services: 16123\n6. Health Services: 16263\n7. Dhaka WASA: 16162\n8. Women and Children Ministry: 109\n9. Legal Services: 16430\n10. National Information Service: 333\n11. IEDCR Helpline for COVID-19: 10655\n\nPlease use these numbers for any emergency situation in Bangladesh.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Bangladesh]"
+   "response": "\ud83d\udfe1 URGENT \u2014 NEEDS ATTENTION SOON\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nThe correct emergency numbers in Bangladesh are:\n\n1. Police: 999\n2. Ambulance: 999\n3. Fire: 999\n4. Anti Corruption Commission: 106\n5. Agricultural Information Services: 16123\n6. Health Services: 16263\n7. Dhaka WASA: 16162\n8. Women and Children Ministry: 109\n9. Legal Services: 16430\n10. National Information Service: 333\n11. IEDCR Helpline for COVID-19: 10655\n\nPlease use these numbers for any emergency situation in Bangladesh.\n\n[ROUTE: emergency_numbers | SOURCE: db+llm | MATCHED: Bangladesh]"
   },
   {
    "label": "uae",
@@ -227,7 +227,7 @@
    "matched": "Subungual haematoma (nail injury)",
    "grounded": "n/a",
    "ok": true,
-   "response": "\ud83d\udfe2 MODERATE \u2014 MANAGEABLE SITUATION\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Elevate the hand to reduce swelling.\n2. Apply a cold pack to the injured area to reduce swelling and pain.\n3. Seek medical attention to drain the subungual hematoma if there is severe pain or if the pain persists.\n4. Do not attempt to drill or prick the nail at home.\n5. Do not ignore severe pain.\n6. Do not pull off the nail.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Subungual haematoma (nail injury)]"
+   "response": "\ud83d\udfe2 MODERATE \u2014 MANAGEABLE SITUATION\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Elevate the hand to reduce swelling.\n2. Apply a cold pack to the injured area to reduce swelling and pain.\n3. Seek medical attention to drain the subungual hematoma if severe pain persists or worsens.\n4. Do not attempt to drill or prick the nail at home.\n5. Do not ignore severe pain.\n6. Do not pull off the nail as it may cause further injury.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Subungual haematoma (nail injury)]"
   },
   {
    "label": "heart attack",
@@ -239,7 +239,7 @@
    "matched": "Heart attack (Myocardial Infarction)",
    "grounded": "n/a",
    "ok": true,
-   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Call emergency services immediately.\n2. Have the person sit or lie down.\n3. Loosen tight clothing.\n4. If available and not allergic, give one adult aspirin (325mg) to chew slowly.\n5. Stay with them until help arrives.\n6. Do not let them walk or climb stairs.\n7. Do not give food or water except the aspirin if available.\n8. Do not leave them alone.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Heart attack (Myocardial Infarction)]"
+   "response": "\ud83d\udd34 CRITICAL EMERGENCY \u2014 ACT NOW\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n1. Call emergency services immediately.\n2. Have the person sit or lie down.\n3. Loosen tight clothing.\n4. If available and not allergic, give one adult aspirin (325mg) to chew slowly.\n5. Stay with them until help arrives.\n\n[ROUTE: body_symptoms | SOURCE: db+llm | MATCHED: Heart attack (Myocardial Infarction)]"
   }
  ],
  "passed": 20,
