@@ -1,0 +1,326 @@
+{
+  "generated": "2026-10-22T11:06:00",
+  "out": "after",
+  "model_note": "routes only - no LLM calls, fully deterministic",
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "id": "med_for_headache",
+      "text": "what med should i consume if i had headache",
+      "expect_route": "medicines",
+      "expect_top": [
+        "paracetamol",
+        "ibuprofen",
+        "aspirin"
+      ],
+      "kind": "benign",
+      "detector_route": "medicines",
+      "chat_route": "medicines",
+      "severity_hint": "MODERATE",
+      "critical_override": false,
+      "matched_keywords": [
+        "what meds",
+        "what med",
+        "med should",
+        "consume",
+        "headache"
+      ],
+      "top_row": "Paracetamol",
+      "top_severity": null,
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "headache_plain",
+      "text": "i have a headache",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "headache"
+      ],
+      "top_row": "Migraine headache (MODERATE)",
+      "top_severity": "MODERATE",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "head_hurts",
+      "text": "my head hurts",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "head hurts"
+      ],
+      "top_row": "Concussion / head injury (URGENT)",
+      "top_severity": "URGENT",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "dizzy",
+      "text": "i feel dizzy",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "dizzy"
+      ],
+      "top_row": "Bradycardia (slow heart rate) (URGENT)",
+      "top_severity": "URGENT",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "fever",
+      "text": "i have a fever",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "fever"
+      ],
+      "top_row": "Pneumonia (URGENT)",
+      "top_severity": "URGENT",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "vomiting",
+      "text": "i am vomiting",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "vomiting"
+      ],
+      "top_row": "Gastroenteritis (MODERATE)",
+      "top_severity": "MODERATE",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "stomach_pain",
+      "text": "my stomach hurts",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "stomach hurts"
+      ],
+      "top_row": "Peptic ulcer (URGENT)",
+      "top_severity": "URGENT",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "weakness",
+      "text": "i feel very weak",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "very weak"
+      ],
+      "top_row": "Weakness / fatigue (mild) (MODERATE)",
+      "top_severity": "MODERATE",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "sore_throat",
+      "text": "sore throat",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "sore throat"
+      ],
+      "top_row": "Persistent hoarseness / possible throat cancer (URGENT)",
+      "top_severity": "URGENT",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "rash",
+      "text": "i have a rash",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "benign",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "rash"
+      ],
+      "top_row": "Allergic contact rash / urticaria (MODERATE)",
+      "top_severity": "MODERATE",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "worst_headache",
+      "text": "worst headache of my life",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "control",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "headache"
+      ],
+      "top_row": "Hypertensive crisis (CRITICAL)",
+      "top_severity": "CRITICAL",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "headache_stiffneck_fever",
+      "text": "headache with stiff neck and fever",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "control",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "headache",
+        "stiff neck",
+        "fever"
+      ],
+      "top_row": "Meningitis (neck stiffness) (CRITICAL)",
+      "top_severity": "CRITICAL",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "thunderclap",
+      "text": "thunderclap headache",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "control",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "URGENT",
+      "critical_override": false,
+      "matched_keywords": [
+        "thunderclap headache",
+        "headache"
+      ],
+      "top_row": "Subarachnoid hemorrhage (brain bleed) (CRITICAL)",
+      "top_severity": "CRITICAL",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "chest_pain_breathless",
+      "text": "my chest hurts and i cant breathe",
+      "expect_route": "body_symptoms",
+      "expect_top": null,
+      "kind": "control",
+      "detector_route": "body_symptoms",
+      "chat_route": "body_symptoms",
+      "severity_hint": "CRITICAL",
+      "critical_override": false,
+      "matched_keywords": [
+        "chest hurts",
+        "chest hurt",
+        "cant breathe"
+      ],
+      "top_row": "Heart attack (Myocardial Infarction) (CRITICAL)",
+      "top_severity": "CRITICAL",
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    },
+    {
+      "id": "named_drug_overdose",
+      "text": "i took too many paracetamol",
+      "expect_route": "medicines",
+      "expect_top": null,
+      "kind": "control",
+      "detector_route": "medicines",
+      "chat_route": "medicines",
+      "severity_hint": "CRITICAL",
+      "critical_override": false,
+      "matched_keywords": [
+        "took too many",
+        "paracetamol"
+      ],
+      "top_row": "Paracetamol",
+      "top_severity": null,
+      "route_ok": true,
+      "top_ok": true,
+      "severity_ok": true,
+      "passed": true
+    }
+  ]
+}
