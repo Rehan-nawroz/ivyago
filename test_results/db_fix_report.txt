@@ -1,0 +1,124 @@
+---DB QUERY FIX REPORT---
+Fix applied to keywords.py: YES
+Fix applied to test_db_llm.py: YES
+
+Test results:
+Burn → correct row matched: YES
+Heart attack → correct row matched: YES
+Paracetamol → correct row matched: YES
+
+LLM response quality:
+Burn with DB: CORRECT
+Heart attack with DB: CORRECT
+Paracetamol with DB: CORRECT
+
+Total tests: 4
+Passed: 4/4
+Status: READY FOR ANDROID INTEGRATION
+---DONE---
+
+
+---DETAIL (rows matched, scores, raw answers)---
+
+=======================================================
+TEST: BURN — LLM alone
+INPUT: i burned my hand on the stove
+SOURCE: LLM ALONE
+DB ROW MATCHED: none
+SCORE: None
+RESPONSE:
+1. Cool the burned area with cold water or a clean cloth.
+2. Apply a topical antiseptic or antibiotic ointment to prevent infection.
+3. Cover the burn with a sterile bandage or wrap it in a clean cloth.
+4. Avoid touching the burned area until it has healed.
+5. If the burn is severe, seek medical attention.
+
+=======================================================
+TEST: BURN — with DB
+INPUT: i burned my hand on the stove
+SOURCE: DB + LLM
+DB ROW MATCHED: Hand burns
+SCORE: 24
+RESPONSE CORRECT: CORRECT (grounded in verified row)
+RESPONSE:
+1. Cool the burn under cool running water for at least 20 minutes.
+2. Remove rings.
+3. Cover loosely with a clean non-stick dressing.
+
+=======================================================
+TEST: HEART ATTACK — LLM alone
+INPUT: my chest hurts and left arm is numb
+SOURCE: LLM ALONE
+DB ROW MATCHED: none
+SCORE: None
+RESPONSE:
+1. Rest the affected area to avoid further injury.
+2. Apply ice or cold packs to reduce swelling and pain.
+3. Avoid activities that exacerbate the symptoms.
+4. Take over-the-counter pain relievers as directed.
+5. Monitor for signs of infection, such as increased fever or redness.
+6. Consider consulting a healthcare provider for a proper diagnosis and treatment.
+
+=======================================================
+TEST: HEART ATTACK — with DB
+INPUT: my chest hurts and left arm is numb
+SOURCE: DB + LLM
+DB ROW MATCHED: Heart attack (Myocardial Infarction)
+SCORE: 29
+RESPONSE CORRECT: CORRECT (grounded in verified row)
+RESPONSE:
+1. Call emergency services immediately.
+2. Have the person sit or lie down and loosen tight clothing.
+3. If available and not allergic, give one adult aspirin (325mg) to chew slowly.
+4. Stay with them until help arrives.
+
+=======================================================
+TEST: PARACETAMOL — LLM alone
+INPUT: i took too many paracetamol tablets
+SOURCE: LLM ALONE
+DB ROW MATCHED: none
+SCORE: None
+RESPONSE:
+1. Stop taking the medication immediately.
+2. Consult a healthcare provider for advice on appropriate dosage and duration of treatment.
+3. Monitor for any adverse effects or side effects of the medication.
+
+=======================================================
+TEST: PARACETAMOL — with DB
+INPUT: i took too many paracetamol tablets
+SOURCE: DB + LLM
+DB ROW MATCHED: Paracetamol
+SCORE: 18
+RESPONSE CORRECT: CORRECT (grounded in verified row)
+RESPONSE:
+1. Go to hospital immediately.
+2. Do NOT induce vomiting.
+3. Antidote must be given within 8 hours for best effect.
+4. Use N-acetylcysteine (NAC) as directed by hospital administration only.
+5. Do not take with alcohol.
+6. Do not exceed dose.
+7. Dangerous for people with liver disease.
+8. Hidden in many combination cold/flu products — check all labels.
+
+=======================================================
+TEST: PAKISTAN NUMBER — LLM alone
+INPUT: what is the emergency number in pakistan
+SOURCE: LLM ALONE
+DB ROW MATCHED: none
+SCORE: None
+RESPONSE:
+The emergency number in Pakistan is 112.
+
+=======================================================
+TEST: PAKISTAN NUMBER — with DB
+INPUT: what is the emergency number in pakistan
+SOURCE: DB + LLM
+DB ROW MATCHED: Pakistan
+SCORE: None
+RESPONSE CORRECT: CORRECT (verified number present)
+RESPONSE:
+1. Check the emergency number in Pakistan: 115
+2. Dial 115 to report a medical emergency
+3. Dial 1122 to report a fire incident
+4. Dial 15 for police assistance
+5. Dial 16 for ambulance services
