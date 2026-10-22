@@ -100,7 +100,7 @@ def _numbers_in(text):
 # CASE TABLE
 # ----------------------------------------------------------------------
 # accept: regex of medically acceptable TOP-row labels for this question
-#         (None means the hardcoded refusal is expected - off topic).
+#         (None means the general LLM path is expected - no DB match needed).
 # ----------------------------------------------------------------------
 C1 = "body"
 C2 = "medicine"
@@ -358,7 +358,7 @@ def grade(case, det, answer, routes_only):
     label = top_label(det["db_results"])    # (overdose detection above mirrors query_layer's _OVERDOSE_WORDS so the
     # grader judges the same fields the production prompt actually used)
     if exp_route is None and category == C5:
-        # off topic: only a hardcoded refusal counts
+        # off topic: the general LLM path is expected, without a DB match
         route_ok = (route == "general")
     elif exp_route is None:
         # ingestion questions with no named drug may legitimately land on
@@ -393,9 +393,13 @@ def grade(case, det, answer, routes_only):
     if route == "general":
         entry["source"] = source
         entry["response"] = response
-        entry["verdict"] = "YES" if source == "hardcoded_refusal" else "NO"
-        if source != "hardcoded_refusal":
-            note = "off-topic question was answered instead of refused"
+        entry["verdict"] = "YES" if (
+            source == "llm_only" and not response.startswith("ERROR:")
+        ) else "NO"
+        if source != "llm_only":
+            note = "general question did not use the optional-DB LLM path"
+        elif response.startswith("ERROR:"):
+            note = "LLM error on general question"
         entry["note"] = note
         return entry
 
