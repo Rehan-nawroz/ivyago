@@ -27,11 +27,11 @@ SOURCE: LLM ALONE
 DB ROW MATCHED: none
 SCORE: None
 RESPONSE:
-1. Cool the burned area with cold water or a clean cloth.
-2. Apply a topical antiseptic or antibiotic ointment to prevent infection.
+1. Cool the burned area immediately with cool water or a cold compress.
+2. Apply a topical antibiotic ointment to prevent infection.
 3. Cover the burn with a sterile bandage or wrap it in a clean cloth.
 4. Avoid touching the burned area until it has healed.
-5. If the burn is severe, seek medical attention.
+5. Monitor the burn for signs of infection, such as redness, swelling, warmth, or pus.
 
 =======================================================
 TEST: BURN — with DB
@@ -56,8 +56,7 @@ RESPONSE:
 2. Apply ice or cold packs to reduce swelling and pain.
 3. Avoid activities that exacerbate the symptoms.
 4. Take over-the-counter pain relievers as directed.
-5. Monitor for signs of infection, such as increased fever or redness.
-6. Consider consulting a healthcare provider for a proper diagnosis and treatment.
+5. Consult a healthcare provider for a proper diagnosis and treatment plan.
 
 =======================================================
 TEST: HEART ATTACK — with DB
@@ -70,7 +69,6 @@ RESPONSE:
 1. Call emergency services immediately.
 2. Have the person sit or lie down and loosen tight clothing.
 3. If available and not allergic, give one adult aspirin (325mg) to chew slowly.
-4. Stay with them until help arrives.
 
 =======================================================
 TEST: PARACETAMOL — LLM alone
@@ -80,8 +78,9 @@ DB ROW MATCHED: none
 SCORE: None
 RESPONSE:
 1. Stop taking the medication immediately.
-2. Consult a healthcare provider for advice on appropriate dosage and duration of treatment.
+2. Consult a healthcare professional for advice on appropriate dosage and duration of treatment.
 3. Monitor for any adverse effects or side effects of the medication.
+4. Follow up with your healthcare provider for further guidance.
 
 =======================================================
 TEST: PARACETAMOL — with DB
@@ -94,11 +93,13 @@ RESPONSE:
 1. Go to hospital immediately.
 2. Do NOT induce vomiting.
 3. Antidote must be given within 8 hours for best effect.
-4. Use N-acetylcysteine (NAC) as directed by hospital administration only.
-5. Do not take with alcohol.
-6. Do not exceed dose.
-7. Dangerous for people with liver disease.
-8. Hidden in many combination cold/flu products — check all labels.
+4. Use N-acetylcysteine (NAC) only.
+5. Hospital administration only.
+6. Maximum adult dose: 1g per dose, max 4g per 24 hours, every 4-6 hours.
+7. Do not take with alcohol.
+8. Do not exceed dose.
+9. Dangerous for people with liver disease.
+10. Hidden in many combination cold/flu products — check all labels.
 
 =======================================================
 TEST: PAKISTAN NUMBER — LLM alone
@@ -119,6 +120,6 @@ RESPONSE CORRECT: CORRECT (verified number present)
 RESPONSE:
 1. Check the emergency number in Pakistan: 115
 2. Dial 115 to report a medical emergency
-3. Dial 1122 to report a fire incident
+3. Dial 1122 to report a fire emergency
 4. Dial 15 for police assistance
 5. Dial 16 for ambulance services
