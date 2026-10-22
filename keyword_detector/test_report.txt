@@ -1,0 +1,8 @@
+---KEYWORD DETECTOR TEST REPORT---
+Tests run: 10
+Correct routes: 10/10
+CRITICAL overrides fired correctly: 3
+DB results returned: 10/10 queries returned results
+Issues found: none
+Status: READY
+---DONE---
