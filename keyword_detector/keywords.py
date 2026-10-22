@@ -324,6 +324,18 @@ MEDICINE_KEYWORDS = [
     "how much should i take", "how many tablets", "how many pills",
     "safe dose", "max dose", "double up", "missed dose", "skip dose",
 
+    # medicine-intent phrasing. Without these, "what med should i consume if
+    # i had headache" scored 0 on this route (only "headache" matched, on the
+    # body side) and was answered with Hypertensive crisis. Kept PHRASE-level
+    # on purpose: chat.py's second router substring-matches its copy of this
+    # vocabulary, where a bare "med" would also hit "medical".
+
+    "what med", "what meds", "med for", "which med", "med should",
+    "what medicine", "which medicine", "medicine for", "what medication",
+    "which medication", "medication for", "pill for", "what pill",
+    "which pill", "what tablet", "which tablet", "what drug", "which drug",
+    "drug for", "consume", "consumed",
+
     # medicine reactions
     "side effect", "side effects", "reaction to medicine", "allergic to medicine",
     "allergic to penicillin", "rash after medicine", "mixed medications",
@@ -718,11 +730,11 @@ _AMPUTATION_PENALTY = 6
 # locally swollen part. Checked against the message AND the row's own symptom
 # text, so a genuine anaphylaxis row still wins for "throat is closing".
 _ANAPHYLAXIS_EVIDENCE = (
-    "throat", "airway", "swallow", "breath", "breathe", "breathing", "wheez",
-    "wheez", "hives", "rash", "allergic", "allergy", "anaphyla", "sting",
+    "airway", "swallow", "breath", "breathe", "breathing", "wheez",
+    "hives", "rash", "allergic", "allergy", "anaphyla", "sting",
     "bee", "wasp", "insect", "peanut", "nuts", "shellfish", "lips", "tongue",
-    "face swelled", "face is swollen", "itching", "itchy", "collapsed",
-    "trouble swallowing", "closing",
+    "face swelled", "face is swollen", "face", "swelling", "swollen",
+    "itching", "itchy", "collapsed", "trouble swallowing", "closing",
 )
 _ANAPHYLAXIS_PENALTY = 8
 
@@ -842,6 +854,160 @@ _CLINICAL_PRIORS = [
       "stairs", "roof"},
      ("spinal fracture", "vertebral", "spinal cord", "cauda", "back"), 8),
 ]
+
+# RED-FLAG GATES: a CRITICAL row is only CRITICAL when the message actually
+# describes that diagnosis. Each entry is (condition fragments, evidence).
+# When a CRITICAL row's condition contains one of the fragments but the
+# message contains NONE of the evidence, the row is demoted by
+# _RED_FLAG_PENALTY. Without this, a bare generic symptom ("i have a
+# headache") landed on Hypertensive crisis purely because that row's symptom
+# text happens to list the word, and the banner read ACT NOW for a benign
+# question. The red-flag phrasings still win: "worst headache of my life",
+# "thunderclap headache" and "headache with stiff neck and fever" all carry
+# their row's evidence, and a CRITICAL override ("not breathing", ...) skips
+# the gates entirely so the old emergency path is untouched.
+_RED_FLAG_PENALTY = 12
+_RED_FLAG_GATES = [
+    # -- headache family --------------------------------------------------
+    (("hypertensive crisis",),
+     ("blood pressure", "bp", "hypertension", "hypertensive", "worst",
+      "severe", "stroke", "confused", "confusion", "vision", "nosebleed",
+      "pregnant")),
+    (("brain haemorrhage", "subarachnoid", "intracerebral", "epidural",
+      "subdural"),
+     ("worst", "thunderclap", "sudden", "severe", "stroke", "bleeding",
+      "confused", "confusion", "slurred", "weak", "seizure", "hit",
+      "fell", "fall", "head injury", "subarachnoid")),
+    (("raised pressure", "intracranial", "cerebral oedema"),
+     ("worst", "thunderclap", "sudden", "projectile", "vision", "confused",
+      "confusion", "drowsy", "hit", "fell", "fall", "head injury",
+      "severe", "seizure", "intracranial")),
+    (("meningitis", "encephalitis"),
+     ("stiff neck", "neck stiffness", "neck is stiff", "rash", "confused",
+      "confusion", "unconscious", "seizure", "light", "severe",
+      "meningitis", "encephalitis")),
+    (("skull fracture",),
+     ("hit", "fell", "fall", "banged", "head injury", "fracture", "blood",
+      "unconscious", "accident", "crash", "bleeding")),
+    (("heat stroke",),
+     ("heat", "hot", "sun", "sunstroke", "temperature", "sweating", "sweat",
+      "outdoors", "humid")),
+    (("stroke", "transient ischaemic", "mini-stroke"),
+     ("arm", "leg", "face", "one side", "slurred", "speech", "droop",
+      "numb", "vision", "balance", "paralysis", "stroke", "tic",
+      "cant move", "cannot move")),
+    (("carbon monoxide",),
+     ("heater", "fumes", "exhaust", "smoke", "gas", "generator", "car",
+      "carbon monoxide", "fire", "chimney", "stove", "bbq", "barbecue")),
+    (("ear bleeding", "csf leak", "csf"),
+     ("bleeding from ear", "blood from ear", "ear is bleeding", "bleeding ears",
+      "blood in ear", "csf", "head injury", "hit", "fell", "fall",
+      "accident", "crash")),
+
+    # -- chest family -----------------------------------------------------
+    # The heart-attack row lists "jaw hurts" and "arm hurts" among its
+    # symptoms, so "my head hurts" reached it on one shared word. Cardiac
+    # chest pain needs a chest/jaw/arm/breath/sweat picture, not just a
+    # generic "hurts" somewhere in the body.
+    (("heart attack", "myocardial"),
+     ("chest", "arm", "jaw", "breath", "sweat", "numb", "pressure",
+      "squeez", "radiat", "left", "pulse", "heart")),
+
+    # -- vomiting / stomach family ---------------------------------------
+    (("haematemesis", "vomiting blood"),
+     ("blood", "bloody", "coffee ground", "red vomit")),
+    (("bowel obstruction",),
+     ("constipat", "no stool", "not passed", "distend", "bloat",
+      "swollen abdomen", "obstruction", "severe", "gas")),
+    (("bleeding peptic ulcer",),
+     ("blood", "black stool", "melena", "faint", "collapse", "severe",
+      "ulcer")),
+    (("caustic ingestion",),
+     ("bleach", "acid", "chemical", "drain", "cleaner", "swallowed",
+      "ingested", "lye", "detergent", "petrol", "kerosene")),
+    (("paracetamol overdose", "drug overdose", "overdose"),
+     ("paracetamol", "acetaminophen", "panadol", "overdose", "took too many",
+      "too many", "swallowed", "pills", "tablets", "poison", "ingested")),
+    (("alcohol poisoning",),
+     ("alcohol", "drunk", "drank", "beer", "vodka", "wine", "booze",
+      "shots")),
+    (("ketoacidosis", "high blood sugar"),
+     ("diabetes", "diabetic", "sugar", "thirst", "fruity", "insulin",
+      "ketone")),
+    (("peritonitis",),
+     ("abdomen", "abdominal", "rigid", "board", "tender", "appendix",
+      "peritonitis", "severe")),
+    (("necrotising fasciitis", "necrotizing fasciitis"),
+     ("wound", "cut", "skin", "red", "swollen", "severe", "flesh",
+      "fasciitis")),
+    (("spinal infection", "discitis", "osteomyelitis"),
+     ("spine", "spinal", "severe", "infection", "injection", "surgery")),
+    (("angle-closure glaucoma",),
+     ("eye", "vision", "glaucoma", "halo")),
+    (("testicular torsion",),
+     ("testicle", "testicular", "scrotum", "torsion")),
+    (("snake bite", "venomous"),
+     ("snake", "snakebite", "bitten", "venom", "viper", "cobra")),
+    (("postpartum",),
+     ("birth", "delivery", "postpartum", "pregnant", "pregnancy",
+      "placenta", "miscarriage", "bleeding")),
+    (("transfusion reaction",),
+     ("transfusion", "donated")),
+
+    # -- fever / dizziness / weakness / throat family --------------------
+    (("sepsis", "septicaemia"),
+     ("very high", "high fever", "severe", "confused", "confusion",
+      "breathing", "rapid", "fast", "mottled", "rash", "shivering",
+      "unconscious", "sepsis", "septicaemia", "low blood pressure")),
+    (("epiglottitis",),
+     ("cant swallow", "can't swallow", "cannot swallow", "trouble swallowing",
+      "drool", "breath", "muffled", "stiff neck", "severe", "epiglottitis")),
+    (("choking", "airway obstruction"),
+     ("choking", "choked", "cant breathe", "can't breathe", "not breathing",
+      "airway", "stuck", "food", "swallow")),
+    (("chemical spill", "toxic gas"),
+     ("spill", "gas", "fumes", "smoke", "chemical", "leak", "barrel",
+      "drum", "tanker")),
+    (("cardiogenic shock",),
+     ("chest", "heart", "breath", "sweat", "cold", "collapse", "pulse",
+      "blood pressure", "faint")),
+    (("acute nerve injury",),
+     ("cut", "wound", "injury", "numb", "hand", "arm", "leg", "accident",
+      "glass", "knife")),
+    (("blunt abdominal trauma",),
+     ("accident", "crash", "hit", "injury", "abdomen", "seatbelt",
+      "steering", "kicked", "punched", "fell", "fall")),
+    (("ruptured spleen",),
+     ("accident", "crash", "hit", "injury", "ribs", "left side", "abdomen",
+      "sport", "fell", "fall")),
+]
+
+
+def _evidence_hit(phrase, words, text):
+    """One red-flag phrase against the normalized message. Whole words (a
+    multi-word phrase may have one filler word), and for a single word any
+    message word that STARTS with it -- so "swell" finds "swelling / swollen"
+    and "vomit" finds "vomiting / vomited" without an exhaustive list."""
+    norm = _normalize(phrase)
+    if not norm:
+        return False
+    if _phrase_positions(norm, text) or _flex_positions(norm, text):
+        return True
+    if " " not in norm and len(norm) >= 4:
+        return any(w.startswith(norm) for w in words)
+    return False
+
+
+def _red_flag_penalty(cond_l, words, text):
+    """Demotion for a CRITICAL row whose diagnosis the message does not
+    support (0 = keep the row's severity as earned)."""
+    for cond_terms, evidence in _RED_FLAG_GATES:
+        if not any(t in cond_l for t in cond_terms):
+            continue
+        if any(_evidence_hit(p, words, text) for p in evidence):
+            return 0
+        return _RED_FLAG_PENALTY
+    return 0
 
 
 def _content_tokens(norm_kw):
@@ -1200,6 +1366,8 @@ def _query_body_symptoms(det, user_input):
     # by severity or row order, which is what puts the scenario the user
     # actually described at the top.
     scored = []
+    norm_words = normalized.split()
+    critical_override = bool(det.get("critical_override"))
     for row in candidates:
         hay = {
             "kw": _normalize(row.get("keywords") or ""),
@@ -1277,6 +1445,12 @@ def _query_body_symptoms(det, user_input):
             if any(t in cond_l for t in terms):
                 score += bonus
                 break
+
+        # RED-FLAG GATES (Fix 2): a CRITICAL row must be supported by what
+        # the message says. Skipped for a critical override ("not breathing",
+        # "unconscious", ...), where the red path must stay exactly as before.
+        if sev == "CRITICAL" and not critical_override:
+            score -= _red_flag_penalty(cond_l, norm_words, normalized)
 
         scored.append((-score, site_rank, SEV_ORDER.get(sev, 3), row.get("id", 0), row))
 
