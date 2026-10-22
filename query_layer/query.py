@@ -450,6 +450,18 @@ def _inverts_safety_verdict(user_input: str, db_results: list, route: str,
     if value not in ("no", "consult doctor", "consult", "ask doctor"):
         return False
     lowered = (response or "").lower()
+
+    # An answer that LEADS with permission is a positive claim no matter what
+    # the tail says. "Yes, you can give Ibuprofen to a pregnant woman.
+    # However ... always consult a healthcare professional ... avoid an
+    # overdose" was passing the denial check on "avoid"/"consult" while the
+    # opening sentence still granted permission, so the sentence the user
+    # actually reads was never replaced by the verified text.
+    first_sentence = re.split(r"(?<=[.!?])\s+", lowered, maxsplit=1)[0]
+    if (re.search(r"\b(can|may)\s+(take|give|use|have)\b", first_sentence)
+            and any(m in first_sentence for m in _PREGNANCY_MARKERS)):
+        return True
+
     if any(d in lowered for d in _SAFETY_DENIALS):
         return False
     if any(c in lowered for c in _POSITIVE_SAFETY_CLAIMS):
