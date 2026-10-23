@@ -18,3 +18,4 @@ test_optional_database.py
 # Android project and all nested files
 /app/
 /model
+/desktop_app
