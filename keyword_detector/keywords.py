@@ -1719,6 +1719,10 @@ def query_db(detection_result: dict, user_input: str) -> dict:
         "route": route,
         "severity_hint": detection_result.get("severity_hint", "UNKNOWN"),
         "critical_override": detection_result.get("critical_override", False),
+        # Pass the matched keywords through so callers of run() (the desktop
+        # assistant service) can preserve them, exactly as detect() produced
+        # them. Purely additive: no existing key or value changes.
+        "matched_keywords": list(detection_result.get("matched_keywords") or []),
         "db_results": results,
         "db_result_count": len(results),
     }
