@@ -54,6 +54,60 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from keyword_detector.keywords import run as detect_and_query
 
+# The pure prompt/output-safety policy is shared with the offline desktop
+# assistant, which must reuse these exact rules WITHOUT importing this module
+# (this module pulls in `requests` and drives Ollama via call_llm). The rules
+# therefore live in a stdlib-only module and are re-imported here so every
+# public and private name below is unchanged for the CLI and its tests.
+try:  # pragma: no cover - the fallback only matters when run as a script
+    from query_layer.prompt_policy import (
+        _EMPTY_REPLY,
+        _ECHO_SAFE_REPLY,
+        _EXPIRY_INSTRUCTION,
+        _EXPIRY_WORDS,
+        _OVERDOSE_WORDS,
+        _POSITIVE_SAFETY_CLAIMS,
+        _PREGNANCY_MARKERS,
+        _PROMPT_ECHO_MARKERS,
+        _SAFETY_DENIALS,
+        _SAFETY_WORDS,
+        _echoes_prompt,
+        _inverts_safety_verdict,
+        _is_expiry_question,
+        _is_overdose_question,
+        _is_safety_question,
+        _looks_degenerate,
+        _pregnancy_text,
+        build_db_fallback,
+        build_system_prompt,
+        build_user_prompt,
+        clean_response,
+    )
+except ImportError:  # pragma: no cover - direct-script fallback
+    from prompt_policy import (  # noqa: F401
+        _EMPTY_REPLY,
+        _ECHO_SAFE_REPLY,
+        _EXPIRY_INSTRUCTION,
+        _EXPIRY_WORDS,
+        _OVERDOSE_WORDS,
+        _POSITIVE_SAFETY_CLAIMS,
+        _PREGNANCY_MARKERS,
+        _PROMPT_ECHO_MARKERS,
+        _SAFETY_DENIALS,
+        _SAFETY_WORDS,
+        _echoes_prompt,
+        _inverts_safety_verdict,
+        _is_expiry_question,
+        _is_overdose_question,
+        _is_safety_question,
+        _looks_degenerate,
+        _pregnancy_text,
+        build_db_fallback,
+        build_system_prompt,
+        build_user_prompt,
+        clean_response,
+    )
+
 # ----------------------------------------------------------------------
 # Ollama configuration
 # ----------------------------------------------------------------------
@@ -62,204 +116,9 @@ OLLAMA_MODEL = "qwen2.5:0.5b"
 OLLAMA_TIMEOUT = 30  # seconds before giving up on the LLM
 
 
-def build_system_prompt(severity: str) -> str:
-    persona = (
-        "You are IVYAGO, a calm and practical offline AI assistant designed "
-        "for critical situations. Understand the user's actual question "
-        "before answering. Optional local reference data may be provided; "
-        "use it when it clearly applies, but never force an unrelated row "
-        "into the answer. If the question is unclear, ask one focused "
-        "question. If you do not know, say so and give the safest useful "
-        "next step. Keep answers concise and actionable.\n"
-    )
-    if severity == "CRITICAL":
-        return (
-            persona +
-            "A life may be at risk RIGHT NOW.\n"
-            "Give ONLY the immediate actions the person must take.\n"
-            "Use simple short sentences.\n"
-            "Number every step.\n"
-            "Start your response with: EMERGENCY - ACT NOW\n"
-            "Do not explain medical theory.\n"
-            "Do not suggest calling a doctor if the person clearly cannot.\n"
-            "Do not add disclaimers.\n"
-            "Speak directly to the person in front of you."
-        )
-    if severity == "URGENT":
-        return (
-            persona +
-            "This situation needs prompt attention.\n"
-            "Give clear step by step instructions.\n"
-            "Number every step.\n"
-            "Keep language simple.\n"
-            "End with one sentence on when to seek further help."
-        )
-    if severity == "MODERATE":
-        return (
-            persona +
-            "Give helpful, clear first aid or medical guidance.\n"
-            "Number the steps.\n"
-            "Keep language simple and calm.\n"
-            "End with signs that would make this more serious."
-        )
-    # UNKNOWN -- and the safe default for any unexpected severity value.
-    return (
-        persona +
-        "Answer ordinary questions too when you can do so safely. For an "
-        "emergency, prioritize immediate safety over background explanation.\n"
-        "Keep all answers simple and clear."
-    )
+# [build_system_prompt, build_user_prompt, and their pure helpers moved to
+#  query_layer/prompt_policy.py and are re-imported above.]
 
-
-_OVERDOSE_WORDS = (
-    "overdose", "overdosed", "too many", "too much", "whole bottle",
-    "double dose", "swallowed", "took extra", "poison", "poisoning",
-    "accidental", "extra pills", "extra tablets",
-)
-
-_SAFETY_WORDS = (
-    "safe", "safety", "can i take", "can i give", "should i take", "is it ok",
-    "is it okay", "pregnancy", "pregnant", "breastfeeding", "side effect",
-    "side effects", "interaction", "how much", "how many", "max dose",
-    "maximum dose", "dose", "dosage", "expired", "out of date", "still good",
-    "with alcohol", "warning", "warnings", "allergic",
-)
-
-
-def _pregnancy_text(value: str) -> str:
-    """Render the short stored pregnancy value as an unambiguous statement.
-    The column holds only 'Yes' / 'No' / 'Consult doctor'; a bare "No" next to
-    the label "Safe in pregnancy" was inverted by the model into "Yes, safe in
-    pregnancy" for ibuprofen, so the value is spelled out instead."""
-    text = (value or "").strip()
-    low = text.lower()
-    if low == "no":
-        return "NOT safe in pregnancy (verified) -- avoid."
-    if low == "yes":
-        return "Considered safe in pregnancy (verified)."
-    if low in ("consult doctor", "consult", "ask doctor"):
-        return "Not established as safe -- consult a doctor."
-    return text
-
-
-def _is_overdose_question(lowered_input: str) -> bool:
-    return any(w in lowered_input for w in _OVERDOSE_WORDS)
-
-
-_EXPIRY_WORDS = (
-    "expired", "expire", "expiry", "out of date", "still good",
-    "past its date", "old medicine", "old tablets",
-)
-
-# The verified rows almost never carry an "expiry" field, so the model was left
-# to invent one -- "i took expired antibiotics" produced the three fragments
-# "Take expired antibiotics. Do NOT use expired tetracycline. Supportive care."
-# This standard offline rule gives it something true to answer with instead.
-_EXPIRY_INSTRUCTION = (
-    "The user is asking about an EXPIRED medicine. Do not say the medicine "
-    "is still in date. Answer directly and "
-    "briefly. If the verified Warnings above mention expiry, use them. Then "
-    "state this standard rule in your own simple words: after its expiry date "
-    "a medicine usually loses strength rather than becoming poisonous, but do "
-    "not take expired antibiotics, eye drops, insulin, liquid medicines or "
-    "anything that has changed colour or smell; never take a double dose to "
-    "catch up; take it to a pharmacy for safe disposal and get a fresh supply. "
-    "Do NOT give overdose, poisoning or emergency steps unless the user "
-    "described an overdose. Number the points."
-)
-
-
-def _is_safety_question(lowered_input: str) -> bool:
-    return any(w in lowered_input for w in _SAFETY_WORDS)
-
-
-def _is_expiry_question(lowered_input: str) -> bool:
-    return any(w in lowered_input for w in _EXPIRY_WORDS)
-
-
-def build_user_prompt(user_input: str, db_results: list, route: str) -> str:
-    top_result = db_results[0] if db_results else {}
-
-    if route == "body_symptoms" and db_results:
-        return f"""User message: {user_input}
-
-OPTIONAL LOCAL EMERGENCY REFERENCE (use only if it clearly matches the
-user's situation; never force an unrelated condition into the answer):
-Condition: {top_result.get('condition', '')}
-Severity: {top_result.get('severity', '')}
-Immediate action: {top_result.get('immediate_action', '')}
-What NOT to do: {top_result.get('what_not_to_do', '')}
-
-Answer the user's actual question. For a genuine emergency, give concise
-numbered safety steps. If the reference does not fit, rely on general
-knowledge, ask a focused question, or say what you do not know."""
-
-    if route == "medicines" and db_results:
-        # A drug-safety question ("is ibuprofen safe in pregnancy") must not be
-        # answered with overdose or poisoning steps just because the row data
-        # holds them -- the instruction sent to the model has to match the
-        # question that was actually asked.
-        lowered = user_input.lower()
-        if _is_overdose_question(lowered):
-            instruction = (
-                "The person has taken too much. If this reference matches the "
-                "medicine, use its overdose action and format immediate steps "
-                "as numbered points. Do not invent a dose or antidote."
-            )
-        elif _is_expiry_question(lowered):
-            instruction = _EXPIRY_INSTRUCTION
-        elif _is_safety_question(lowered):
-            instruction = (
-                "Answer the user's safety question directly and briefly. Use "
-                "the relevant fields above when they match. Use the exact field that was asked "
-                "about (Pregnancy / Maximum adult dose / Maximum child dose / "
-                "Warnings) and repeat its meaning faithfully. Do not say a "
-                "medicine is safe in pregnancy unless the reference says it "
-                "is safe. Do NOT give overdose, poisoning or emergency steps "
-                "unless the user described an overdose."
-            )
-        else:
-            instruction = (
-                "Clearly explain what the person should know right now. Use "
-                "only the relevant reference fields when they match, and do "
-                "not invent medical facts."
-            )
-        return f"""User message: {user_input}
-
-OPTIONAL LOCAL MEDICINE REFERENCE:
-Medicine: {top_result.get('medicine_name', '')}
-Also known as: {top_result.get('aliases', '')}
-Overdose symptoms: {top_result.get('overdose_symptoms', '')}
-Overdose action: {top_result.get('overdose_action', '')}
-Antidote: {top_result.get('antidote', '')}
-Maximum adult dose: {top_result.get('max_dose_adult', '')}
-Pregnancy (verified): {_pregnancy_text(top_result.get('safe_in_pregnancy', ''))}
-Maximum child dose: {top_result.get('max_dose_child', '')}
-Warnings: {top_result.get('warnings', '')}
-
-{instruction}"""
-
-    if route == "emergency_numbers" and db_results:
-        number_lines = "\n".join(
-            f"Country: {row.get('country', '')} | Police: {row.get('police', '')} | "
-            f"Ambulance: {row.get('ambulance', '')} | Fire: {row.get('fire', '')}"
-            for row in db_results
-        )
-        return f"""User message: {user_input}
-
-OPTIONAL LOCAL EMERGENCY-NUMBER REFERENCE (use it when the country matches;
-never invent, change, or reassign a number):
-{number_lines}
-
-Tell the user exactly which numbers to call based on their situation. Keep every number with the service it is listed under (police / ambulance / fire) - never move a number to a different service, and never add a service that is not in the list. Never guess a number not in this list."""
-
-    # route == "general", or a DB-backed route that returned no rows.
-    return f"""User message: {user_input}
-
-Answer the user's actual question using your offline knowledge when useful.
-If the question is unclear, ask one focused question. If you do not know,
-say so rather than inventing facts. For an emergency, give the safest
-immediate next step first."""
 
 
 def call_llm(system_prompt: str, user_prompt: str) -> str:
@@ -295,57 +154,7 @@ def call_llm(system_prompt: str, user_prompt: str) -> str:
         return "ERROR: Could not generate response. Please try again."
 
 
-# Returned by clean_response when the model produced nothing usable.
-_EMPTY_REPLY = "Please describe your emergency and I will provide guidance."
-
-
-def clean_response(text: str) -> str:
-    # STEP 1 -- SPLIT INTO LINES (trim, drop empties)
-    lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
-
-    # STEP 2 -- DETECT AND REMOVE REPEATED LINES
-    def _clean_for_compare(line: str) -> str:
-        return re.sub(r"[^a-z0-9]+", "", line.lower())
-
-    seen = set()
-    kept_lines = []
-    for line in lines:
-        key = _clean_for_compare(line)
-        if key in seen:
-            continue
-        seen.add(key)
-        kept_lines.append(line)
-
-    # STEP 3 -- DETECT REPEATED PHRASES WITHIN A LINE
-    # e.g. "Call 911. Call 911. Call 911." -> "Call 911."
-    final_lines = []
-    for line in kept_lines:
-        sentences = [s.strip() for s in line.split(". ")]
-        unique = []
-        seen_sent = set()
-        for s in sentences:
-            skey = _clean_for_compare(s)
-            if skey in seen_sent:
-                continue
-            seen_sent.add(skey)
-            unique.append(s)
-        out_line = ". ".join(unique)
-        # If the line ended with a period that belonged to a dropped repeat,
-        # restore it ("Call 911. Call 911. Call 911." -> "Call 911.").
-        if unique and line.rstrip().endswith(".") and not out_line.endswith("."):
-            out_line += "."
-        final_lines.append(out_line)
-
-    # STEP 4 -- REBUILD AND RETURN
-    cleaned = "\n".join(final_lines)
-    if len(cleaned) < 10:
-        # Nothing usable came back (the model emitted only whitespace or one
-        # deduplicated fragment). This sentinel is recognised in answer(),
-        # which then falls back to the verified DB text -- answering the
-        # Nigeria question with "Please describe your emergency" while the
-        # verified 112 was sitting unused in db_results was a real bug.
-        cleaned = _EMPTY_REPLY
-    return cleaned
+# [clean_response and its _EMPTY_REPLY sentinel moved to query_layer/prompt_policy.py]
 
 
 def build_banner(severity: str) -> str:
@@ -358,169 +167,9 @@ def build_banner(severity: str) -> str:
     return "ℹ️  GENERAL ASSISTANCE"
 
 
-_PROMPT_ECHO_MARKERS = (
-    "if this is not an emergency topic",
-    "politely refuse",
-    "if the question is outside these topics",
-    "respond with exactly this",
-    "review the verified data",
-    "identify the condition",
-    "identify the severity",
-    "identify the immediate action",
-    "determine the immediate action",
-    "determine the severity",
-    "using the verified data above",
-    "do not add or change any medical facts",
-    "do not change any medical facts",
-    "format the immediate action as numbered steps",
-    "use exactly these numbers",
-    "never guess a number not in this list",
-    "based on your emergency knowledge only",
-    "keep every number with the service",
-    "never move a number to a different service",
-)
-
-# Shown when the model echoed an instruction AND there is no verified row to
-# fall back on, so the user never reads a prompt instruction as an answer.
-_ECHO_SAFE_REPLY = (
-    "I am IVYAGO, an offline assistant for critical situations. "
-    "Please restate your question and I will give the safest useful next step."
-)
-
-
-def _echoes_prompt(text: str) -> bool:
-    """True when the model returned prompt instructions, not an answer."""
-    lowered = (text or "").lower()
-    return any(marker in lowered for marker in _PROMPT_ECHO_MARKERS)
-
-
-def _looks_degenerate(text: str) -> bool:
-    """True when the answer is a repetition loop rather than an answer. The
-    0.5B model sometimes loops one clause across the whole reply, e.g. "The
-    maximum adult dose is NOT safe in pregnancy (verified)." repeated three
-    times -- a phrase repeat that clean_response's line dedup cannot see.
-    Numbered lists defeat the duplicate-line test too: the answer to
-    "emergency number in united states" was "4. Medical: 911 | 5. Medical:
-    911 | 6. Medical: 911 ...", where every line differs only by its number."""
-    body = (text or "").strip()
-    if not body:
-        return True
-    lines = [ln.strip() for ln in body.splitlines() if len(ln.strip()) > 20]
-    if len(lines) >= 3 and len(set(lines)) * 2 <= len(lines):
-        return True
-    # Same test again with the leading list numbering and punctuation removed,
-    # so "5. Medical: 911" and "6. Medical: 911" count as the same line.
-    stripped = []
-    for line in body.splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        content = re.sub(r"^[\d]+[.):\-\s]+", "", line)
-        content = re.sub(r"[^a-z]", "", content.lower())
-        if len(content) >= 3:
-            stripped.append(content)
-    if len(stripped) >= 4:
-        if Counter(stripped).most_common(1)[0][1] >= 3:
-            return True
-    words = body.lower().split()
-    counts = {}
-    for i in range(len(words) - 4):
-        phrase = " ".join(words[i:i + 5])
-        counts[phrase] = counts.get(phrase, 0) + 1
-        if counts[phrase] >= 3:
-            return True
-    return False
-
-
-_PREGNANCY_MARKERS = ("pregnan", "breastfeed", "breast-feed", "expecting")
-_POSITIVE_SAFETY_CLAIMS = (
-    "safe in pregnancy", "safe during pregnancy", "safe for pregnancy",
-    "safe to take during pregnancy", "safe to use in pregnancy",
-    "safe for the baby", "safe to give",
-)
-# An answer that already denies safety is left alone, however it is phrased.
-# A bare "consult a doctor" is NOT a denial: the model answered "Yes, you can
-# give Ibuprofen to a pregnant woman. However ... Always consult a healthcare
-# professional" -- an affirmative claim with a soft tail that must not be able
-# to switch this guard off.
-_SAFETY_DENIALS = (
-    "not safe", "unsafe", "avoid", "do not", "don't", "dont", "never",
-    "no evidence", "not recommended", "not established", "not advised",
-    "contraindicated", "should not be used", "must not",
-)
-
-
-def _inverts_safety_verdict(user_input: str, db_results: list, route: str,
-                            response: str) -> bool:
-    """True when the answer claims a medicine is safe although the verified
-    row says it must not be used in pregnancy."""
-    if route != "medicines" or not db_results:
-        return False
-    lowered_input = (user_input or "").lower()
-    if not any(m in lowered_input for m in _PREGNANCY_MARKERS):
-        return False
-    value = (db_results[0].get("safe_in_pregnancy") or "").strip().lower()
-    if value not in ("no", "consult doctor", "consult", "ask doctor"):
-        return False
-    lowered = (response or "").lower()
-
-    # An answer that LEADS with permission is a positive claim no matter what
-    # the tail says. "Yes, you can give Ibuprofen to a pregnant woman.
-    # However ... always consult a healthcare professional ... avoid an
-    # overdose" was passing the denial check on "avoid"/"consult" while the
-    # opening sentence still granted permission, so the sentence the user
-    # actually reads was never replaced by the verified text.
-    first_sentence = re.split(r"(?<=[.!?])\s+", lowered, maxsplit=1)[0]
-    if (re.search(r"\b(can|may)\s+(take|give|use|have)\b", first_sentence)
-            and any(m in first_sentence for m in _PREGNANCY_MARKERS)):
-        return True
-
-    if any(d in lowered for d in _SAFETY_DENIALS):
-        return False
-    if any(c in lowered for c in _POSITIVE_SAFETY_CLAIMS):
-        return True
-    # "Can give Ibuprofen to a pregnant woman." never says the word "safe",
-    # so a bare permission sentence about a pregnancy is treated the same way.
-    if (re.search(r"\b(can|may|should)\s+(take|give|use|have)\b", lowered)
-            and any(m in lowered for m in _PREGNANCY_MARKERS)):
-        return True
-    return False
-
-
-def build_db_fallback(db_results: list, route: str) -> str:
-    """Verified, database-only answer built straight from the top row.
-    Used whenever the LLM output is unusable, so the checked data is never
-    thrown away because of a bad model response."""
-    if not db_results:
-        return ""
-    row = db_results[0]
-    if route == "emergency_numbers":
-        return ("Call {country}: police {police}, ambulance {ambulance}, "
-                "fire {fire}.").format(
-            country=row.get("country", ""),
-            police=row.get("police", ""),
-            ambulance=row.get("ambulance", ""),
-            fire=row.get("fire", ""),
-        )
-    if route == "medicines":
-        lines = [str(row.get("medicine_name", ""))]
-        if row.get("safe_in_pregnancy"):
-            lines.append("Pregnancy: %s" % _pregnancy_text(row["safe_in_pregnancy"]))
-        if row.get("max_dose_adult"):
-            lines.append("Maximum adult dose: %s" % row["max_dose_adult"])
-        if row.get("overdose_action"):
-            lines.append("If too much was taken: %s" % row["overdose_action"])
-        if row.get("warnings"):
-            lines.append("Warnings: %s" % row["warnings"])
-        return "\n".join(lines)
-    lines = []
-    if row.get("condition"):
-        lines.append("Condition: %s" % row["condition"])
-    if row.get("immediate_action"):
-        lines.append("Do this now: %s" % row["immediate_action"])
-    if row.get("what_not_to_do"):
-        lines.append("Do NOT: %s" % row["what_not_to_do"])
-    return "\n".join(lines)
+# [The output-safety guards (_echoes_prompt, _looks_degenerate,
+#  _inverts_safety_verdict) and build_db_fallback moved to
+#  query_layer/prompt_policy.py and are re-imported above.]
 
 
 def answer(user_input: str) -> dict:
