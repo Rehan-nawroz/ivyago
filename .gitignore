@@ -32,6 +32,8 @@ test_optional_database.py
 !/.gitignore
 !/LICENSE
 !/README.md
+!/public/
+!/public/**
 !/dist/
 /dist/*
 !/dist/Ivyago-Setup-0.1.0.exe
