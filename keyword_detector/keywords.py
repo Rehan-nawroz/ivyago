@@ -439,7 +439,24 @@ STOPWORDS = {
 
 # Paths — resolved relative to this file so it works from any CWD.
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_DIR = os.path.normpath(os.path.join(BASE_DIR, "..", "db"))
+
+
+def _database_directory() -> str:
+    """Return the folder that holds the reference SQLite databases.
+
+    A frozen Windows build keeps ``db/`` beside ``Ivyago.exe`` instead of inside
+    the PyInstaller bundle, matching :func:`desktop_app.paths.application_root`.
+    Repository and CLI use are unchanged.
+    """
+
+    if getattr(sys, "frozen", False):
+        return os.path.join(
+            os.path.dirname(os.path.abspath(sys.executable)), "db"
+        )
+    return os.path.normpath(os.path.join(BASE_DIR, "..", "db"))
+
+
+DB_DIR = _database_directory()
 DB_PATHS = {
     "emergency_numbers": os.path.join(DB_DIR, "emergency_numbers.db"),
     "medicines": os.path.join(DB_DIR, "medicines.db"),
