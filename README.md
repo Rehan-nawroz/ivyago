@@ -92,7 +92,7 @@ The beta installer is **not code-signed yet**, so Windows may show **"Windows pr
 ### Installer checksum
 
 ```
-SHA-256  1C43479284BF55CA7DE8C85F912EB9DAD58CA1714BB736047F771F86476BF7E7
+SHA-256  43D871065F95DC5E03641BBEA47F66809C3700A2418DC463E54D7B2F3E4C2007
 File     Ivyago-Setup-0.1.0.exe
 ```
 
