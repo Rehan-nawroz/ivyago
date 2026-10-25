@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="dist/Ivyago-Setup-0.1.0.exe"><strong>Download Ivyago 0.1.0 for Windows</strong></a><br>
-  <sub>44 MB · Windows 10 / 11 (64-bit) · No account required</sub>
+  <sub>46 MB · Windows 10 / 11 (64-bit) · No account required</sub>
 </p>
 
 <p align="center">
@@ -80,7 +80,7 @@ The model download requests only the model file from its official source. Messag
 
 ## Install
 
-1. Download **[Ivyago-Setup-0.1.0.exe](dist/Ivyago-Setup-0.1.0.exe)** (44 MB). Future versions are published under [Releases](../../releases).
+1. Download **[Ivyago-Setup-0.1.0.exe](dist/Ivyago-Setup-0.1.0.exe)** (46 MB). Future versions are published under [Releases](../../releases).
 2. Run the installer. It installs for your Windows account only, needs no administrator rights, and creates Start Menu and optional Desktop shortcuts.
 3. On first launch, Ivyago offers to download its local language model (about 1.1 GB). The download can be paused and resumed, and the file is verified with SHA-256 before it is used.
 4. After setup, Ivyago runs offline.
@@ -92,7 +92,7 @@ The beta installer is **not code-signed yet**, so Windows may show **"Windows pr
 ### Installer checksum
 
 ```
-SHA-256  9A5CA08A8AEB560E68821BA260C5552ACA5F3EFAE13103C1C9D325C4EC92C6F2
+SHA-256  1C43479284BF55CA7DE8C85F912EB9DAD58CA1714BB736047F771F86476BF7E7
 File     Ivyago-Setup-0.1.0.exe
 ```
 
