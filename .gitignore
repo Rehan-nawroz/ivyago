@@ -45,3 +45,8 @@ test_optional_database.py
 desktop_app/**/__pycache__/
 desktop_app/**/*.pyc
 desktop_app/**/*.pyo
+desktop_app/resources/ivyago-line.png
+desktop_app/resources/logo.ico
+desktop_app/resources/logo.png
+desktop_app/ui-refrence/code.html
+desktop_app/ui-refrence/screen.png
